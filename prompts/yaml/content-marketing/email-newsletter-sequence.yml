@@ -1,0 +1,171 @@
+name: "Email Newsletter Sequence Generator"
+category: "Content Marketing"
+difficulty: "Advanced"
+estimated_tokens: "1200-1600"
+version: "1.2.0"
+
+description: "Transform podcast insights into a nurturing email sequence that builds subscriber relationships and drives business goals. Perfect for converting interview content into systematic lead nurturing campaigns."
+
+metadata:
+  industry: "Email Marketing"
+  use_cases:
+    - "Lead nurturing campaigns"
+    - "Podcast promotion"
+    - "Expert interview marketing"
+    - "Subscriber engagement"
+    - "Content repurposing"
+    - "Business development"
+
+  target_audience:
+    - "Email marketers"
+    - "Content strategists"
+    - "Podcast producers"
+    - "Marketing managers"
+    - "Business owners"
+
+  prerequisites:
+    - "Podcast or interview transcript"
+    - "Understanding of email marketing best practices"
+    - "Knowledge of target audience"
+    - "Email marketing platform access"
+
+  outputs:
+    - "Multi-email sequence (4-6 emails)"
+    - "Subject line variations"
+    - "Engagement-focused content"
+    - "Strategic call-to-actions"
+
+prompt_template: |
+  Create a comprehensive email newsletter sequence based on this podcast interview that nurtures subscribers and drives engagement over multiple weeks:
+
+  ## Email Sequence Structure (4-6 emails)
+
+  ### Email #1: Introduction & Hook (Send immediately)
+
+  **Subject Line Options (provide 3):**
+  - Create urgency or curiosity around main interview insight
+  - Include guest name if they're well-known in your industry
+  - Tease surprising statistic or contrarian viewpoint
+
+  **Email Content Structure:**
+  - **Opening Hook:** Reference current industry trend or problem
+  - **Guest Introduction:** Brief credentials and why their perspective matters
+  - **Key Teaser:** One surprising insight without giving everything away
+  - **Value Preview:** What subscribers will learn in upcoming emails
+  - **CTA:** Listen to full interview + social sharing request
+
+  ### Email #2: Deep Dive Insight #1 (Send 3-4 days later)
+
+  **Focus:** Most actionable takeaway from interview
+  - **Problem Definition:** What challenge this insight solves
+  - **Solution Breakdown:** Step-by-step implementation
+  - **Real Example:** Case study or example from interview
+  - **Action Step:** One specific thing subscribers can do this week
+  - **CTA:** Share results or ask questions via reply
+
+  ### Email #3: Deep Dive Insight #2 (Send 1 week later)
+
+  **Focus:** Most surprising or counterintuitive insight
+  - **Myth Busting:** What most people get wrong about this topic
+  - **Truth Revelation:** What the guest revealed that's different
+  - **Evidence Support:** Data or examples that prove the point
+  - **Implementation Guide:** How to apply this insight
+  - **CTA:** Download related resource or book consultation
+
+  ### Email #4: Behind the Scenes (Send 2 weeks later)
+
+  **Focus:** Process, tools, or methodology discussion
+  - **Process Deep Dive:** How guest approaches their work
+  - **Tool Recommendations:** Specific tools or resources mentioned
+  - **Methodology Breakdown:** Framework or system they use
+  - **Personal Story:** Challenge or failure that led to insights
+  - **CTA:** Try recommended tool or share your own process
+
+  ### Email #5: Expert Roundup (Send 3 weeks later)
+
+  **Focus:** Connect this interview to broader industry conversation
+  - **Industry Perspective:** How guest's views compare to others
+  - **Trend Analysis:** What this means for industry direction
+  - **Additional Resources:** Related experts, books, articles
+  - **Community Building:** Encourage subscriber discussion
+  - **CTA:** Join community group or attend upcoming event
+
+  ### Email #6: Call to Action & Next Steps (Send 1 month later)
+
+  **Focus:** Convert engagement into business relationship
+  - **Series Recap:** Key insights from entire sequence
+  - **Transformation Promise:** What changes if they take action
+  - **Clear Next Step:** Specific service, product, or consultation offer
+  - **Urgency/Scarcity:** Time-limited or capacity-limited offer
+  - **Social Proof:** Success stories from previous participants
+
+  Please ensure each email maintains conversational tone while delivering substantial value, and includes specific subject lines and calls-to-action.
+
+  Podcast transcript:
+  [PASTE YOUR TRANSCRIPT HERE]
+
+example_input: "Podcast interview with business growth expert discussing scaling strategies, workflow optimization, and team building for small businesses."
+
+example_output: |
+  ### Email #1: The $2M Mistake Most Growing Businesses Make
+
+  **Subject Line Options:**
+  - "The $2M mistake I see every week (true story)"
+  - "Why [Guest Name]'s 'backward' approach doubled his revenue"
+  - "This counterintuitive strategy saves 40% on hiring costs"
+
+  **Email Content:**
+  Hi [First Name],
+
+  I just finished an eye-opening conversation with [Guest Name], who's helped 200+ companies scale past $10M ARR.
+
+  He told me about a client who was hemorrhaging $2M annually on something 90% of growing businesses get completely wrong: hiring too early.
+
+  While everyone's rushing to hire specialists, [Guest] advocates for what he calls "strategic skill stacking" - and the results are mind-blowing.
+
+  Over the next few weeks, I'll share the 3 counterintuitive insights from our conversation that could save your business hundreds of thousands of dollars:
+
+  ✓ The "hiring pause" strategy that doubled efficiency
+  ✓ Why generalists beat specialists in years 2-5
+  ✓ The 4-person team structure that scales to $50M
+
+  Listen to the full interview here: [Link]
+
+best_practices:
+  - "Sequence strategy: Build value systematically across emails rather than pitching immediately"
+  - "Engagement tracking: Monitor open rates and replies to optimize send timing and content"
+  - "Personalization: Reference subscriber interests and previous engagement where possible"
+  - "Value delivery: Ensure each email provides standalone value while building toward business goals"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "email_sequence"
+
+  integration_examples:
+    - name: "Email Marketing Platform"
+      description: "Auto-schedule email sequences in marketing platforms"
+      code_snippet: |
+        email_sequence = generate_email_sequence(transcript)
+        email_platform.create_drip_campaign(email_sequence)
+
+    - name: "Engagement Analytics"
+      description: "Track email performance and optimize future sequences"
+      code_snippet: |
+        sequence = create_email_sequence(transcript)
+        analytics.track_sequence_performance(sequence)
+        insights = analytics.generate_optimization_report()
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/content-marketing-ai-toolkit-interview-optimization-prompts#prompt-3-email-newsletter-sequence-generator"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "email-marketing"
+  - "lead-nurturing"
+  - "content-sequence"
+  - "podcast-marketing"
+  - "subscriber-engagement"
+  - "conversion-optimization"
+  - "content-repurposing"

@@ -1,0 +1,194 @@
+name: "Lead Magnet Creator"
+category: "Content Marketing"
+difficulty: "Advanced"
+estimated_tokens: "1000-1400"
+version: "1.2.0"
+
+description: "Transform expert interviews into high-converting lead magnets that build your email list and demonstrate expertise. Perfect for creating valuable resources that attract ideal prospects."
+
+metadata:
+  industry: "Lead Generation"
+  use_cases:
+    - "Email list building"
+    - "Lead generation"
+    - "Authority positioning"
+    - "Content marketing"
+    - "Expert positioning"
+    - "Business development"
+
+  target_audience:
+    - "Marketing managers"
+    - "Business owners"
+    - "Content strategists"
+    - "Sales professionals"
+    - "Consultants"
+
+  prerequisites:
+    - "Expert interview transcript"
+    - "Understanding of target audience"
+    - "Knowledge of lead generation best practices"
+    - "Email marketing system"
+
+  outputs:
+    - "Multiple lead magnet concepts"
+    - "Implementation frameworks"
+    - "Landing page copy"
+    - "Email sequence starters"
+
+prompt_template: |
+  Based on this expert interview, create multiple high-value lead magnets that will attract ideal prospects and demonstrate authority:
+
+  ## Lead Magnet Concept #1: Comprehensive Guide
+
+  **Title:** [Create compelling title that promises specific outcome]
+  **Format:** Multi-page PDF guide or report
+  **Target Audience:** [Specific persona who would want this]
+
+  **Content Structure:**
+  - **Introduction:** Problem this guide solves
+  - **Section 1:** [Key insight #1 from interview expanded]
+  - **Section 2:** [Key insight #2 from interview expanded]
+  - **Section 3:** [Key insight #3 from interview expanded]
+  - **Action Plan:** Step-by-step implementation checklist
+  - **Resources:** Tools, links, and additional reading
+  - **About/CTA:** Brief bio and next step offer
+
+  **Landing Page Headline:** [Benefit-focused headline]
+  **Value Proposition:** [What they get and why it matters]
+
+  ## Lead Magnet Concept #2: Quick-Win Checklist
+
+  **Title:** [Action-oriented checklist title]
+  **Format:** 1-2 page checklist or cheat sheet
+  **Target Audience:** [Busy professionals who need quick wins]
+
+  **Checklist Items (8-12 items):**
+  - [ ] [Actionable item from interview insight #1]
+  - [ ] [Actionable item from interview insight #2]
+  - [Continue with specific, measurable actions]
+
+  **Bonus Sections:**
+  - Common mistakes to avoid
+  - Quick troubleshooting guide
+  - Resource recommendations
+
+  ## Lead Magnet Concept #3: Video Training Series
+
+  **Title:** [Transformation-focused training title]
+  **Format:** 3-5 short video lessons (5-10 minutes each)
+  **Target Audience:** [People who prefer video learning]
+
+  **Video Outline:**
+  - **Video 1:** [Core concept introduction]
+  - **Video 2:** [Main methodology/framework]
+  - **Video 3:** [Implementation strategy]
+  - **Video 4:** [Common challenges and solutions]
+  - **Video 5:** [Next steps and advanced strategies]
+
+  ## Lead Magnet Concept #4: Tool/Template
+
+  **Title:** [Practical tool title]
+  **Format:** Spreadsheet, template, or digital tool
+  **Target Audience:** [Hands-on implementers]
+
+  **Tool Features:**
+  - Pre-built formulas or frameworks from interview
+  - Customizable sections for different scenarios
+  - Instructions and example usage
+  - Tips for maximization
+
+  ## Supporting Materials for Each Lead Magnet
+
+  **Email Welcome Sequence (3 emails):**
+  - Email 1: Delivery + quick start guide
+  - Email 2: Implementation support + case study
+  - Email 3: Next level offer + consultation CTA
+
+  **Landing Page Copy Framework:**
+  - Attention-grabbing headline
+  - Problem/pain point identification
+  - Solution preview
+  - Credibility indicators
+  - Simple opt-in form
+  - Privacy assurance
+
+  Please ensure each lead magnet concept provides genuine value while positioning our expertise and naturally leading to our services.
+
+  Expert interview transcript:
+  [PASTE YOUR TRANSCRIPT HERE]
+
+example_input: "Interview with productivity expert discussing time management strategies, workflow optimization, and team efficiency for small business owners."
+
+example_output: |
+  ## Lead Magnet Concept #1: The 4-Hour Workday Blueprint
+
+  **Title:** "The 4-Hour Workday Blueprint: How Small Business Owners Can Double Productivity While Working Half the Time"
+  **Format:** 15-page PDF guide with worksheets
+  **Target Audience:** Small business owners feeling overwhelmed and overworked
+
+  **Content Structure:**
+  - **Introduction:** Why working harder isn't working
+  - **Section 1:** The Priority Pyramid - Focus on what actually moves the needle
+  - **Section 2:** Automation Arsenal - 7 tasks you should never do manually
+  - **Section 3:** Delegation Democracy - Building a team that works without you
+  - **Action Plan:** 30-day implementation roadmap
+  - **Resources:** Recommended tools and apps for each strategy
+  - **About/CTA:** Free consultation offer for implementation support
+
+  **Landing Page Headline:** "Finally, A Proven System to Cut Your Workday in Half (Without Sacrificing Results)"
+  **Value Proposition:** "Get the exact framework used by 500+ business owners to reclaim 20+ hours per week while growing revenue."
+
+  ## Lead Magnet Concept #2: The Productivity Audit Checklist
+
+  **Title:** "The 5-Minute Productivity Audit: Instantly Identify What's Killing Your Efficiency"
+  **Format:** 2-page checkable PDF with scoring system
+  **Target Audience:** Busy entrepreneurs who need quick wins
+
+  **Checklist Items:**
+  - [ ] You have a written priority system (not just mental notes)
+  - [ ] You batch similar tasks together
+  - [ ] You have set times for checking email/messages
+  - [ ] You delegate tasks worth less than $50/hour of your time
+  - [ ] You use automation for recurring processes
+  - [ ] You have "focus blocks" protected from interruptions
+  - [ ] You track time spent on revenue-generating activities
+  - [ ] You have systems for common client requests
+
+best_practices:
+  - "Value-first approach: Ensure lead magnets provide genuine utility independent of sales goals"
+  - "Format matching: Choose format that best serves the content and audience preferences"
+  - "Implementation focus: Include actionable steps rather than just theoretical concepts"
+  - "Authority building: Position expertise naturally through valuable content delivery"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "lead_magnet_concepts"
+
+  integration_examples:
+    - name: "Landing Page Builder"
+      description: "Auto-generate landing pages for lead magnets"
+      code_snippet: |
+        lead_magnets = create_lead_magnets(transcript)
+        landing_pages = generate_landing_pages(lead_magnets)
+
+    - name: "Email Automation"
+      description: "Set up automated email sequences for lead magnet delivery"
+      code_snippet: |
+        magnets = generate_lead_magnets(transcript)
+        email_sequences = create_nurture_sequences(magnets)
+        automation_platform.setup_sequences(email_sequences)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/content-marketing-ai-toolkit-interview-optimization-prompts#prompt-4-lead-magnet-creator"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "lead-generation"
+  - "lead-magnets"
+  - "email-list-building"
+  - "content-marketing"
+  - "conversion-optimization"
+  - "authority-building"
+  - "prospect-attraction"
