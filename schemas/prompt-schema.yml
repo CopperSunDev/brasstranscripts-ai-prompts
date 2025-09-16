@@ -1,0 +1,136 @@
+# YAML Schema for BrassTranscripts AI Prompts
+# This schema defines the standardized structure for all prompt files
+
+metadata:
+  id:
+    type: string
+    description: "Unique identifier for the prompt (kebab-case)"
+    pattern: "^[a-z0-9-]+$"
+    required: true
+
+  title:
+    type: string
+    description: "Human-readable prompt title"
+    required: true
+
+  category:
+    type: string
+    description: "Primary category classification"
+    enum: ["executive-business", "content-marketing", "legal-professional", "general-content"]
+    required: true
+
+  subcategory:
+    type: string
+    description: "More specific classification within category"
+    required: false
+
+  difficulty:
+    type: string
+    description: "Complexity level for users"
+    enum: ["beginner", "intermediate", "advanced"]
+    required: true
+
+  estimated_tokens:
+    type: string
+    description: "Expected token usage range"
+    pattern: "^[0-9]+-[0-9]+$"
+    example: "500-800"
+    required: true
+
+  version:
+    type: string
+    description: "Semantic version of the prompt"
+    pattern: "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    example: "1.2.0"
+    required: true
+
+  last_updated:
+    type: string
+    description: "ISO date of last modification"
+    pattern: "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    required: true
+
+author:
+  organization:
+    type: string
+    description: "Creating organization"
+    default: "BrassTranscripts"
+    required: true
+
+  website:
+    type: string
+    description: "Organization website URL"
+    default: "https://brasstranscripts.com"
+    required: true
+
+resources:
+  detailed_guide:
+    type: string
+    description: "URL to detailed blog post guide"
+    pattern: "^https://brasstranscripts\\.com/blog/.+#.+$"
+    required: true
+
+  prompt_collection:
+    type: string
+    description: "URL to main prompt guide"
+    default: "https://brasstranscripts.com/ai-prompt-guide"
+    required: true
+
+  transcription_service:
+    type: string
+    description: "URL to transcription upload page"
+    default: "https://brasstranscripts.com/upload"
+    required: true
+
+tags:
+  type: array
+  description: "Searchable tags for categorization"
+  items:
+    type: string
+  minItems: 1
+  maxItems: 5
+  required: true
+
+prompt:
+  system_message:
+    type: string
+    description: "Optional system prompt for AI models that support it"
+    required: false
+
+  user_template:
+    type: string
+    description: "Main prompt template with placeholders"
+    required: true
+
+example:
+  input_sample:
+    type: string
+    description: "Representative sample transcript (anonymized)"
+    required: true
+
+  expected_output:
+    type: string
+    description: "Example of generated result"
+    required: true
+
+use_cases:
+  type: array
+  description: "List of specific application scenarios"
+  items:
+    type: string
+  minItems: 2
+  maxItems: 6
+  required: true
+
+performance:
+  typical_processing_time:
+    type: string
+    description: "Expected processing time range"
+    example: "30-60 seconds"
+    required: false
+
+  optimal_transcript_length:
+    type: string
+    description: "Recommended transcript length for best results"
+    example: "5-30 minutes"
+    required: false
