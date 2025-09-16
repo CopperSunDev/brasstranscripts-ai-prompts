@@ -1,0 +1,170 @@
+metadata:
+  id: "blog-post-generator"
+  title: "Comprehensive Blog Post Generator"
+  category: "content-marketing"
+  subcategory: "content-creation"
+  difficulty: "intermediate"
+  estimated_tokens: "700-1000"
+  version: "1.2.0"
+  last_updated: "2025-01-16"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/podcast-content-empire-ai-prompts-marketing-assets#prompt-1-comprehensive-blog-post-generator"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "content-marketing"
+  - "blog-creation"
+  - "seo-optimization"
+  - "podcast-transcription"
+  - "content-strategy"
+
+prompt:
+  system_message: |
+    You are a content marketing AI specialized in transforming podcast interviews
+    and conversations into engaging, SEO-optimized blog posts that drive organic traffic.
+
+  user_template: |
+    Transform this podcast interview transcript into a comprehensive, SEO-optimized blog post that captures the conversation's key insights and maintains reader engagement throughout:
+
+    ## Content Structure Requirements
+
+    **Hook-Driven Introduction (150-200 words):**
+    - Start with a compelling question or surprising statistic from the interview
+    - Establish the problem this content solves
+    - Preview the key insights readers will gain
+    - Include a brief introduction of the expert being interviewed
+
+    **Main Content Sections (5-7 sections):**
+    For each major topic discussed, create:
+    - **Section Title:** [Compelling, keyword-rich heading]
+    - **Key Insight:** [Main takeaway in 2-3 sentences]
+    - **Supporting Details:** [Elaboration with examples and context]
+    - **Expert Quote:** [Powerful quote that reinforces the point]
+    - **Actionable Tip:** [Specific step readers can implement]
+
+    **Conclusion with Clear Next Steps (100-150 words):**
+    - Summarize the top 3 takeaways
+    - Provide specific action items for readers
+    - Include call-to-action linking to your services or resources
+
+    ## SEO Optimization Requirements
+
+    **Primary Keyword Integration:**
+    - Identify the main topic and integrate keyword naturally throughout
+    - Use semantic variations in subheadings
+    - Include related keywords in image alt tags (suggest 3-5 images)
+
+    **Engagement Optimization:**
+    - Break up long paragraphs with bullet points and numbered lists
+    - Include relevant statistics or data points mentioned
+    - Add internal linking opportunities to other content
+    - Suggest pull quotes for social media sharing
+
+    ## Content Enhancement
+
+    **Credibility Boosters:**
+    - Include guest's credentials and expertise areas
+    - Reference any specific tools, books, or resources mentioned
+    - Add links to studies or data sources if referenced
+    - Note any industry recognition or achievements discussed
+
+    **Reader Value Adds:**
+    - Create a "Quick Reference" section with key takeaways
+    - Suggest related topics readers might be interested in
+    - Include discussion questions for social sharing
+    - Recommend next steps for deeper learning
+
+    ## Meta Information
+
+    **Suggested Meta Description:** [150-160 character summary optimized for click-through]
+    **Recommended Tags:** [5-10 relevant tags for content management system]
+    **Social Media Headlines:** [3 variations for different platforms]
+
+    Interview transcript:
+    {transcript_content}
+
+example:
+  input_sample: |
+    [Podcast Interview]
+    Host: Today we're speaking with Sarah Chen, a digital marketing expert who's helped over 200 companies improve their conversion rates.
+
+    Sarah: Thanks for having me. I'm excited to share what I've learned about conversion optimization.
+
+    Host: What's the biggest mistake you see companies making?
+
+    Sarah: The biggest mistake is focusing on traffic instead of conversion. I've seen companies with 10,000 monthly visitors convert better than those with 100,000 visitors. It's all about understanding your audience.
+
+    Host: Can you give us a specific example?
+
+    Sarah: Sure. I worked with an e-commerce client who increased their conversion rate from 2% to 8% just by changing their product descriptions to focus on benefits instead of features. The traffic stayed the same, but revenue quadrupled.
+
+    [Interview continues...]
+
+  expected_output: |
+    # The Traffic Trap: Why 10,000 Visitors Can Outperform 100,000 (Expert Insights)
+
+    ## Hook-Driven Introduction
+
+    What if I told you that a website with 10,000 monthly visitors could generate more revenue than one with 100,000? According to digital marketing expert Sarah Chen, who has helped over 200 companies optimize their conversion rates, this scenario happens more often than you'd think. While most businesses obsess over driving traffic, they're missing the bigger picture: conversion optimization.
+
+    In this comprehensive interview, Sarah reveals the counterintuitive strategies that helped one e-commerce client quadruple their revenue without increasing traffic by a single visitor. If you're tired of watching your analytics show impressive visitor numbers while your revenue stays flat, this insight-packed conversation will transform how you think about digital marketing success.
+
+    ## Section 1: The Traffic Obsession Problem
+
+    **Key Insight:** Most companies prioritize traffic generation over conversion optimization, leading to wasted marketing spend and missed revenue opportunities.
+
+    **Supporting Details:** Sarah's experience with over 200 companies reveals a consistent pattern: businesses invest heavily in SEO, paid advertising, and content marketing to drive traffic, but neglect the critical step of converting those visitors into customers. This creates a "leaky bucket" scenario where expensive traffic flows through the site without generating proportional revenue.
+
+    **Expert Quote:** "I've seen companies with 10,000 monthly visitors convert better than those with 100,000 visitors. It's all about understanding your audience."
+
+    **Actionable Tip:** Before investing in more traffic generation, audit your current conversion funnel. Calculate your conversion rate for each traffic source and identify which audiences convert best.
+
+    ## Section 2: The Power of Benefit-Focused Messaging
+
+    **Key Insight:** Shifting product descriptions from features to benefits can dramatically improve conversion rates without requiring additional traffic.
+
+    **Supporting Details:** Sarah's e-commerce case study demonstrates how messaging changes can create exponential revenue growth. The client moved from describing what their products did (features) to explaining how the products improved customers' lives (benefits). This psychological shift helped visitors envision themselves using and benefiting from the products.
+
+    **Expert Quote:** "I worked with an e-commerce client who increased their conversion rate from 2% to 8% just by changing their product descriptions to focus on benefits instead of features. The traffic stayed the same, but revenue quadrupled."
+
+    **Actionable Tip:** Review your product or service descriptions. For each feature listed, add a corresponding benefit that explains the emotional or practical value to the customer.
+
+    ## Conclusion and Next Steps
+
+    Sarah Chen's insights reveal that conversion optimization often delivers better ROI than traffic generation. The key takeaways: focus on understanding your audience deeply, optimize your messaging for benefits over features, and measure conversion rates as carefully as you measure traffic.
+
+    **Your Action Plan:**
+    1. Audit your current conversion rates by traffic source
+    2. Rewrite your key landing pages to emphasize benefits
+    3. Test these changes and measure the impact on revenue
+
+    Ready to transform your website's performance? Start with a conversion audit and discover how much revenue you're leaving on the table.
+
+    ## Meta Information
+
+    **Suggested Meta Description:** "Digital marketing expert Sarah Chen reveals how focusing on conversion optimization over traffic can quadruple revenue. Real case studies included."
+
+    **Recommended Tags:** conversion optimization, digital marketing, e-commerce strategy, traffic analysis, revenue growth
+
+    **Social Media Headlines:**
+    - LinkedIn: "Why 10K visitors can outperform 100K: Conversion optimization insights"
+    - Twitter: "This marketing expert helped a client quadruple revenue without increasing traffic"
+    - Facebook: "Stop chasing traffic. Start optimizing conversions. Here's how."
+
+use_cases:
+  - "Podcast episode blog posts and content repurposing"
+  - "Expert interview articles and thought leadership content"
+  - "Educational content creation from recorded sessions"
+  - "SEO content strategy and organic traffic generation"
+  - "Authority building through guest expertise showcase"
+  - "Content series development from interview insights"
+
+performance:
+  typical_processing_time: "90-120 seconds"
+  optimal_transcript_length: "20-45 minutes"

@@ -1,0 +1,221 @@
+metadata:
+  id: "executive-communication-package"
+  title: "Executive Communication Package Generator"
+  category: "executive-business"
+  subcategory: "stakeholder-communication"
+  difficulty: "advanced"
+  estimated_tokens: "1000-1500"
+  version: "1.2.0"
+  last_updated: "2025-01-16"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/meeting-transcripts-executive-summaries-ai-prompts#prompt-5-executive-communication-package-generator"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "executive-communication"
+  - "stakeholder-management"
+  - "board-reporting"
+  - "internal-communication"
+  - "leadership-updates"
+
+prompt:
+  system_message: |
+    You are an executive communications AI specialized in creating multiple
+    audience-appropriate formats from meeting content for various stakeholder levels.
+
+  user_template: |
+    Based on this meeting transcript, create a comprehensive executive communication package with multiple formats:
+
+    ## 1. Board-Ready Executive Brief (2-3 paragraphs)
+
+    Write a concise summary suitable for board meeting materials:
+    - Opening: Meeting purpose and strategic context
+    - Middle: Key decisions made and their business impact
+    - Closing: Next steps and any board-level approvals needed
+
+    ## 2. Leadership Team Update (Bulleted Format)
+
+    **Key Decisions & Actions:**
+    - [Decision]: [Implementation by whom/when]
+    - [Action]: [Owner and deadline]
+
+    **Resource Impacts:**
+    - Budget changes or needs
+    - Headcount implications
+    - Timeline adjustments
+
+    **Cross-Department Dependencies:**
+    - [Department A] needs [specific deliverable] from [Department B]
+    - [Shared resource] allocation changes
+
+    **Leadership Attention Required:**
+    - Decisions pending executive approval
+    - Escalated issues needing intervention
+
+    ## 3. Investor Update Snippet (External Communication)
+
+    If appropriate for external sharing:
+    - Progress on strategic initiatives
+    - Key milestones achieved or upcoming
+    - Market position improvements
+    - Financial performance indicators mentioned
+
+    ## 4. All-Hands Meeting Talking Points
+
+    Employee-appropriate highlights:
+    - Company direction updates
+    - New initiatives affecting teams
+    - Success stories or wins to celebrate
+    - Changes in priorities or focus areas
+
+    ## 5. Follow-Up Email Template
+
+    Draft a professional follow-up email to meeting participants:
+
+    Subject: [Meeting Name] - Decisions & Next Steps
+
+    Team,
+
+    Thank you for productive discussion on [key topics]. Here are our commitments moving forward:
+
+    **Decisions Confirmed:**
+    - [List major decisions reached]
+
+    **Action Items:**
+    - [Name]: [Task] by [deadline]
+    - [Name]: [Task] by [deadline]
+
+    **Next Meetings:**
+    - [Follow-up session]: [date and purpose]
+
+    Please reach out with questions or if priorities shift.
+
+    Best regards,
+    [Meeting Organizer]
+
+    ## 6. Strategic Planning Input
+
+    **For quarterly/annual planning sessions:**
+    - Strategic themes emerging from discussion
+    - Resource allocation implications
+    - Timeline considerations for strategic planning
+    - Success metrics to track
+
+    ## Customization Guidelines
+
+    For each communication format:
+    - Adjust confidentiality level for intended audience
+    - Include relevant context for stakeholder's role
+    - Emphasize outcomes most important to specific group
+    - Use appropriate level of detail for decision-making needs
+
+    Meeting transcript:
+    {transcript_content}
+
+example:
+  input_sample: |
+    [Leadership Team Meeting]
+    CEO: We need to address the customer retention drop to 85%. I'm thinking about a loyalty program.
+
+    CFO: Budget-wise, we have $200K in retention funds. ROI could be significant if we see the 15% CLV increase we're projecting.
+
+    VP Engineering: We'd need 2 engineers for Q1. The CRM integration is doable but needs planning.
+
+    CMO: This aligns with our customer-first messaging. We can reallocate some paid ad budget to this.
+
+    Head of Sales: Enterprise customers have specifically asked about loyalty benefits. This could be a differentiator.
+
+    CEO: Let's move forward. Sarah, can you scope the technical requirements? Mike, work with sales on feature priorities.
+
+    [Meeting continues...]
+
+  expected_output: |
+    ## 1. Board-Ready Executive Brief (2-3 paragraphs)
+
+    The executive team convened to address declining customer retention rates and evaluate strategic responses to competitive market pressures. Following comprehensive discussion of customer feedback and market analysis, leadership approved a $200K investment in a customer loyalty program designed to improve retention from 85% to target levels while enhancing competitive differentiation. The initiative represents a strategic shift toward customer-first investment, with projected 15% increase in customer lifetime value and strong ROI potential based on retention improvements and enterprise customer demand for loyalty benefits.
+
+    ## 2. Leadership Team Update (Bulleted Format)
+
+    **Key Decisions & Actions:**
+    - **Loyalty Program Approval**: $200K budget allocation approved, Q1 development timeline
+    - **Resource Commitment**: 2 engineers assigned to development project
+    - **Budget Reallocation**: Marketing to shift funds from paid advertising to retention focus
+
+    **Resource Impacts:**
+    - Budget: $200K from existing retention fund allocation
+    - Headcount: 2 FTE engineers dedicated to Q1 development
+    - Timeline: Q1 development phase, integration with existing CRM systems
+
+    **Cross-Department Dependencies:**
+    - Engineering needs feature prioritization from Sales team
+    - Marketing requires technical specifications for promotion planning
+    - Sales needs development timeline for customer communication
+
+    **Leadership Attention Required:**
+    - Technical scoping document review and approval
+    - Marketing budget reallocation confirmation
+    - Enterprise customer communication strategy coordination
+
+    ## 3. Investor Update Snippet (External Communication)
+
+    The company continues strategic investment in customer retention capabilities, with recent approval of advanced loyalty program development. This customer-first initiative addresses market feedback and positions the organization for enhanced competitive differentiation while targeting improved customer lifetime value metrics.
+
+    ## 4. All-Hands Meeting Talking Points
+
+    - **Customer-Focused Growth**: Investing in loyalty programs based on direct customer feedback and market research
+    - **Innovation Investment**: Engineering team taking on exciting customer experience enhancement project
+    - **Strategic Positioning**: Strengthening competitive advantages in response to market opportunities
+    - **Team Collaboration**: Cross-department initiative demonstrating company-wide customer commitment
+
+    ## 5. Follow-Up Email Template
+
+    Subject: Customer Retention Strategy Meeting - Decisions & Next Steps
+
+    Team,
+
+    Thank you for the productive discussion on our customer retention strategy and loyalty program initiative. Here are our commitments moving forward:
+
+    **Decisions Confirmed:**
+    - Approved $200K loyalty program development budget from retention funds
+    - Assigned 2 dedicated engineers for Q1 development cycle
+    - Confirmed marketing budget reallocation from paid advertising to retention focus
+
+    **Action Items:**
+    - **Sarah (VP Engineering)**: Complete technical scoping and CRM integration requirements by January 20
+    - **Mike (Head of Sales)**: Finalize feature prioritization based on enterprise customer feedback by January 15
+    - **CMO**: Develop marketing strategy for loyalty program launch and budget reallocation plan
+
+    **Next Meetings:**
+    - **Weekly Progress Reviews**: Fridays at 2 PM starting January 12
+    - **Feature Review Session**: January 25 for final program design approval
+
+    Please reach out with questions or if priorities shift requiring timeline adjustments.
+
+    Best regards,
+    [Meeting Organizer]
+
+    ## 6. Strategic Planning Input
+
+    **For quarterly/annual planning sessions:**
+    - **Strategic Theme**: Customer-first investment strategy and retention focus
+    - **Resource Allocation**: $200K retention investment, 2 FTE engineering allocation
+    - **Timeline Considerations**: Q1 development phase impacts engineering capacity planning
+    - **Success Metrics**: Customer retention rate improvement, CLV increase measurement, enterprise customer satisfaction scores
+
+use_cases:
+  - "Board meeting preparation and multi-level communication"
+  - "Cross-functional project updates and stakeholder alignment"
+  - "Strategic initiative communication across organizational levels"
+  - "Crisis communication and coordinated stakeholder messaging"
+  - "Quarterly business reviews and comprehensive reporting"
+  - "Major decision announcements and change management"
+
+performance:
+  typical_processing_time: "180-240 seconds"
+  optimal_transcript_length: "30-90 minutes"
