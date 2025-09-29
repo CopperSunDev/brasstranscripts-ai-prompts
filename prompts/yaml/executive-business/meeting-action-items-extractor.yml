@@ -1,0 +1,76 @@
+metadata:
+  id: "meeting-action-items-extractor"
+  title: "Meeting Action Items Extractor"
+  category: "executive-business"
+  subcategory: "meeting-documentation"
+  difficulty: "beginner"
+  estimated_tokens: "400-600"
+  version: "1.0.0"
+  last_updated: "2025-10-26"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/corporate-meeting-documentation-transcription-workflow#extracting-action-items-automatically"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "meeting-transcription"
+  - "action-items"
+  - "task-management"
+  - "team-accountability"
+
+prompt:
+  system_message: |
+    You are a task management AI specializing in extracting every commitment and
+    assignment from meeting discussions to create comprehensive, project management-ready
+    action item lists that improve accountability and follow-through.
+
+  user_template: |
+    Based on this meeting transcript, create a comprehensive action item tracker:
+
+    1. List every task, assignment, or commitment mentioned
+    2. Identify the responsible person/team for each item
+    3. Extract or infer deadlines and due dates
+    4. Categorize by urgency (High/Medium/Low priority)
+    5. Note any dependencies between action items
+    6. Flag items that need clarification or follow-up
+    7. Format as a project management-ready checklist with status column
+
+    Ensure nothing gets lost in translation.
+
+    Meeting type: {{MEETING_TYPE}}
+    Project: {{PROJECT_NAME}}
+    Date: {{MEETING_DATE}}
+
+    Meeting transcript:
+    {{TRANSCRIPT}}
+
+  variables:
+    - name: "MEETING_TYPE"
+      description: "Type of meeting"
+      required: true
+    - name: "PROJECT_NAME"
+      description: "Project name if applicable"
+      required: false
+    - name: "MEETING_DATE"
+      description: "Date of the meeting"
+      required: true
+    - name: "TRANSCRIPT"
+      description: "Full meeting transcript from BrassTranscripts"
+      required: true
+
+use_cases:
+  - "Project management system integration"
+  - "Team accountability tracking"
+  - "Client deliverable tracking"
+  - "Follow-up and progress monitoring"
+
+best_practices:
+  - "Extract every commitment, even casual mentions"
+  - "Assign specific individuals for accountability"
+  - "Extract or infer explicit deadlines"
+  - "Identify task dependencies for prioritization"

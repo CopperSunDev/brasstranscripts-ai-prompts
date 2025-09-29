@@ -1,0 +1,79 @@
+metadata:
+  id: "video-social-media-package"
+  title: "Video Social Media Package Generator"
+  category: "content-marketing"
+  subcategory: "social-media-marketing"
+  difficulty: "intermediate"
+  estimated_tokens: "800-1200"
+  version: "1.0.0"
+  last_updated: "2025-10-14"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/video-transcription-complete-guide-youtube-content#video-to-social-media-content-package"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "video-transcription"
+  - "social-media-marketing"
+  - "content-repurposing"
+  - "youtube-optimization"
+
+prompt:
+  system_message: |
+    You are a video marketing AI specializing in creating multi-platform social media
+    content packages that drive video views, engagement, and channel growth while
+    providing immediate value to audiences across different platforms.
+
+  user_template: |
+    Create a complete social media content package from this video transcript:
+
+    1. Write 5 LinkedIn posts (200-250 words each) highlighting different insights from the video
+    2. Create 10 Twitter/X posts (280 characters each) with the most impactful quotes and takeaways
+    3. Design 3 Instagram carousel concepts (5-7 slides each) with text for each slide
+    4. Write 5 short video quote suggestions (under 30 words) perfect for creating quote graphics
+    5. Generate 10 relevant hashtags for cross-platform use
+    6. Create 1 email newsletter snippet (300 words) promoting the full video
+
+    Focus on the most shareable, valuable content that drives engagement and directs traffic back to the full video.
+
+    Video topic: {{VIDEO_TOPIC}}
+    Primary platform: {{PRIMARY_PLATFORM}}
+    Audience: {{TARGET_AUDIENCE}}
+    Call-to-action: {{CTA_GOAL}}
+
+    Video transcript:
+    {{TRANSCRIPT}}
+
+  variables:
+    - name: "VIDEO_TOPIC"
+      description: "Main topic or title of the video"
+      required: true
+    - name: "PRIMARY_PLATFORM"
+      description: "Main video platform (YouTube/LinkedIn/Instagram/etc.)"
+      required: true
+    - name: "TARGET_AUDIENCE"
+      description: "Target audience for the video and social content"
+      required: true
+    - name: "CTA_GOAL"
+      description: "Primary call-to-action (watch video/subscribe/visit website/etc.)"
+      required: true
+    - name: "TRANSCRIPT"
+      description: "Full video transcript from BrassTranscripts"
+      required: true
+
+use_cases:
+  - "YouTube video promotion and discovery"
+  - "Multi-platform content distribution"
+  - "Channel growth and subscriber acquisition"
+  - "Content efficiency and repurposing"
+
+best_practices:
+  - "Adapt content for each platform's unique style and format"
+  - "Lead with value and insights, not just promotion"
+  - "Schedule content over multiple days for sustained reach"
+  - "Create visual-friendly quotes for graphics and carousels"

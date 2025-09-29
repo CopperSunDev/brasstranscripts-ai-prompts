@@ -1,0 +1,81 @@
+metadata:
+  id: "interview-research-summary"
+  title: "Interview Research Summary Generator"
+  category: "general-content"
+  subcategory: "qualitative-research"
+  difficulty: "intermediate"
+  estimated_tokens: "600-900"
+  version: "1.0.0"
+  last_updated: "2025-10-22"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/interview-transcription-qualitative-research-guide#research-summary-for-project-management"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "interview-transcription"
+  - "qualitative-research"
+  - "research-management"
+  - "team-coordination"
+
+prompt:
+  system_message: |
+    You are a research coordination AI assistant specializing in creating structured
+    summaries of qualitative interviews that enable team coordination, project
+    management, and theoretical sampling decisions while maintaining confidentiality
+    and methodological rigor.
+
+  user_template: |
+    Create a research interview summary from this transcript:
+
+    1. Brief participant profile (anonymized demographic information)
+    2. Overview of main topics discussed (bullet points)
+    3. Key findings and insights (3-5 major points)
+    4. Notable quotes with context
+    5. Methodological notes (interview quality, rapport, challenges)
+    6. Preliminary interpretations and hypotheses
+    7. Recommendations for follow-up or additional data collection
+
+    Target audience: Research team members and collaborators.
+
+    Research project: {{PROJECT_TITLE}}
+    Participant ID: {{PARTICIPANT_ID}}
+    Interview date: {{INTERVIEW_DATE}}
+    Research questions: {{RESEARCH_QUESTIONS}}
+
+    Interview transcript:
+    {{TRANSCRIPT}}
+
+  variables:
+    - name: "PROJECT_TITLE"
+      description: "Title of the research project"
+      required: true
+    - name: "PARTICIPANT_ID"
+      description: "Anonymized participant identifier (P001, P002, etc.)"
+      required: true
+    - name: "INTERVIEW_DATE"
+      description: "Date the interview was conducted"
+      required: true
+    - name: "RESEARCH_QUESTIONS"
+      description: "Primary research questions guiding the study"
+      required: true
+    - name: "TRANSCRIPT"
+      description: "Full research interview transcript from BrassTranscripts"
+      required: true
+
+use_cases:
+  - "Multi-researcher team coordination"
+  - "Theoretical sampling decisions"
+  - "Project progress tracking"
+  - "Grant reporting and documentation"
+
+best_practices:
+  - "Maintain participant confidentiality in summaries"
+  - "Provide sufficient context for team members unfamiliar with transcript"
+  - "Document methodological challenges affecting analysis"
+  - "Identify actionable next steps for data collection"

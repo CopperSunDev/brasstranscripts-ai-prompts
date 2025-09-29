@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **23 Professional AI Prompts for Transcript Analysis**
+🎯 **37 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -13,7 +13,7 @@ Transform meeting recordings, interviews, and audio content into executive summa
 
 ## 📋 Prompt Categories
 
-### 🏢 Executive & Business (5 prompts)
+### 🏢 Executive & Business (8 prompts)
 Perfect for C-level executives and managers who need strategic insights from meetings.
 
 - **Executive Summary Generator** - Transform meetings into boardroom-ready summaries
@@ -21,10 +21,13 @@ Perfect for C-level executives and managers who need strategic insights from mee
 - **Risk Assessment Analyzer** - Identify potential issues and mitigation strategies
 - **Strategic Context Analyzer** - Connect decisions to business impact
 - **Executive Communication Package** - Create stakeholder updates and briefings
+- **Meeting Minutes Generator** - Create formal meeting documentation automatically
+- **Meeting Action Items Extractor** - Extract every task and commitment from meetings
+- **Meeting Executive Summary** - Concise summaries for busy executives
 
 [📖 View Details](https://brasstranscripts.com/blog/meeting-transcripts-executive-summaries-ai-prompts) | [📁 Browse Files](./prompts/markdown/executive-business/)
 
-### 📢 Content Marketing (5 prompts)
+### 📢 Content Marketing (10 prompts)
 Transform podcast interviews and video content into comprehensive marketing campaigns.
 
 - **Blog Post Generator** - Create detailed articles from interview content
@@ -32,6 +35,10 @@ Transform podcast interviews and video content into comprehensive marketing camp
 - **Email Newsletter Sequence** - Build nurture campaigns from expert insights
 - **Lead Magnet Creator** - Develop valuable downloads and course outlines
 - **Video Content Strategy** - Plan clips, highlights, and promotional materials
+- **Podcast Show Notes Generator** - Create comprehensive episode documentation
+- **Podcast Blog Post Transformer** - Transform episodes into SEO-optimized articles
+- **Podcast Social Media Package** - Multi-platform promotion for podcast episodes
+- **Video Social Media Package** - Social media campaigns from video content
 
 [📖 View Details](https://brasstranscripts.com/blog/podcast-content-empire-ai-prompts-marketing-assets) | [📁 Browse Files](./prompts/markdown/content-marketing/)
 
@@ -46,7 +53,7 @@ Specialized tools for legal professionals analyzing depositions and case materia
 
 [📖 View Details](https://brasstranscripts.com/blog/legal-professional-ai-toolkit-deposition-analysis-prompts) | [📁 Browse Files](./prompts/markdown/legal-professional/)
 
-### 📄 General Content (8 prompts)
+### 📄 General Content (14 prompts)
 Versatile prompts for document creation, training materials, and content optimization.
 
 - **Master Transcript Processing Prompt** - Universal AI prompt for transforming raw transcripts into professional documents
@@ -58,6 +65,11 @@ Versatile prompts for document creation, training materials, and content optimiz
 - **Customer Support FAQ** - Build support resources from customer interactions
 - **Strategic Insights Extractor** - Pull executive-level intelligence from any content
 - **Transcript Quality Analyzer** - AI-powered accuracy assessment and improvement recommendations
+- **Lecture Study Guide Generator** - Transform lectures into comprehensive study materials
+- **Lecture Key Concepts Extractor** - Create quick reference sheets for exam prep
+- **Interview Thematic Analysis** - Identify themes and patterns in research interviews
+- **Interview Research Summary** - Generate structured summaries for research teams
+- **Video Content Repurposing** - Transform video transcripts into multiple formats
 
 [📖 View Details](https://brasstranscripts.com/blog/powerful-llm-prompts-transcript-optimization) | [📁 Browse Files](./prompts/markdown/general-content/)
 
