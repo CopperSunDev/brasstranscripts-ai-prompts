@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **41 Professional AI Prompts for Transcript Analysis**
+🎯 **44 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -53,7 +53,7 @@ Specialized tools for legal professionals analyzing depositions and case materia
 
 [📖 View Details](https://brasstranscripts.com/blog/legal-professional-ai-toolkit-deposition-analysis-prompts) | [📁 Browse Files](./prompts/markdown/legal-professional/)
 
-### 📄 General Content (18 prompts)
+### 📄 General Content (21 prompts)
 Versatile prompts for document creation, training materials, and content optimization.
 
 - **Master Transcript Processing Prompt** - Universal AI prompt for transforming raw transcripts into professional documents
@@ -69,6 +69,9 @@ Versatile prompts for document creation, training materials, and content optimiz
 - **Lecture Key Concepts Extractor** - Create quick reference sheets for exam prep
 - **Interview Thematic Analysis** - Identify themes and patterns in research interviews
 - **Interview Research Summary** - Generate structured summaries for research teams
+- **Interview Quote Extraction** - Extract compelling newsworthy quotes for journalism
+- **Qualitative Research Thematic Analysis** - Systematic qualitative coding and theme development
+- **Interview to Article Transformation** - Transform interviews into polished publication-ready articles
 - **Video Content Repurposing** - Transform video transcripts into multiple formats
 - **Format Conversion & Optimization** - Convert between TXT, SRT, VTT, JSON formats with quality optimization
 - **Subtitle Timing Optimization** - Professional subtitle timing and readability for SRT/VTT files
