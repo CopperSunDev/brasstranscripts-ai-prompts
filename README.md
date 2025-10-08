@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **44 Professional AI Prompts for Transcript Analysis**
+🎯 **46 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -27,7 +27,7 @@ Perfect for C-level executives and managers who need strategic insights from mee
 
 [📖 View Details](https://brasstranscripts.com/blog/meeting-transcripts-executive-summaries-ai-prompts) | [📁 Browse Files](./prompts/markdown/executive-business/)
 
-### 📢 Content Marketing (10 prompts)
+### 📢 Content Marketing (14 prompts)
 Transform podcast interviews and video content into comprehensive marketing campaigns.
 
 - **Blog Post Generator** - Create detailed articles from interview content
@@ -39,6 +39,10 @@ Transform podcast interviews and video content into comprehensive marketing camp
 - **Podcast Blog Post Transformer** - Transform episodes into SEO-optimized articles
 - **Podcast Social Media Package** - Multi-platform promotion for podcast episodes
 - **Video Social Media Package** - Social media campaigns from video content
+- **Microsoft Ads Pain Point Extractor** - Extract customer pain points for Microsoft Advertising campaigns
+- **Microsoft Ads Language Pattern Analyzer** - Analyze customer language for authentic ad tone
+- **Microsoft Ads Copy Generator** - Generate headlines and ad copy from customer interviews
+- **Google Ads Interview Analyzer** - Extract testimonials and social proof for Google Ads
 
 [📖 View Details](https://brasstranscripts.com/blog/podcast-content-empire-ai-prompts-marketing-assets) | [📁 Browse Files](./prompts/markdown/content-marketing/)
 
