@@ -137,14 +137,6 @@ These prompts help professionals:
 - **📚 Blog Posts**: Detailed guides for each prompt category
 - **💡 Audio Tips**: [Recording Quality Best Practices](https://brasstranscripts.com/audio-quality-tips)
 
-## 🤝 Contributing
-
-We welcome improvements and new prompts! Please see our [Contributing Guidelines](./CONTRIBUTING.md) for details on:
-- Prompt format standards
-- Testing requirements
-- Documentation expectations
-- Community guidelines
-
 ## 📄 License
 
 MIT License - Feel free to use, modify, and distribute these prompts for any purpose.
