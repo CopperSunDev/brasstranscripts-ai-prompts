@@ -43,6 +43,10 @@ For each quote, note if it contains:
 - Potentially controversial statements
 - Technical terms that may need explanation
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Here's the interview transcript:
 [PASTE YOUR INTERVIEW TRANSCRIPT]
 

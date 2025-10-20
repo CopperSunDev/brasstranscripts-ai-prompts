@@ -65,6 +65,11 @@ prompt_template: |
   Please make each post platform-specific and optimized for maximum engagement.
 
   Source transcript:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
   [PASTE YOUR TRANSCRIPT HERE]
 
 example_input: "Expert interview transcript about AI transcription technology, targeting content marketing professionals and business owners interested in workflow optimization and productivity tools."

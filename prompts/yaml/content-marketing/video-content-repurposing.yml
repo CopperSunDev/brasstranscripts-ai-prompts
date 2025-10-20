@@ -49,6 +49,10 @@ prompt:
     Primary keyword: {{PRIMARY_KEYWORD}}
     Secondary keywords: {{SECONDARY_KEYWORDS}}
 
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
     Video transcript:
     {{TRANSCRIPT}}
 

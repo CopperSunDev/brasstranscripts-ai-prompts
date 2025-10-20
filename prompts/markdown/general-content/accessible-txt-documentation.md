@@ -43,6 +43,10 @@ Content Optimization:
 - Maintain natural speech patterns
 - Preserve important pauses [indicated]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Source Transcript:
 [PASTE YOUR TRANSCRIPT IN ANY FORMAT]
 

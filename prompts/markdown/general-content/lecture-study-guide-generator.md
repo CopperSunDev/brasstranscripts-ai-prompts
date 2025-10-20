@@ -28,6 +28,10 @@ Course: [COURSE NAME AND NUMBER]
 Lecture topic: [MAIN TOPIC]
 Professor emphasis areas: [MENTION ANY TOPICS THE PROFESSOR STRESSED]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Lecture transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

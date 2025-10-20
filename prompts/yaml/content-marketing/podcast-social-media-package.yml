@@ -47,6 +47,10 @@ prompt:
     Target audience: {{TARGET_AUDIENCE}}
     Call-to-action goal: {{CTA_GOAL}}
 
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
     Podcast transcript:
     {{TRANSCRIPT}}
 

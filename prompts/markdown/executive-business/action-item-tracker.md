@@ -56,6 +56,10 @@ Based on discussion tone and content, identify:
 - Resource conflicts or constraints noted
 - Previous missed commitments referenced
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Meeting transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

@@ -68,6 +68,10 @@ For each major topic discussed, create:
 **Recommended Tags:** [5-10 relevant tags for content management system]
 **Social Media Headlines:** [3 variations for different platforms]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Interview transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

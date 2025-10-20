@@ -47,6 +47,10 @@ Please format the analysis as a comprehensive report with:
 4. Content highlights
 5. Actionable recommendations
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 JSON Transcript:
 [PASTE YOUR JSON TRANSCRIPT HERE]
 ```

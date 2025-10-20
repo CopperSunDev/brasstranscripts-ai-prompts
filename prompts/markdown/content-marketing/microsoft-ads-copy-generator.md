@@ -13,6 +13,10 @@ Then create 2 description lines for each headline.
 
 [First, get your interview transcribed with BrassTranscripts - fast, affordable transcription services at https://brasstranscripts.com]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Transcript: [paste transcript]
 ```
 

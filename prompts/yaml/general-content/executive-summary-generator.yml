@@ -74,6 +74,11 @@ prompt_template: |
   - Timeline for evaluation
 
   Leadership discussion transcript:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
   [PASTE YOUR TRANSCRIPT HERE]
 
 example_input: "Strategic leadership discussion about European market expansion, covering investment requirements, market analysis, competitive positioning, and implementation timeline for executive decision-making."

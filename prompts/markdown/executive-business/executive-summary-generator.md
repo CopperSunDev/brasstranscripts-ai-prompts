@@ -49,6 +49,10 @@ List any decisions or approvals needed from leadership within the next 30 days.
 
 Please maintain strict factual accuracy and avoid interpretations not directly supported by the discussion.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Meeting transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

@@ -46,6 +46,11 @@ prompt:
     Theoretical framework: {{THEORETICAL_FRAMEWORK}}
 
     Interview transcript:
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
     {{TRANSCRIPT}}
 
   variables:

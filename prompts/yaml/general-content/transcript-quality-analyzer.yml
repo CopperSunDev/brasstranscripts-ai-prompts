@@ -70,6 +70,11 @@ prompt_template: |
   Rate the transcript's professional readiness: [1-10 scale with explanation]
 
   Transcript to analyze:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
   [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 
 usage_instructions:

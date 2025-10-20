@@ -45,6 +45,10 @@ prompt:
     Episode: {{EPISODE_NUMBER_AND_TITLE}}
     Target audience: {{TARGET_AUDIENCE}}
 
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
     Podcast transcript:
     {{TRANSCRIPT}}
 

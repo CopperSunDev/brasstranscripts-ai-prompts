@@ -24,6 +24,11 @@ I have a transcript from a [podcast interview/expert interview/panel discussion]
 The target audience is [describe your audience]. The blog post should be approximately [word count] words.
 
 Here's the transcript:
+
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 [PASTE YOUR TRANSCRIPT HERE]
 
 Please format the output as a complete blog post ready for publication.

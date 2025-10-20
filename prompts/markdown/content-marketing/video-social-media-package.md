@@ -28,6 +28,10 @@ Primary platform: [YouTube/LinkedIn/Instagram/etc.]
 Audience: [DESCRIBE TARGET AUDIENCE]
 Call-to-action: [Watch video/Subscribe/Visit website/etc.]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Video transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

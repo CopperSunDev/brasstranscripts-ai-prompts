@@ -67,6 +67,11 @@ prompt_template: |
   - Product/service clarifications needed
 
   Support transcript:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
   [PASTE YOUR TRANSCRIPT HERE]
 
 example_input: "Customer support call transcript covering transcription accuracy issues, format selection questions, and billing inquiries - typical of common customer support interactions requiring clear documentation."

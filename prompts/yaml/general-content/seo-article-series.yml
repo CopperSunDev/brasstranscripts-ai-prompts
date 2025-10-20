@@ -70,6 +70,10 @@ prompt_template: |
 
   Transform the insights from this transcript into this strategic content approach:
 
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
   [PASTE YOUR TRANSCRIPT HERE]
 
 example_input: "Comprehensive expert interview about AI transcription technology covering accuracy, formats, implementation, workflows, and business impact - suitable for creating an authoritative content series."

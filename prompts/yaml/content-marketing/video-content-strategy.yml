@@ -158,6 +158,10 @@ prompt_template: |
 
   Please ensure all video concepts maintain platform-appropriate tone while maximizing the educational and entertainment value of the original interview content.
 
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
   Expert interview transcript:
   [PASTE YOUR TRANSCRIPT HERE]
 

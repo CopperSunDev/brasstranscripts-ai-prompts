@@ -60,6 +60,10 @@ Please analyze this transcript for accuracy issues and provide improvement recom
 ## Final Quality Score
 Rate the transcript's professional readiness: [1-10 scale with explanation]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Transcript to analyze:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

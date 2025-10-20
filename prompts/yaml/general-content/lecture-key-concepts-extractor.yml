@@ -46,6 +46,11 @@ prompt:
     Difficulty level: {{DIFFICULTY_LEVEL}}
 
     Lecture transcript:
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
     {{TRANSCRIPT}}
 
   variables:

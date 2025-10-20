@@ -49,6 +49,10 @@ Transform this expert discussion transcript into comprehensive training material
 
 Please structure this as a complete training module ready for implementation.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Expert transcript:
 [PASTE YOUR TRANSCRIPT HERE]
 ```

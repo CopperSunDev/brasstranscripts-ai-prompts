@@ -49,6 +49,11 @@ prompt:
     Research questions: {{RESEARCH_QUESTIONS}}
 
     Interview transcript:
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
     {{TRANSCRIPT}}
 
   variables:

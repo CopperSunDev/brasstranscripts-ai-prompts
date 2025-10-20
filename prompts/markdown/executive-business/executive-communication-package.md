@@ -97,6 +97,10 @@ For each communication format:
 - Emphasize outcomes most important to specific group
 - Use appropriate level of detail for decision-making needs
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Meeting transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

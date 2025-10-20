@@ -68,6 +68,10 @@ How identified risks should influence:
 - Strategic planning assumptions
 - Communication with stakeholders
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Meeting transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

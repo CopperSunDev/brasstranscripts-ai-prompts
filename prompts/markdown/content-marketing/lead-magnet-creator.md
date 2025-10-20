@@ -152,6 +152,10 @@ Based on this podcast interview, create comprehensive lead magnet concepts and e
 
 Please ensure all recommendations align with business goals and provide genuine value to target audience.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Podcast transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

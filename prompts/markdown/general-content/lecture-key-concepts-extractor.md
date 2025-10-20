@@ -27,6 +27,10 @@ Course: [COURSE NAME]
 Exam format: [Multiple choice/Essay/Mixed]
 Difficulty level: [Introductory/Intermediate/Advanced]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Lecture transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

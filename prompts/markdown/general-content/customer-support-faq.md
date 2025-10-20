@@ -42,6 +42,10 @@ Based on this interaction, suggest:
 - Training topics for support team
 - Product/service clarifications needed
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Support transcript:
 [PASTE YOUR TRANSCRIPT HERE]
 ```

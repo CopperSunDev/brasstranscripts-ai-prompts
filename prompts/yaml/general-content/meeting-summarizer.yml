@@ -66,6 +66,11 @@ prompt_template: |
   Please keep the summary concise but comprehensive, focusing on actionable information rather than conversational details.
 
   Transcript:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
   [PASTE YOUR TRANSCRIPT HERE]
 
 example_input: "Team meeting transcript discussing Q4 product launch planning with multiple stakeholders, decisions, and action items requiring clear documentation and follow-up."

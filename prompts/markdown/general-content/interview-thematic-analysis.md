@@ -26,6 +26,10 @@ Format for qualitative research coding and analysis.
 Research focus: [DESCRIBE RESEARCH QUESTIONS]
 Theoretical framework: [IF APPLICABLE]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Interview transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

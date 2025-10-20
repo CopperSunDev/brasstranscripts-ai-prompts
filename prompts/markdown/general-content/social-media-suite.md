@@ -40,6 +40,10 @@ Based on this transcript, create a social media content package including:
 
 Please make each post platform-specific and optimized for maximum engagement.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Source transcript:
 [PASTE YOUR TRANSCRIPT HERE]
 ```

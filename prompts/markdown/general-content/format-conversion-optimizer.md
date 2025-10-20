@@ -31,6 +31,10 @@ Additional Requirements:
 - Styling needs: [Basic / Advanced CSS / None]
 - Character encoding: [UTF-8 / other]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Here's the source transcript:
 [PASTE YOUR TRANSCRIPT HERE]
 

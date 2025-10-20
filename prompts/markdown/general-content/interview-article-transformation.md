@@ -57,6 +57,10 @@ Additional Notes:
 - Suggest subheadings for major sections
 - Indicate where additional research or expert commentary might strengthen the article
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Interview Transcript:
 [PASTE YOUR INTERVIEW TRANSCRIPT]
 

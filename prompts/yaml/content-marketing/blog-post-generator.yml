@@ -86,6 +86,10 @@ prompt:
     **Recommended Tags:** [5-10 relevant tags for content management system]
     **Social Media Headlines:** [3 variations for different platforms]
 
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
     Interview transcript:
     {transcript_content}
 

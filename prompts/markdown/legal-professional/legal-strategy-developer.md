@@ -160,6 +160,10 @@ Based on this deposition transcript analysis, develop comprehensive strategic re
 
 Please provide strategic recommendations that are actionable and specific to the case circumstances revealed in the deposition.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Deposition transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

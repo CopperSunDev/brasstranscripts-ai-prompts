@@ -33,6 +33,10 @@ Please also:
 - Optimize for comfortable reading pace
 - Follow professional subtitle formatting standards
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Here's the subtitle file:
 [PASTE YOUR SRT/VTT CONTENT HERE]
 

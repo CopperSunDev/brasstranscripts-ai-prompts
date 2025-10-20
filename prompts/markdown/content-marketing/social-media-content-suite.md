@@ -117,6 +117,10 @@ Based on this podcast interview transcript, create a comprehensive social media 
 
 Please ensure all content maintains brand voice consistency while being optimized for each platform's unique audience and algorithm.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Podcast transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

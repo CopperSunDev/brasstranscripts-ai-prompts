@@ -29,6 +29,10 @@ Primary platform: [LinkedIn/Instagram/YouTube/etc.]
 Target audience: [DESCRIBE AUDIENCE]
 Call-to-action goal: [Listen to episode/Subscribe/Visit website/etc.]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Podcast transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

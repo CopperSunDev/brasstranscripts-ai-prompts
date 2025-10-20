@@ -46,6 +46,10 @@ For each article, provide:
 
 Transform the insights from this transcript into this strategic content approach:
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 [PASTE YOUR TRANSCRIPT HERE]
 ```
 

@@ -109,6 +109,10 @@ prompt_template: |
 
   Please maintain exact quote accuracy and provide specific page/line references for all citations. Flag any areas where the transcript quality affects analysis confidence.
 
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
   Deposition transcript:
   [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 

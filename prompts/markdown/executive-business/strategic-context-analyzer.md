@@ -87,6 +87,10 @@ Based on this analysis, recommend:
 **Communication Needs:** [Who else needs to know what]
 **Success Metrics:** [How to measure progress toward goals]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Meeting transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

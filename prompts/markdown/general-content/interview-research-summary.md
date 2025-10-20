@@ -29,6 +29,10 @@ Participant ID: [P001, P002, etc.]
 Interview date: [DATE]
 Research questions: [LIST QUESTIONS]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Interview transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

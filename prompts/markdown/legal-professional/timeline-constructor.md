@@ -106,6 +106,10 @@ For events central to your case:
 
 Please ensure all timeline elements include specific page and line references from the transcript for easy verification and citation.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Deposition transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

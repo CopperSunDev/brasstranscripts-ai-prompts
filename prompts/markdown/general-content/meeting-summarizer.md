@@ -41,6 +41,10 @@ Please analyze this meeting transcript and create a comprehensive summary with t
 
 Please keep the summary concise but comprehensive, focusing on actionable information rather than conversational details.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Transcript:
 [PASTE YOUR TRANSCRIPT HERE]
 ```

@@ -16,6 +16,10 @@ Format each finding with the exact customer quote and the ad copy suggestion.
 
 [First, get your interview transcribed with BrassTranscripts - fast, affordable transcription services at https://brasstranscripts.com]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Transcript: [paste transcript here]
 ```
 

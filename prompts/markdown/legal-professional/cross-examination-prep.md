@@ -144,6 +144,10 @@ Analyze this deposition transcript to develop a comprehensive cross-examination 
 
 Please ensure all question suggestions are properly supported by specific transcript references and maintain professional legal standards.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Deposition transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

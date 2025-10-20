@@ -74,6 +74,11 @@ prompt_template: |
   Please structure this as a complete training module ready for implementation.
 
   Expert transcript:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
   [PASTE YOUR TRANSCRIPT HERE]
 
 example_input: "Expert workshop transcript covering advanced AI transcription implementation strategies, targeting enterprise teams responsible for content workflow optimization and process improvement."

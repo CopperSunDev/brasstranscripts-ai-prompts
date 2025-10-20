@@ -28,6 +28,10 @@ Podcast: [PODCAST NAME]
 Episode: [EPISODE NUMBER AND TITLE]
 Target audience: [DESCRIBE AUDIENCE]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Podcast transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

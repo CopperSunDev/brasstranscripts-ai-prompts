@@ -153,6 +153,10 @@ For each clear factual assertion:
 
 Please organize all extracted facts with precise transcript references and assess their relative importance to case success.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Deposition transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

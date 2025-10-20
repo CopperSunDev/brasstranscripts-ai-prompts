@@ -125,6 +125,10 @@ Based on interview content, suggest:
 
 Please ensure all emails maintain consistent brand voice and provide genuine value while strategically moving subscribers toward business goals.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Podcast transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

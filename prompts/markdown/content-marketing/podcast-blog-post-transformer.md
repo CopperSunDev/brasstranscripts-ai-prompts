@@ -31,6 +31,10 @@ Target audience: [DESCRIBE AUDIENCE]
 Primary keyword: [MAIN SEO KEYWORD]
 Secondary keywords: [2-3 RELATED KEYWORDS]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Podcast transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

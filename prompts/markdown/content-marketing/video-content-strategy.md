@@ -157,6 +157,10 @@ Analyze this podcast transcript to create a comprehensive video content strategy
 
 Please analyze the transcript and provide specific timestamp recommendations, exact quote suggestions, and platform-optimized content for maximum engagement.
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Podcast transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

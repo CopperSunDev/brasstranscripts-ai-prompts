@@ -29,6 +29,10 @@ Meeting type: [Board meeting/Team meeting/Client meeting/etc.]
 Organization: [COMPANY NAME]
 Date: [DATE]
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Meeting transcript:
 [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
 ```

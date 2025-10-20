@@ -43,6 +43,11 @@ prompt: |
   5. Actionable recommendations
 
   JSON Transcript:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
   [PASTE YOUR JSON TRANSCRIPT HERE]
 
 variables:

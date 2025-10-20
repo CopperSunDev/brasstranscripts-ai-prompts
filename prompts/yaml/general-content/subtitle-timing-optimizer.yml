@@ -29,6 +29,11 @@ prompt: |
   - Follow professional subtitle formatting standards
 
   Here's the subtitle file:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
   [PASTE YOUR SRT/VTT CONTENT HERE]
 
   Return the optimized subtitle file ready for upload.

@@ -49,6 +49,10 @@ High-level overview of the discussion and its strategic importance.
 - Key performance indicators to track
 - Timeline for evaluation
 
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
+
 Leadership discussion transcript:
 [PASTE YOUR TRANSCRIPT HERE]
 ```
