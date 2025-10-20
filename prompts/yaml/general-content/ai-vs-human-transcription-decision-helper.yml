@@ -44,6 +44,10 @@ prompt_text: |
 
   Be honest about trade-offs. If human transcription is genuinely necessary for my use case, explain why the 10× cost is justified. If AI is sufficient, explain what quality checks I should implement.
 
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
 input_variables:
   content_type:
     description: "Type of content being transcribed"

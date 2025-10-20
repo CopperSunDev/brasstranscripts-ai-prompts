@@ -43,6 +43,10 @@ Please analyze my project and provide:
 7. **Deal-breakers** - specific scenarios where I should absolutely choose one over the other
 
 Be honest about trade-offs. If human transcription is genuinely necessary for my use case, explain why the 10× cost is justified. If AI is sufficient, explain what quality checks I should implement.
+
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
 ```
 
 ## Example Use Cases

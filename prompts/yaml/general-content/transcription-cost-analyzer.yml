@@ -42,6 +42,10 @@ prompt_text: |
 
   Compare at least 3 services and show the math on why your recommendation is most cost-effective for my specific situation, not just the lowest per-minute rate.
 
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
 input_variables:
   monthly_volume:
     description: "Hours of audio transcribed per month"

@@ -41,6 +41,10 @@ Please analyze my requirements and recommend:
 6. **Hybrid approach** if combining multiple services would save money
 
 Compare at least 3 services and show the math on why your recommendation is most cost-effective for my specific situation, not just the lowest per-minute rate.
+
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
 ```
 
 ## Example Use Cases

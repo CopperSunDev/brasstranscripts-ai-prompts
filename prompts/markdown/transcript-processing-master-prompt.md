@@ -42,6 +42,10 @@ Before I paste the transcript, please ask me these clarifying questions to ensur
 After you ask your clarifying questions and I answer them, I'll upload the transcript file or paste my raw transcript below for you to process according to the instructions above.
 
 Please start by asking me the clarifying questions so we can get the best results!
+
+---
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+---
 ```
 
 ## Key Features
