@@ -1,0 +1,154 @@
+name: "AWS Transcribe True Cost Calculator"
+category: "general-content"
+version: "1.0"
+created_date: "2025-10-23"
+last_updated: "2025-10-23"
+
+description: "Calculates TRUE total AWS Transcribe costs including all hidden fees (speaker ID, S3 storage, data transfer, regional pricing, 15-second minimums) and compares to BrassTranscripts all-inclusive pricing to determine which service offers better value for your specific usage pattern."
+
+use_cases:
+  - "AWS Transcribe cost evaluation and budget planning"
+  - "Hidden fee discovery before unexpected bills"
+  - "BrassTranscripts vs AWS Transcribe comparison"
+  - "Break-even analysis for service switching"
+  - "Monthly transcription budget forecasting"
+
+complexity: "intermediate"
+
+source_url: "https://brasstranscripts.com/blog/aws-transcribe-pricing-per-minute-2025-better-alternative#ai-prompt-aws-transcribe-true-cost-calculator"
+
+markdown_url: "https://github.com/CopperSunDev/brasstranscripts-ai-prompts/blob/main/prompts/markdown/general-content/aws-transcribe-true-cost-calculator.md"
+
+prompt_text: |
+  Calculate my TRUE AWS Transcribe costs including all hidden fees:
+
+  **My Usage:**
+  - Monthly audio volume: [X hours, e.g., "50 hours"]
+  - Audio format: [MP3/WAV/other]
+  - Need speaker identification: [Yes/No]
+  - Need custom vocabulary: [Yes/No]
+  - AWS region: [US East/Europe/Asia Pacific/other]
+  - Average file length: [X minutes]
+  - Number of files per month: [X files]
+  - Storage duration needed: [X months]
+
+  **Please Calculate:**
+
+  1. **Base AWS Transcribe cost** by tier (include tier breakdown)
+  2. **Speaker identification fees** (if applicable)
+  3. **S3 storage costs** ($0.023/GB/month)
+  4. **Data transfer costs** (if applicable)
+  5. **Regional pricing adjustment** (if outside US East)
+  6. **15-second minimum impact** (if many short files)
+  7. **Custom vocabulary fees** (if applicable)
+
+  **Then Compare:**
+  - **AWS Transcribe TOTAL** (all fees included)
+  - **BrassTranscripts cost** ($0.15/min all-inclusive, $2.25 for 0-15 min)
+
+  Show me:
+  - Which service is cheaper for MY specific usage
+  - Break-even point if volume changes
+  - Hidden costs I might not know about
+  - When BrassTranscripts' all-inclusive pricing becomes better value
+
+  Be specific with dollar amounts and show the math.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
+input_variables:
+  monthly_volume:
+    description: "Hours of audio transcribed per month"
+    type: "string"
+    required: true
+    example: "50 hours"
+
+  audio_format:
+    description: "Audio file format (affects S3 storage costs)"
+    type: "string"
+    required: true
+    example: "MP3"
+
+  need_speaker_id:
+    description: "Whether speaker identification/diarization is required"
+    type: "string"
+    required: true
+    example: "Yes"
+
+  need_custom_vocabulary:
+    description: "Whether custom vocabulary for specialized terminology is needed"
+    type: "string"
+    required: false
+    example: "Yes, medical terminology"
+
+  aws_region:
+    description: "AWS region for transcription (affects regional pricing)"
+    type: "string"
+    required: true
+    example: "US East"
+
+  average_file_length:
+    description: "Average length of each audio file in minutes"
+    type: "string"
+    required: true
+    example: "30 minutes"
+
+  files_per_month:
+    description: "Number of audio files processed monthly"
+    type: "string"
+    required: true
+    example: "100 files"
+
+  storage_duration:
+    description: "How long audio files are stored in S3"
+    type: "string"
+    required: true
+    example: "3 months"
+
+expected_output_structure:
+  - "AWS Transcribe tier breakdown with dollar amounts"
+  - "Speaker identification cost estimate (20-40% markup)"
+  - "S3 storage cost calculation"
+  - "Data transfer fee estimates"
+  - "Regional pricing adjustments"
+  - "15-second minimum penalty calculation"
+  - "Custom vocabulary fees"
+  - "Total AWS cost (all fees summed)"
+  - "BrassTranscripts cost (simple per-minute)"
+  - "Side-by-side comparison"
+  - "Break-even analysis for different volumes"
+  - "Hidden cost warnings specific to usage"
+  - "Service recommendation with reasoning"
+
+tips_for_best_results:
+  - "Be specific about volume ranges (e.g., '50-80 hours' not 'moderate usage')"
+  - "State audio format accurately (WAV costs 20× more to store than MP3)"
+  - "Mention speaker ID needs explicitly (biggest hidden cost)"
+  - "Include actual file counts (calculates 15-second minimum impact)"
+  - "Specify AWS region (20-30% cost difference)"
+  - "State storage duration needs (S3 costs accumulate)"
+  - "Mention growth plans (calculates future break-even points)"
+
+related_prompts:
+  - "transcription-cost-analyzer"
+  - "ai-vs-human-transcription-decision-helper"
+
+compatible_ai_models:
+  - "ChatGPT (GPT-3.5, GPT-4, GPT-4o)"
+  - "Claude (Claude 3 Opus, Sonnet, Haiku)"
+  - "Google Gemini"
+  - "Microsoft Copilot"
+  - "Any general-purpose LLM with calculation capabilities"
+
+tags:
+  - "cost-analysis"
+  - "aws-transcribe"
+  - "hidden-costs"
+  - "service-comparison"
+  - "budget-planning"
+  - "pricing-calculator"
+  - "cost-optimization"
+
+license: "MIT"

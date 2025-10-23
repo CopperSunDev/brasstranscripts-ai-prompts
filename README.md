@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **47 Professional AI Prompts for Transcript Analysis**
+🎯 **48 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -57,7 +57,7 @@ Specialized tools for legal professionals analyzing depositions and case materia
 
 [📖 View Details](https://brasstranscripts.com/blog/legal-professional-ai-toolkit-deposition-analysis-prompts) | [📁 Browse Files](./prompts/markdown/legal-professional/)
 
-### 📄 General Content (20 prompts)
+### 📄 General Content (21 prompts)
 Versatile prompts for document creation, training materials, and content optimization.
 
 - **Blog Post Creator** - Transform any transcript into engaging articles
@@ -81,6 +81,7 @@ Versatile prompts for document creation, training materials, and content optimiz
 - **Accessible TXT Documentation** - Create WCAG-compliant, screen reader-optimized transcripts
 - **Transcription Cost Analyzer** - Find the most cost-effective transcription service for your needs
 - **AI vs Human Transcription Decision Helper** - Choose between AI and human transcription based on project requirements
+- **AWS Transcribe True Cost Calculator** - Calculate true AWS Transcribe costs including all hidden fees vs BrassTranscripts
 
 [📖 View Details](https://brasstranscripts.com/blog/powerful-llm-prompts-transcript-optimization) | [📁 Browse Files](./prompts/markdown/general-content/)
 
