@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **48 Professional AI Prompts for Transcript Analysis**
+🎯 **57 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -57,7 +57,7 @@ Specialized tools for legal professionals analyzing depositions and case materia
 
 [📖 View Details](https://brasstranscripts.com/blog/legal-professional-ai-toolkit-deposition-analysis-prompts) | [📁 Browse Files](./prompts/markdown/legal-professional/)
 
-### 📄 General Content (21 prompts)
+### 📄 General Content (30 prompts)
 Versatile prompts for document creation, training materials, and content optimization.
 
 - **Blog Post Creator** - Transform any transcript into engaging articles
@@ -82,6 +82,15 @@ Versatile prompts for document creation, training materials, and content optimiz
 - **Transcription Cost Analyzer** - Find the most cost-effective transcription service for your needs
 - **AI vs Human Transcription Decision Helper** - Choose between AI and human transcription based on project requirements
 - **AWS Transcribe True Cost Calculator** - Calculate true AWS Transcribe costs including all hidden fees vs BrassTranscripts
+- **Rev.ai Pricing Calculator** - Calculate true Rev.ai costs including all hidden fees vs BrassTranscripts
+- **AssemblyAI Pricing Calculator** - Calculate true AssemblyAI costs including all hidden fees vs BrassTranscripts
+- **Deepgram Pricing Calculator** - Calculate true Deepgram costs including all hidden fees vs BrassTranscripts
+- **Google Cloud Speech-to-Text Pricing Calculator** - Calculate true Google Cloud STT costs including all hidden fees vs BrassTranscripts
+- **Azure Speech Services Pricing Calculator** - Calculate true Azure Speech costs including all hidden fees vs BrassTranscripts
+- **OpenAI Whisper API Pricing Calculator** - Calculate true OpenAI Whisper costs including all hidden fees vs BrassTranscripts
+- **Otter.ai Pricing Calculator** - Calculate true Otter.ai costs including all hidden fees vs BrassTranscripts
+- **Trint Pricing Calculator** - Calculate true Trint costs including all hidden fees vs BrassTranscripts
+- **Sonix Pricing Calculator** - Calculate true Sonix costs including all hidden fees vs BrassTranscripts
 
 [📖 View Details](https://brasstranscripts.com/blog/powerful-llm-prompts-transcript-optimization) | [📁 Browse Files](./prompts/markdown/general-content/)
 
