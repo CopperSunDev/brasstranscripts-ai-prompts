@@ -1,0 +1,164 @@
+name: "Speaker Attribution Error Corrector"
+category: "General Content"
+difficulty: "Intermediate"
+estimated_tokens: "1200-1800"
+version: "1.0.0"
+
+description: "While AI achieves 94% speaker identification accuracy, the remaining 6% of errors can confuse readers and misattribute important statements. This prompt systematically identifies and corrects speaker attribution mistakes using context clues, speech patterns, and logical conversation flow."
+
+metadata:
+  industry: "Transcription Services"
+  use_cases:
+    - "Multi-speaker meetings"
+    - "Panel discussions"
+    - "Podcast interviews"
+    - "Focus groups"
+    - "Legal depositions"
+    - "Academic interviews"
+
+  target_audience:
+    - "Business professionals"
+    - "Content creators"
+    - "Researchers"
+    - "Legal professionals"
+    - "Meeting organizers"
+
+  prerequisites:
+    - "Transcript with speaker labels"
+    - "Basic knowledge of participants (optional but helpful)"
+    - "Understanding of conversation context"
+
+  outputs:
+    - "Corrected speaker attributions"
+    - "Error analysis report"
+    - "Find-and-replace commands"
+    - "Fully corrected transcript"
+
+prompt_template: |
+  I have a transcript with automatic speaker identification that contains some speaker attribution errors. Please help me identify and correct these mistakes systematically:
+
+  **Transcript with Speaker Labels:**
+  [PASTE YOUR TRANSCRIPT HERE]
+
+  **Known Speaker Information (if available):**
+  - Speaker names: [LIST KNOWN PARTICIPANTS]
+  - Voice characteristics: [DESCRIBE - e.g., "Speaker 1 is female with British accent, Speaker 2 is male with American accent"]
+  - Context clues: [ANY RELEVANT INFO - e.g., "John is the CEO mentioned in line 45", "Sarah discusses marketing topics"]
+
+  Please analyze the transcript and:
+
+  1. **Identify Attribution Errors**
+     - Find instances where speaker labels switch mid-sentence or mid-thought
+     - Detect unnatural speaker changes (e.g., one person asking and answering their own question)
+     - Flag conversations where responses don't logically match questions
+     - Note any single sentence unrealistically attributed to 3+ different speakers
+
+  2. **Detect Pattern-Based Errors**
+     - Identify systematic errors (e.g., Speaker 2 and Speaker 3 consistently confused)
+     - Find sections where all speakers labeled generically ("Speaker 1, 2, 3") but context reveals names
+     - Detect when one speaker's dialogue is split across multiple speaker IDs
+     - Note timestamp clusters where speaker switches happen every 2-3 seconds (likely incorrect)
+
+  3. **Apply Context-Based Corrections**
+     - Use content context (e.g., "As I mentioned earlier" links to previous speaker)
+     - Identify speakers through self-references ("Hi, I'm John", "My team and I...")
+     - Track topic ownership (technical discussions likely same expert throughout)
+     - Recognize response patterns (answering questions logically pairs speakers)
+
+  4. **Suggest Systematic Corrections**
+     For each error type found, provide:
+     - **Error description**: "Speaker 2 and Speaker 3 confused in lines 145-230"
+     - **Evidence**: Quote 2-3 specific examples showing the error
+     - **Recommended fix**: "All 'Speaker 3' in this section should be 'Speaker 2' based on topic continuity"
+     - **Confidence level**: High/Medium/Low based on available evidence
+
+  5. **Generate Corrected Version**
+     - Provide the fully corrected transcript with accurate speaker labels
+     - Highlight major corrections made (e.g., "Consolidated 4 speaker IDs into 2 actual speakers")
+     - Flag any sections where attribution remains uncertain for manual review
+
+  6. **Create Find-and-Replace Commands**
+     If corrections are systematic, provide exact find-and-replace commands:
+     - "Replace all 'Speaker 3:' with 'Speaker 2:' in lines 145-230"
+     - "Replace 'Speaker 1' with 'John Smith' throughout document"
+
+  **Priority**: Focus on errors that significantly impact readability and comprehension. Minor labeling inconsistencies that don't affect meaning can be noted separately.
+
+  Please return: (1) Summary of errors found, (2) Specific correction recommendations, (3) Fully corrected transcript, (4) Any uncertain sections flagged for manual review.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 96.4% average accuracy.
+  ---
+
+example_input: "4-person panel discussion transcript where Speaker 2 and Speaker 3 are consistently confused, with generic labels instead of actual names (John Smith, Sarah Johnson, etc.)"
+
+example_output: |
+  **Speaker Attribution Error Analysis**
+
+  **Errors Found: 23 instances across 3 error types**
+
+  ### Error Type 1: Speaker 2 and Speaker 3 Confused (Lines 145-320)
+  **Evidence:**
+  - Line 147: "Speaker 3" discusses Q4 budget, but line 160 shows "Speaker 2" saying "As I mentioned about the budget..."
+  - Line 201: "Speaker 2" introduces himself as "John from Finance" but earlier attributed to "Speaker 3"
+  - Line 289: Continuous 4-minute financial discussion alternates between Speaker 2/3 but content flow suggests single speaker
+
+  **Recommendation (HIGH CONFIDENCE):** Replace all "Speaker 3" with "Speaker 2" in lines 145-320. This represents John Smith (CFO) discussing financial topics continuously.
+
+  ### Error Type 2: Generic Labels Where Names Available
+  **Evidence:**
+  - Line 12: "Hi everyone, I'm Sarah Johnson from Marketing"
+  - Line 67: "This is Mike Chen, I'll be presenting technical specs"
+  - Line 102: "John Smith here, let's review the budget"
+
+  **Recommendation (HIGH CONFIDENCE):**
+  - Replace "Speaker 1" with "Sarah Johnson (Marketing)" throughout
+  - Replace "Speaker 2" with "John Smith (CFO)" throughout
+  - Replace "Speaker 4" with "Mike Chen (Engineering)" throughout
+
+  **Find-and-Replace Commands:**
+  ```
+  Replace: "Speaker 3:" → "Speaker 2:" (lines 145-320 only)
+  Replace: "Speaker 1:" → "Sarah Johnson:"
+  Replace: "Speaker 2:" → "John Smith:"
+  Replace: "Speaker 4:" → "Mike Chen:"
+  ```
+
+  **Summary of Changes:**
+  - Consolidated 4 generic speaker IDs into 3 named speakers
+  - Corrected 23 speaker attribution errors
+  - Confidence: 21 high-confidence, 2 medium-confidence (flagged for review at lines 456, 502)
+
+best_practices:
+  - "Provide context: Any known speaker information (names, roles, voice characteristics) dramatically improves correction accuracy"
+  - "Section processing: For long transcripts (60+ minutes), process in 15-20 minute sections for more accurate corrections"
+  - "Audio cross-reference: For high-stakes documents (legal, medical, compliance), verify corrections against original audio"
+  - "Iterative refinement: Run prompt once for initial corrections, then re-run on corrected version to catch remaining errors"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "corrected_transcript"
+
+  integration_examples:
+    - name: "Automated Speaker Correction"
+      description: "Detect and correct speaker errors before publishing"
+      code_snippet: |
+        corrected = detect_speaker_errors(transcript, known_speakers)
+        if corrected.high_confidence_fixes:
+            apply_corrections(corrected.high_confidence_fixes)
+        if corrected.uncertain_sections:
+            flag_for_manual_review(corrected.uncertain_sections)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/audio-transcription-questions-answered-expert-guide#ai-prompt-3-speaker-attribution-error-corrector"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "speaker-identification"
+  - "error-correction"
+  - "quality-control"
+  - "speaker-diarization"
+  - "attribution-accuracy"
+  - "multi-speaker"
