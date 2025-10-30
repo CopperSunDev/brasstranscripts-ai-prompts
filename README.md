@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **62 Professional AI Prompts for Transcript Analysis**
+🎯 **48 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
