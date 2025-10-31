@@ -1,12 +1,12 @@
 # BrassTranscripts AI Prompts
 
-🎯 **62 Professional AI Prompts for Transcript Analysis**
+🎯 **63 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
 ## 🚀 Quick Start
 
-1. **Get Quality Transcripts**: Use [BrassTranscripts](https://brasstranscripts.com/upload) for 95-98% accurate transcriptions
+1. **Get Quality Transcripts**: Use [BrassTranscripts](https://brasstranscripts.com/upload) for high-quality transcriptions
 2. **Choose Your Format**: Use `prompts/markdown/` for reading or `prompts/yaml/` for automation
 3. **Select a Prompt**: Browse categories below or see the [complete guide](https://brasstranscripts.com/ai-prompt-guide)
 4. **Copy & Use**: Works with ChatGPT, Claude, Gemini, and all AI chat systems
@@ -57,10 +57,11 @@ Specialized tools for legal professionals analyzing depositions and case materia
 
 [📖 View Details](https://brasstranscripts.com/blog/legal-professional-ai-toolkit-deposition-analysis-prompts) | [📁 Browse Files](./prompts/markdown/legal-professional/)
 
-### 📄 General Content (35 prompts)
+### 📄 General Content (36 prompts)
 Versatile prompts for document creation, training materials, and content optimization.
 
 - **Audio Quality Pre-Recording Checklist** - Prevent audio problems before recording
+- **Transcription Service Comparison Analyzer** - Choose between pay-per-file and subscription services based on your usage
 - **Transcript Formatting & Style Standardizer** - Apply consistent formatting and style
 - **Speaker Attribution Error Corrector** - Fix speaker identification mistakes
 - **Technical Terminology Consistency Checker** - Verify industry-specific terms
