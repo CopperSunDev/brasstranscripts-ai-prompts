@@ -1,0 +1,129 @@
+name: "Speaker Name Assignment Helper"
+category: "General Content"
+difficulty: "Beginner"
+estimated_tokens: "800-1200"
+version: "1.0.0"
+
+description: "After automatic speaker identification labels your transcript as 'Speaker 0,' 'Speaker 1,' 'Speaker 2,' etc., you need to figure out which label corresponds to which person. This prompt analyzes your transcript to identify speakers using context clues, self-introductions, role indicators, and conversation patterns—saving you from manually listening to the entire recording."
+
+metadata:
+  industry: "Transcription Services"
+  use_cases:
+    - "Business meetings"
+    - "Research interviews"
+    - "Podcast episodes"
+    - "Focus groups"
+    - "Training sessions"
+    - "Panel discussions"
+
+  target_audience:
+    - "Business professionals"
+    - "Researchers"
+    - "Content creators"
+    - "Podcast producers"
+    - "Meeting organizers"
+    - "Qualitative researchers"
+
+  prerequisites:
+    - "Transcript with speaker labels (Speaker 0, Speaker 1, etc.)"
+    - "Basic information about meeting/conversation context"
+    - "Participant names or roles (helpful but not required)"
+
+  outputs:
+    - "Speaker identification report with evidence"
+    - "Confidence levels for each assignment"
+    - "Find-and-replace commands"
+    - "Suggestions for uncertain cases"
+
+prompt_template: |
+  I have a transcript with automatic speaker labels (Speaker 0, Speaker 1, Speaker 2, etc.) and need help identifying which label corresponds to which person. Please analyze the transcript and help me assign names to speaker numbers:
+
+  **Transcript with Speaker Labels:**
+  [PASTE YOUR TRANSCRIPT HERE]
+
+  **Known Information (if available):**
+  - Number of participants: [e.g., "4 people in total"]
+  - Participant names (if known): [e.g., "Sarah Chen, Mike Rodriguez, Alex Kim, Jordan Lee"]
+  - Meeting/conversation context: [e.g., "Product planning meeting", "Podcast interview with marketing expert", "Focus group about mobile app"]
+  - Any other helpful details: [e.g., "CEO leads the meeting", "Host introduces guest at start"]
+
+  Please analyze the transcript and:
+
+  1. **Identify Self-Introductions**
+     - Find where speakers introduce themselves by name ("Hi, I'm Sarah", "This is Mike speaking")
+     - Note any explicit name mentions in greetings or sign-offs
+     - Identify instances where speakers refer to themselves by name
+
+  2. **Analyze Role Indicators**
+     - Identify leadership patterns (who sets agenda, assigns tasks, makes decisions)
+     - Detect expertise areas (who discusses technical topics, marketing, finance, etc.)
+     - Note facilitation behavior (who asks questions vs. provides answers)
+     - Recognize host/guest dynamics in interviews or podcasts
+
+  3. **Use Conversation Context Clues**
+     - Track who responds to specific questions (e.g., "Sarah, what do you think?" followed by response)
+     - Identify speakers through content ownership ("My team and I...", "In my department...")
+     - Note references to roles or titles ("As CEO, I believe...", "From an engineering perspective...")
+     - Recognize topic continuity (same speaker discussing related points throughout)
+
+  4. **Detect Relationship Patterns**
+     - Identify reporting relationships (who defers to whom, who assigns tasks)
+     - Note collaborative pairs (two speakers who frequently build on each other's points)
+     - Recognize communication styles (formal vs. casual, technical vs. non-technical)
+
+  5. **Generate Speaker Identification Report**
+     For each speaker label, provide:
+     - **Most likely name**: Based on strongest evidence
+     - **Confidence level**: High/Medium/Low
+     - **Supporting evidence**: 2-3 specific quotes or context clues
+     - **Alternative possibilities**: If uncertain, list other candidates
+
+  6. **Create Find-and-Replace Commands**
+     Once identities are confirmed, provide exact commands:
+     - "Replace all 'Speaker 0:' with 'Sarah Chen:' throughout"
+     - "Replace all 'Speaker 1:' with 'Mike Rodriguez:' throughout"
+     - Continue for all speakers identified
+
+  **Format preference:** Provide results in order from highest to lowest confidence, starting with speakers who have clear identifying information.
+
+  Please return: (1) Speaker identification summary with evidence, (2) Confidence levels for each assignment, (3) Find-and-replace commands for confirmed identities, (4) Suggestions for verifying uncertain assignments.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with automatic speaker identification.
+  ---
+
+best_practices:
+  - "Provide context upfront: Meeting type, participant list, and roles dramatically improve identification accuracy"
+  - "Start with beginning and end: Introductions and conclusions often contain the clearest speaker identification cues"
+  - "Cross-reference with audio: For important transcripts, verify AI suggestions by listening to a few key moments"
+  - "Process systematically: Identify obvious speakers first, then use their patterns to identify others"
+  - "Mark uncertainties: When confidence is low, note sections for manual verification rather than guessing"
+
+workflow:
+  - step: "Copy transcript with speaker labels from your transcription service"
+  - step: "Gather known information (participant names, meeting context, roles)"
+  - step: "Run prompt with transcript and context"
+  - step: "Review results focusing on high-confidence assignments first"
+  - step: "Verify uncertain cases by spot-checking audio at suggested timestamps"
+  - step: "Execute find-replace to update speaker labels with actual names"
+  - step: "Final review to ensure assignments make logical sense throughout"
+
+related_prompts:
+  - name: "Speaker Attribution Error Corrector"
+    url: "https://github.com/CopperSunDev/brasstranscripts-ai-prompts/blob/main/prompts/markdown/general-content/speaker-attribution-error-corrector.md"
+    relationship: "Use after identification if labels seem incorrect"
+
+  - name: "Meeting Minutes Generator"
+    url: "https://github.com/CopperSunDev/brasstranscripts-ai-prompts/blob/main/prompts/markdown/executive-business/meeting-minutes-generator.md"
+    relationship: "Use after identification to create formal documentation"
+
+  - name: "Audio Quality Pre-Recording Checklist"
+    url: "https://github.com/CopperSunDev/brasstranscripts-ai-prompts/blob/main/prompts/markdown/general-content/audio-quality-pre-recording-checklist.md"
+    relationship: "Improve future recordings for better speaker identification"
+
+source:
+  title: "Speaker Identification Complete Guide"
+  url: "https://brasstranscripts.com/blog/speaker-identification-complete-guide"
+  description: "Featured in BrassTranscripts blog post about speaker identification technology"
+
+license: "MIT"
