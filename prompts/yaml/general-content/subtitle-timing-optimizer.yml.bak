@@ -1,0 +1,97 @@
+name: "Subtitle Timing Optimization"
+category: "General Content"
+difficulty: "Advanced"
+estimated_tokens: "700-1000"
+version: "1.0.0"
+
+description: "Improve subtitle readability by optimizing timing, line breaks, and reading speed for SRT/VTT formats. Ensures professional-quality subtitles that enhance viewer comprehension without overwhelming or rushing the reading experience."
+
+prompt: |
+  Please optimize this SRT/VTT subtitle file for maximum readability and professional quality.
+
+  Optimization Goals:
+  1. Timing: Maintain 2-3 seconds per subtitle (minimum 1s, maximum 6s)
+  2. Reading Speed: 15-20 characters per second
+  3. Line Length: Maximum 42 characters per line
+  4. Line Breaks: Split at natural phrase boundaries
+  5. Gaps: Add 0.3-0.5 second gaps between subtitles
+  6. Format: Maximum 2 lines per subtitle
+
+  Target Platform: [YouTube / Website / DVD / Broadcast]
+  Language: [English / Other]
+  Content Type: [Interview / Lecture / Podcast / Meeting]
+
+  Please also:
+  - Fix any overlapping timestamps
+  - Ensure proper synchronization with speech
+  - Remove unnecessary line breaks
+  - Optimize for comfortable reading pace
+  - Follow professional subtitle formatting standards
+
+  Here's the subtitle file:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
+  [PASTE YOUR SRT/VTT CONTENT HERE]
+
+  Return the optimized subtitle file ready for upload.
+
+variables:
+  - name: "PLATFORM"
+    type: "string"
+    required: true
+    options: ["YouTube", "Website", "DVD", "Broadcast"]
+  - name: "LANGUAGE"
+    type: "string"
+    required: true
+  - name: "CONTENT_TYPE"
+    type: "string"
+    required: true
+    options: ["Interview", "Lecture", "Podcast", "Meeting"]
+  - name: "SUBTITLE_FILE"
+    type: "text"
+    required: true
+
+use_cases:
+  - "YouTube Video Optimization - Ensure subtitles meet platform best practices for engagement"
+  - "Accessibility Compliance - Create WCAG-conformant subtitle timing for legal requirements"
+  - "Professional Broadcasting - Prepare subtitles meeting broadcast industry standards"
+  - "Educational Content - Optimize lecture and tutorial subtitles for learning effectiveness"
+  - "International Distribution - Prepare subtitle files for translation-ready formatting"
+  - "Mobile Viewing - Ensure subtitles are readable on small screens with proper timing"
+
+timing_standards:
+  minimum_duration: "1 second"
+  ideal_duration: "2-3 seconds"
+  maximum_duration: "6 seconds"
+  gap_between: "0.3-0.5 seconds"
+  reading_speed: "15-20 characters/second"
+
+character_guidelines:
+  max_per_line: 42
+  max_lines: 2
+  break_points: "Natural phrase boundaries"
+
+best_practices:
+  - "Maintain 15-20 characters per second to accommodate average reading speeds across demographics"
+  - "Split lines at natural grammatical boundaries—avoid breaking mid-phrase or between article and noun"
+  - "Add 0.3-0.5 second gaps between subtitles to give viewers' eyes time to reset"
+  - "Keep lines under 42 characters to ensure readability on all screen sizes"
+
+tags:
+  - "subtitle-optimization"
+  - "srt-formatting"
+  - "vtt-timing"
+  - "accessibility"
+  - "video-production"
+  - "professional-subtitles"
+
+related_resources:
+  - name: "Professional Subtitle Formatting Guidelines"
+    url: "https://splitsrt.com/blog/professional-subtitle-formatting-guidelines"
+  - name: "Transcription File Formats Guide"
+    url: "https://brasstranscripts.com/transcription-file-formats"
+  - name: "WCAG Accessibility Guidelines"
+    url: "https://www.w3.org/WAI/media/av/"

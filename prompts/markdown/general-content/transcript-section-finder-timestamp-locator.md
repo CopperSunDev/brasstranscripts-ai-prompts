@@ -73,7 +73,7 @@ Please analyze the transcript and:
 Please return: (1) All relevant sections with timestamps and quotes, (2) Topic clustering showing how discussion evolves, (3) Navigation map for entire transcript, (4) Searchable index for future reference.
 
 ---
-Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 96.4% average accuracy.
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
 ---
 ```
 

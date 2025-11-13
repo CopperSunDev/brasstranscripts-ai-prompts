@@ -1,0 +1,140 @@
+name: "Meeting Summary and Action Items"
+category: "General Content"
+difficulty: "Beginner"
+estimated_tokens: "600-1000"
+version: "1.2.0"
+
+description: "Convert lengthy meeting recordings into concise, actionable summaries that keep teams aligned and productive. Perfect for transforming team meetings, client calls, project discussions, and strategic sessions into organized documentation that drives accountability and follow-through."
+
+metadata:
+  industry: "Business Operations"
+  use_cases:
+    - "Team meetings"
+    - "Client calls"
+    - "Board meetings"
+    - "Project meetings"
+    - "Sales meetings"
+    - "Training sessions"
+
+  target_audience:
+    - "Project managers"
+    - "Team leaders"
+    - "Executive assistants"
+    - "Operations managers"
+    - "Business analysts"
+
+  prerequisites:
+    - "Meeting transcript"
+    - "Understanding of meeting participants"
+    - "Knowledge of project context"
+    - "Familiarity with team responsibilities"
+
+  outputs:
+    - "Structured meeting summary"
+    - "Action items with owners"
+    - "Decision documentation"
+    - "Next steps framework"
+
+prompt_template: |
+  Please analyze this meeting transcript and create a comprehensive summary with the following structure:
+
+  ## Meeting Overview
+  - Date, participants, and main purpose
+  - Key decisions made
+  - Overall outcomes
+
+  ## Discussion Highlights
+  - Main topics covered (with bullet points)
+  - Important concerns or challenges raised
+  - Innovative ideas or solutions proposed
+
+  ## Action Items
+  - Specific tasks assigned (with responsible person if mentioned)
+  - Deadlines mentioned
+  - Follow-up meetings scheduled
+
+  ## Key Decisions
+  - Final decisions made
+  - Approvals given
+  - Budget or resource allocations
+
+  ## Next Steps
+  - Immediate priorities
+  - Longer-term initiatives
+  - Required follow-up actions
+
+  Please keep the summary concise but comprehensive, focusing on actionable information rather than conversational details.
+
+  Transcript:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
+  [PASTE YOUR TRANSCRIPT HERE]
+
+example_input: "Team meeting transcript discussing Q4 product launch planning with multiple stakeholders, decisions, and action items requiring clear documentation and follow-up."
+
+example_output: |
+  ### Meeting Summary: Q4 Product Launch Planning
+
+  **Meeting Overview**
+  - **Date:** September 16, 2025
+  - **Participants:** Sarah (Product Manager), Mike (Engineering Lead), Lisa (Marketing Director), Tom (Sales Manager)
+  - **Purpose:** Finalize Q4 product launch strategy and timeline
+  - **Key Decisions:** Launch date confirmed for November 15, 2025; marketing budget approved at $50K
+  - **Overall Outcomes:** Clear launch plan established with defined responsibilities and deadlines
+
+  **Discussion Highlights**
+  - **Product readiness:** Engineering confirmed core features complete, testing phase begins October 1
+  - **Marketing strategy:** Focus on digital channels with emphasis on video content and customer testimonials
+  - **Sales preparation:** Need updated training materials and pricing strategy finalization
+  - **Concerns raised:** Potential conflict with competitor launch timing; resource allocation for support team
+  - **Solutions proposed:** Accelerate beta testing program; implement phased support team scaling
+
+  **Action Items**
+  - **Sarah:** Finalize beta testing program and recruit 50 test users (Due: September 30)
+  - **Mike:** Complete security audit and performance testing (Due: October 15)
+  - **Lisa:** Develop launch campaign assets and schedule content calendar (Due: October 30)
+  - **Tom:** Create sales training materials and update pricing documentation (Due: October 20)
+  - **All:** Weekly check-in meetings every Thursday at 2 PM starting September 23
+
+best_practices:
+  - "Speaker tracking: Use JSON format to automatically identify who said what and assign accountability for action items"
+  - "Time references: Include timestamps for important decisions using SRT/VTT formats when precision matters"
+  - "Confidentiality: Always review before sharing to ensure sensitive information is appropriately handled"
+  - "Distribution: Create different summary levels for different stakeholder groups (executive summary vs. detailed team summary)"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "structured_text"
+
+  integration_examples:
+    - name: "Project Management Integration"
+      description: "Export action items to project management tools"
+      code_snippet: |
+        meeting_summary = generate_meeting_summary(transcript)
+        action_items = extract_action_items(meeting_summary)
+        project_tool.create_tasks(action_items)
+
+    - name: "Calendar Automation"
+      description: "Auto-schedule follow-up meetings and deadlines"
+      code_snippet: |
+        summary = parse_meeting_summary(transcript)
+        calendar_events = extract_scheduling_info(summary)
+        calendar.schedule_events(calendar_events)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/powerful-llm-prompts-transcript-optimization#prompt-2-meeting-summary-and-action-items"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "meeting-management"
+  - "action-items"
+  - "team-collaboration"
+  - "project-management"
+  - "decision-tracking"
+  - "accountability"
+  - "business-operations"

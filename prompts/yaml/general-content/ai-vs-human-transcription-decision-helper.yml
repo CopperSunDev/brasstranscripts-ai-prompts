@@ -4,7 +4,7 @@ version: "1.0"
 created_date: "2025-10-20"
 last_updated: "2025-10-20"
 
-description: "Analyzes project requirements to recommend AI transcription (fast, affordable, 95-98% accuracy) or human transcription (slow, expensive, 99% accuracy) based on quality needs, compliance requirements, and budget constraints."
+description: "Analyzes project requirements to recommend AI transcription (fast, affordable, professional-grade accuracy) or human transcription (slow, expensive, premium accuracy) based on quality needs, compliance requirements, and budget constraints."
 
 use_cases:
   - "Service method selection (AI vs human)"
@@ -45,7 +45,7 @@ prompt_text: |
   Be honest about trade-offs. If human transcription is genuinely necessary for my use case, explain why the 10× cost is justified. If AI is sufficient, explain what quality checks I should implement.
 
   ---
-  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
   ---
 
 input_variables:

@@ -1,0 +1,121 @@
+name: "Accessible TXT Documentation Generator"
+category: "General Content"
+difficulty: "Intermediate"
+estimated_tokens: "700-1000"
+version: "1.0.0"
+
+description: "Transform any transcript format into WCAG-compliant accessible documentation with proper structure and formatting. Creates clean, screen reader-optimized TXT files perfect for accessibility requirements, documentation archives, and universal device compatibility."
+
+prompt: |
+  Create a WCAG-compliant accessible transcript document from this source material.
+
+  Accessibility Requirements:
+  1. Clear speaker identification
+  2. Logical paragraph structure
+  3. Proper headings and sections
+  4. Description of non-speech audio [when present]
+  5. UTF-8 encoding
+  6. Screen reader optimization
+  7. Remove filler words for clarity
+
+  Document Structure:
+  - Title: [Meeting/Interview/Lecture Title]
+  - Date: [Date if known]
+  - Participants: [List of speakers]
+  - Main Content: [Formatted transcript]
+  - Summary: [Key points and action items]
+
+  Formatting Guidelines:
+  - Use "Speaker Name:" for speaker labels
+  - Add blank lines between speaker turns
+  - Group related exchanges into paragraphs
+  - Include timestamps for key moments [optional]
+  - Add [DESCRIPTION] tags for non-speech audio
+
+  Content Optimization:
+  - Remove filler words (um, uh, like) for readability
+  - Fix obvious transcription errors
+  - Maintain natural speech patterns
+  - Preserve important pauses [indicated]
+
+  Source Transcript:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
+  [PASTE YOUR TRANSCRIPT IN ANY FORMAT]
+
+  Please create a clean, accessible TXT document following W3C guidelines and optimized for screen readers.
+
+variables:
+  - name: "TITLE"
+    type: "string"
+    required: true
+  - name: "DATE"
+    type: "string"
+    required: false
+  - name: "PARTICIPANTS"
+    type: "string"
+    required: false
+  - name: "TRANSCRIPT"
+    type: "text"
+    required: true
+
+wcag_compliance:
+  level_a:
+    - "Text alternative for non-text content"
+    - "Adaptable presentation without loss of information"
+    - "Distinguishable content with clear structure"
+    - "Keyboard accessible navigation"
+
+  level_aa:
+    - "Clear contrast and readable text size"
+    - "Consistent navigation and identification"
+    - "Input assistance through clear labeling"
+    - "Compatible with assistive technologies"
+
+  enhancements:
+    - "UTF-8 encoding for universal character support"
+    - "Logical heading hierarchy"
+    - "Descriptive speaker labels"
+    - "Clean formatting"
+
+use_cases:
+  - "Accessibility Compliance - Create WCAG 2.1 conformant transcripts for legal requirements"
+  - "Meeting Documentation - Generate clean, professional meeting minutes from recordings"
+  - "Archive Records - Create long-term accessible documentation for institutional archives"
+  - "Research Interviews - Transform interview recordings into readable research documentation"
+  - "Educational Content - Provide accessible lecture transcripts for students with disabilities"
+  - "Legal Records - Generate court-ready transcripts meeting accessibility standards"
+
+formatting_standards:
+  encoding: "UTF-8"
+  speaker_labels: "Speaker Name: format at start of turn"
+  blank_lines: "One blank line between speaker turns"
+  sections: "=== SECTION NAME === format"
+  timestamps: "Optional [HH:MM:SS] for key moments"
+  non_speech: "[DESCRIPTION] tags for audio cues"
+
+best_practices:
+  - "Use consistent 'Speaker Name:' format at the start of each turn for clear attribution"
+  - "Group related exchanges logically to improve reading flow and comprehension"
+  - "Include descriptions like [applause], [laughter], or [pause] when contextually important"
+  - "Edit out 'um,' 'uh,' 'like' to create cleaner, more professional documentation"
+
+tags:
+  - "accessibility"
+  - "wcag-compliance"
+  - "txt-format"
+  - "screen-reader"
+  - "documentation"
+  - "archive-quality"
+  - "universal-compatibility"
+
+related_resources:
+  - name: "W3C Web Accessibility Initiative - Transcripts"
+    url: "https://www.w3.org/WAI/media/av/transcripts/"
+  - name: "Section 508 Captions and Transcripts"
+    url: "https://www.section508.gov/create/captions-transcripts/"
+  - name: "Transcription File Formats Guide"
+    url: "https://brasstranscripts.com/transcription-file-formats"

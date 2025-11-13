@@ -1,0 +1,259 @@
+name: "Key Facts and Evidence Extraction System"
+category: "Legal Professional"
+difficulty: "Advanced"
+estimated_tokens: "1600-2100"
+version: "1.2.0"
+
+description: "Systematically extract and organize all factual assertions, evidence references, and legal elements from deposition testimony. Perfect for comprehensive case preparation and evidence management in complex litigation."
+
+metadata:
+  industry: "Legal Services"
+  use_cases:
+    - "Complex litigation management"
+    - "Trial preparation"
+    - "Discovery planning"
+    - "Settlement negotiations"
+    - "Expert witness coordination"
+    - "Appeal preparation"
+
+  target_audience:
+    - "Trial attorneys"
+    - "Litigation support teams"
+    - "Legal analysts"
+    - "Case managers"
+    - "Appellate attorneys"
+
+  prerequisites:
+    - "Complete deposition transcript"
+    - "Understanding of legal elements"
+    - "Knowledge of case claims"
+    - "Familiarity with evidence rules"
+
+  outputs:
+    - "Comprehensive fact catalog"
+    - "Evidence reference database"
+    - "Legal elements analysis"
+    - "Strategic fact assessment"
+
+prompt_template: |
+  Perform comprehensive fact extraction from this deposition transcript, organizing all factual assertions, evidence references, and legal elements for case preparation:
+
+  ## Factual Assertions Catalog
+
+  **Undisputed Facts Established:**
+  For each clear factual assertion:
+  - **Fact:** [Specific factual claim]
+  - **Source:** [Page/line reference]
+  - **Context:** [Circumstances of this statement]
+  - **Significance:** [Why this fact matters legally]
+  - **Corroboration Needed:** [How to verify this fact]
+
+  **Disputed or Contradicted Facts:**
+  - **Claimed Fact:** [What witness claims]
+  - **Dispute Nature:** [Why this is questionable]
+  - **Alternative Versions:** [Other accounts of same fact]
+  - **Resolution Method:** [How to determine truth]
+
+  **Opinion vs. Fact Separation:**
+  - **Statement:** [Witness statement]
+  - **Classification:** [Fact/Opinion/Mixed]
+  - **Basis for Opinion:** [What supports witness opinion]
+  - **Admissibility Issues:** [Potential evidence problems]
+
+  ## Evidence References and Documentation
+
+  **Documents Mentioned:**
+  - **Document Type:** [Contract, email, report, etc.]
+  - **Description:** [What witness said about document]
+  - **Relevance:** [How this relates to case issues]
+  - **Availability:** [Whether produced, location, access]
+  - **Authentication Issues:** [Problems with proving authenticity]
+
+  **Physical Evidence References:**
+  - **Item:** [Object, location, condition described]
+  - **Witness Knowledge:** [How witness knows about this]
+  - **Current Status:** [Where evidence is now]
+  - **Chain of Custody:** [Who has handled this evidence]
+
+  **Electronic Evidence:**
+  - **Type:** [Emails, texts, digital files, recordings]
+  - **Access Information:** [How witness accessed this]
+  - **Storage Details:** [Where this information is kept]
+  - **Technical Issues:** [Potential problems with electronic evidence]
+
+  ## Legal Elements Analysis
+
+  **[Cause of Action] Elements:** [Adjust based on your case type]
+  - **Element 1:** [Legal requirement]
+    - **Supporting Testimony:** [How witness testimony supports]
+    - **Page References:** [Specific locations]
+    - **Strength Assessment:** [How strong this support is]
+    - **Additional Proof Needed:** [What else is required]
+
+  - **Element 2:** [Next legal requirement]
+    - [Follow same structure]
+
+  **Damages Evidence:**
+  - **Economic Damages:** [Financial losses mentioned]
+    - **Amount:** [Specific figures given]
+    - **Calculation Method:** [How witness determined amount]
+    - **Supporting Documentation:** [Records that back this up]
+
+  - **Non-Economic Damages:** [Pain, suffering, other intangible losses]
+    - **Description:** [How witness described impact]
+    - **Duration:** [How long effects lasted/will last]
+    - **Comparison Points:** [Before and after comparisons]
+
+  ## Witness Knowledge and Competency
+
+  **Personal Knowledge Areas:**
+  - **Direct Observation:** [What witness personally saw/heard]
+  - **Participation:** [Events witness was involved in]
+  - **Professional Expertise:** [Areas of claimed expertise]
+
+  **Hearsay and Secondhand Information:**
+  - **Source:** [Who told witness this information]
+  - **Context:** [When and why this was communicated]
+  - **Reliability Factors:** [Reasons to trust or doubt this information]
+  - **Admissibility Analysis:** [Whether this can be used at trial]
+
+  **Knowledge Limitations:**
+  - **Admitted Ignorance:** [What witness doesn't know]
+  - **Assumptions:** [What witness is guessing about]
+  - **Memory Problems:** [Areas of unclear or missing memory]
+
+  ## Strategic Fact Analysis
+
+  **Facts Supporting Your Case:**
+  1. **Fact:** [Helpful fact established]
+     - **Legal Significance:** [How this helps your case]
+     - **Strength:** [How reliable this testimony is]
+     - **Reinforcement Strategy:** [How to strengthen this evidence]
+
+  2. **Fact:** [Additional supporting fact]
+     - [Follow same structure]
+
+  **Facts Favoring Opposition:**
+  1. **Problematic Fact:** [Fact that helps opposing party]
+     - **Damage Assessment:** [How much this hurts your case]
+     - **Challenge Strategy:** [How to undermine or limit this]
+     - **Mitigation Options:** [Ways to reduce impact]
+
+  **Neutral or Undetermined Facts:**
+  - **Fact:** [Information that could go either way]
+  - **Development Strategy:** [How to shape this favorably]
+
+  ## Discovery and Investigation Priorities
+
+  **High-Priority Follow-up:**
+  1. **Investigation Need:** [What requires immediate attention]
+     - **Method:** [How to investigate this]
+     - **Timeline:** [When this must be completed]
+     - **Resources Required:** [Cost, time, expertise needed]
+
+  2. **Document Request:** [Records to subpoena or request]
+     - **Source:** [Where these documents likely exist]
+     - **Relevance:** [How these documents help case]
+
+  **Expert Witness Considerations:**
+  - **Expertise Needed:** [Type of expert required]
+  - **Opinion Areas:** [What expert should address]
+  - **Fact Dependencies:** [What facts expert needs for opinion]
+
+  ## Admissibility Assessment
+
+  **Strong Admissible Evidence:**
+  - [Facts likely to be admitted at trial]
+  - [Why these will survive evidentiary challenges]
+
+  **Questionable Admissibility:**
+  - [Evidence with potential admissibility problems]
+  - [Objections likely to be raised]
+  - [Strategies for admission]
+
+  **Inadmissible but Useful:**
+  - [Information useful for investigation but not trial]
+  - [How to use this information strategically]
+
+  Please organize all extracted facts with precise transcript references and assess their relative importance to case success.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
+  Deposition transcript:
+  [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
+
+example_input: "Deposition transcript containing witness testimony with factual assertions, evidence references, and information relevant to legal elements of claims or defenses."
+
+example_output: |
+  ### Factual Assertions Catalog
+
+  **Undisputed Facts Established:**
+
+  **Fact:** Contract was signed on March 15, 2023 at 2:30 PM
+  - **Source:** Page 45/Lines 8-12
+  - **Context:** Witness reviewing calendar entry during questioning about timeline
+  - **Significance:** Establishes precise timing for statute of limitations calculation
+  - **Corroboration Needed:** Calendar records, other attendee testimony
+
+  **Fact:** Payment of $50,000 was due within 30 days of contract execution
+  - **Source:** Page 67/Lines 15-18
+  - **Context:** Witness reading contract terms aloud
+  - **Significance:** Central to breach of contract claim regarding late payment
+  - **Corroboration Needed:** Contract document authentication
+
+  **Disputed or Contradicted Facts:**
+
+  **Claimed Fact:** "No verbal modifications to contract were ever discussed"
+  - **Dispute Nature:** Contradicts earlier testimony about phone call negotiations
+  - **Alternative Versions:** Page 112 describes detailed phone conversation about terms
+  - **Resolution Method:** Phone records, opposing party deposition testimony
+
+  ### Evidence References and Documentation
+
+  **Documents Mentioned:**
+
+  **Document Type:** Original contract with handwritten modifications
+  - **Description:** Witness described seeing handwritten notes in margins
+  - **Relevance:** Proves contract modifications were contemplated
+  - **Availability:** Not yet produced in discovery
+  - **Authentication Issues:** Handwriting analysis may be required
+
+best_practices:
+  - "Database integration: Transfer AI-extracted facts into your case management system for easy access and cross-referencing"
+  - "Collaborative review: Share fact extraction with legal team for verification and strategic planning discussions"
+  - "Opposing counsel preparation: Anticipate how opposing counsel might use these same facts and prepare counter-strategies"
+  - "Ongoing updates: Revise fact analysis as new evidence emerges through discovery process"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "structured_json"
+
+  integration_examples:
+    - name: "Fact Database"
+      description: "Export extracted facts to legal case management systems"
+      code_snippet: |
+        facts = extract_key_facts(transcript)
+        case_db.store_facts(case_id, facts)
+
+    - name: "Evidence Tracker"
+      description: "Create tracking system for mentioned evidence and documents"
+      code_snippet: |
+        evidence = identify_evidence_references(transcript)
+        evidence_tracker.add_items(evidence)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/legal-professional-ai-toolkit-deposition-analysis-prompts#prompt-4-key-facts-and-evidence-extraction-system"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "legal-analysis"
+  - "fact-extraction"
+  - "evidence-organization"
+  - "case-preparation"
+  - "litigation-support"
+  - "discovery-planning"
+  - "trial-preparation"

@@ -72,7 +72,7 @@ prompt_template: |
   Transcript to analyze:
 
   ---
-  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
   ---
 
   [PASTE YOUR BRASSTRANSCRIPTS OUTPUT HERE]
@@ -119,5 +119,5 @@ related_prompts:
 brasstranscripts_integration:
   service_url: "https://brasstranscripts.com/upload"
   supported_formats: ["TXT", "SRT", "VTT", "JSON"]
-  accuracy_rate: "95-98%"
+  accuracy_rate: "Professional-grade"
   features: ["Speaker identification", "Multiple output formats", "Professional quality"]

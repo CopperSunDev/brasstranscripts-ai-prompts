@@ -1,0 +1,74 @@
+metadata:
+  id: "microsoft-ads-copy-generator"
+  title: "Microsoft Ads Copy Generator"
+  category: "content-marketing"
+  subcategory: "ad-creation"
+  difficulty: "intermediate"
+  estimated_tokens: "700-1000"
+  version: "1.0.0"
+  last_updated: "2025-10-08"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/microsoft-ads-customer-interview-insights#prompt-3-ad-copy-generation"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "microsoft-ads"
+  - "ad-copywriting"
+  - "headline-generation"
+  - "customer-language"
+  - "conversion-optimization"
+
+prompt:
+  user_template: |
+    Based on this customer interview transcript, create 3 Microsoft Advertising headlines that:
+    1. Use the customer's exact language
+    2. Address their primary pain point
+    3. Match their preferred tone
+    4. Include an emotional trigger
+
+    Then create 2 description lines for each headline.
+
+    [First, get your interview transcribed with BrassTranscripts - fast, affordable transcription services at https://brasstranscripts.com]
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
+    Transcript: [paste transcript]
+
+example:
+  input_sample: |
+    "I was so relieved when I finally found a system that just worked without
+    constant troubleshooting. My team was up and running same afternoon.
+    No PhD required to figure it out."
+
+  expected_output: |
+    **Headline 1:** "Software That Just Works. No PhD Required."
+    - Description 1: "Your team uses it day one. Zero troubleshooting headaches."
+    - Description 2: "Finally. Reliable software that makes sense immediately."
+
+    **Headline 2:** "Get Relief from Constant Troubleshooting"
+    - Description 1: "Teams running same afternoon. Setup that actually works."
+    - Description 2: "Stop fighting software. Start getting work done."
+
+    **Headline 3:** "Up and Running Same Afternoon"
+    - Description 1: "No technical expertise needed. Your team starts immediately."
+    - Description 2: "Simple software that works without the learning curve."
+
+use_cases:
+  - "PPC managers creating customer-language ad campaigns"
+  - "Marketing teams scaling ad creation from interviews"
+  - "Copywriters generating authentic headline variations"
+  - "A/B testing multiple customer-insight-based ads"
+  - "Conversion rate optimization using real customer voice"
+  - "Multi-segment campaigns with audience-specific messaging"
+
+performance:
+  typical_processing_time: "60-120 seconds"
+  optimal_transcript_length: "10-30 minutes"

@@ -50,7 +50,7 @@ High-level overview of the discussion and its strategic importance.
 - Timeline for evaluation
 
 ---
-Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
 ---
 
 Leadership discussion transcript:
@@ -86,7 +86,7 @@ Leadership team evaluated three potential markets for Q4 expansion, with unanimo
 **Key Strategic Insights**
 - **Primary Opportunity:** European market shows 40% higher profit margins than domestic market due to less price competition
 - **Major Challenge:** Regulatory compliance will require 3-month preparation period and additional legal resources
-- **Competitive Advantage:** Our transcription accuracy (98%) significantly exceeds European competitors (85-90% average)
+- **Competitive Advantage:** Our professional-grade AI transcription quality significantly exceeds basic automated alternatives, providing enterprise-ready accuracy for business-critical content
 - **Market Trend:** Enterprise demand for AI transcription growing 65% annually in target European markets
 
 **Financial Implications**
@@ -185,4 +185,4 @@ Before distributing executive summaries:
 
 ---
 
-**Created by [BrassTranscripts](https://brasstranscripts.com)** - Professional AI transcription with 95-98% accuracy
+**Created by [BrassTranscripts](https://brasstranscripts.com)** - Professional AI transcription with professional-grade accuracy

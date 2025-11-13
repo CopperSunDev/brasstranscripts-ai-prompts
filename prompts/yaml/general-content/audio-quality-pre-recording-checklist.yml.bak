@@ -1,0 +1,132 @@
+name: "Audio Quality Pre-Recording Checklist Generator"
+category: "General Content"
+difficulty: "Beginner"
+estimated_tokens: "500-800"
+version: "1.0.0"
+
+description: "Eliminate audio quality problems before they happen with a customized pre-recording checklist tailored to your specific recording situation. This prompt generates practical, actionable steps covering environment setup, equipment verification, and recording best practices."
+
+metadata:
+  industry: "Audio Recording"
+  use_cases:
+    - "Remote meeting organizers"
+    - "Podcast producers"
+    - "Interview researchers"
+    - "Content creators"
+    - "Business professionals"
+
+  target_audience:
+    - "Meeting organizers"
+    - "Podcast hosts"
+    - "Researchers"
+    - "Content creators"
+    - "Business professionals"
+
+  prerequisites:
+    - "Knowledge of recording equipment available"
+    - "Understanding of recording environment"
+    - "Basic audio recording familiarity"
+
+  outputs:
+    - "Customized pre-recording checklist"
+    - "Environment setup instructions"
+    - "Equipment verification steps"
+    - "Time-allocated task list"
+
+prompt_template: |
+  I'm about to record audio for [meeting/podcast/interview/lecture/presentation] that I'll transcribe using AI. Please create a comprehensive pre-recording quality checklist customized for my specific situation:
+
+  **Recording Context:**
+  - Type of recording: [DESCRIBE]
+  - Number of speakers: [NUMBER]
+  - Recording location: [DESCRIBE]
+  - Available equipment: [LIST YOUR EQUIPMENT]
+  - Estimated duration: [TIME]
+
+  Please generate a practical checklist covering:
+
+  1. **Environment Setup** (5 minutes before recording)
+     - Specific room preparation steps
+     - Noise elimination tactics
+     - Acoustic treatment suggestions
+
+  2. **Equipment Verification** (2-3 minutes before recording)
+     - Microphone placement and testing
+     - Recording level checks
+     - Backup system verification
+
+  3. **Speaker Preparation**
+     - Positioning guidelines for each speaker
+     - Speaking technique reminders
+     - Communication protocols for multi-speaker recordings
+
+  4. **Recording Settings**
+     - Optimal format and quality settings for my equipment
+     - Backup recording recommendations
+     - Monitoring setup
+
+  5. **Final Pre-Recording Checks** (30 seconds before start)
+     - Last-minute verification items
+     - Quick audio test procedure
+     - Emergency backup plan
+
+  Format the checklist as a simple, actionable list I can print or save. Include approximate time needed for each section and mark critical items that absolutely cannot be skipped.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 96.4% average accuracy.
+  ---
+
+example_input: "30-minute podcast interview recording in home office with Blue Yeti USB microphone, 2 speakers, recording to Audacity"
+
+example_output: |
+  # Pre-Recording Checklist - Podcast Interview
+  ## Total Prep Time: 10 minutes
+
+  ### Environment Setup (5 min)
+  - [ ] ✓ CRITICAL: Close all windows to eliminate street noise
+  - [ ] Turn off HVAC system temporarily
+  - [ ] Place "Recording - Do Not Disturb" sign on door
+  - [ ] Silence phone and computer notifications
+  - [ ] Remove ticking clocks or noisy appliances
+
+  ### Equipment Verification (3 min)
+  - [ ] ✓ CRITICAL: Blue Yeti gain set to 50% (12 o'clock position)
+  - [ ] USB connection secure to computer
+  - [ ] Audacity recording format: WAV, 44.1kHz, 16-bit
+  - [ ] Test recording 10-second sample, verify levels between -12dB and -6dB
+  - [ ] Backup: Phone voice recorder app ready as secondary capture
+
+best_practices:
+  - "Equipment-specific recommendations: The more detail you provide about your recording equipment, the more precise the checklist will be"
+  - "Location details matter: Specify if you're recording in an office, home, conference room, or outdoor setting for environment-specific advice"
+  - "Time allocation: Build in 10-15 minutes before recording to complete the full checklist without rushing"
+  - "Save successful checklists: Once you find a configuration that works, save the checklist for future similar recordings"
+
+automation:
+  api_compatible: true
+  batch_processing: false
+  output_format: "checklist_markdown"
+
+  integration_examples:
+    - name: "Recording Workflow Automation"
+      description: "Generate environment-specific checklists before scheduled recordings"
+      code_snippet: |
+        checklist = generate_pre_recording_checklist(
+          recording_type="podcast",
+          equipment=["Blue Yeti", "Audacity"],
+          location="home_office"
+        )
+        send_reminder_email(checklist, recording_time_minus_15min)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/audio-transcription-questions-answered-expert-guide#ai-prompt-1-audio-quality-pre-recording-checklist-generator"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "audio-quality"
+  - "recording-preparation"
+  - "checklist-generation"
+  - "quality-assurance"
+  - "pre-production"
+  - "best-practices"

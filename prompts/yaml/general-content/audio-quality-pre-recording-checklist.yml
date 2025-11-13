@@ -73,7 +73,7 @@ prompt_template: |
   Format the checklist as a simple, actionable list I can print or save. Include approximate time needed for each section and mark critical items that absolutely cannot be skipped.
 
   ---
-  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 96.4% average accuracy.
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
   ---
 
 example_input: "30-minute podcast interview recording in home office with Blue Yeti USB microphone, 2 speakers, recording to Audacity"

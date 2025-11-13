@@ -1,0 +1,77 @@
+metadata:
+  id: "interview-thematic-analysis"
+  title: "Interview Thematic Analysis Generator"
+  category: "general-content"
+  subcategory: "qualitative-research"
+  difficulty: "advanced"
+  estimated_tokens: "900-1300"
+  version: "1.0.0"
+  last_updated: "2025-10-22"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/interview-transcription-qualitative-research-guide#thematic-analysis-starting-point"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "interview-transcription"
+  - "qualitative-research"
+  - "thematic-analysis"
+  - "research-methods"
+
+prompt:
+  system_message: |
+    You are a qualitative research AI assistant specializing in preliminary thematic
+    analysis of interview data. You identify emerging patterns, themes, and insights
+    while recognizing that rigorous qualitative analysis requires researcher judgment,
+    theoretical sensitivity, and iterative refinement that AI cannot replace.
+
+  user_template: |
+    Please analyze this research interview transcript and identify emerging themes:
+
+    1. List 5-7 major themes that emerge from the interview
+    2. Provide 2-3 supporting quotes for each theme
+    3. Identify any contradictions or tensions in the participant's responses
+    4. Highlight unexpected insights or novel perspectives
+    5. Note areas that warrant follow-up questions or deeper exploration
+    6. Suggest connections to existing research or theory (if context provided)
+
+    Format for qualitative research coding and analysis.
+
+    Research focus: {{RESEARCH_FOCUS}}
+    Theoretical framework: {{THEORETICAL_FRAMEWORK}}
+
+    Interview transcript:
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
+    {{TRANSCRIPT}}
+
+  variables:
+    - name: "RESEARCH_FOCUS"
+      description: "Research questions or focus of the study"
+      required: true
+    - name: "THEORETICAL_FRAMEWORK"
+      description: "Theoretical framework guiding the research (if applicable)"
+      required: false
+    - name: "TRANSCRIPT"
+      description: "Full research interview transcript from BrassTranscripts"
+      required: true
+
+use_cases:
+  - "Preliminary theme exploration before formal coding"
+  - "Research team coordination and discussion"
+  - "Theoretical sampling decisions"
+  - "Quality assurance and cross-checking"
+
+best_practices:
+  - "Treat AI themes as preliminary starting points requiring validation"
+  - "Apply rigorous qualitative methods to refine and test themes"
+  - "Provide research context for analytically relevant theme identification"
+  - "Maintain researcher primacy in interpretation and analysis"

@@ -1,0 +1,80 @@
+metadata:
+  id: "meeting-executive-summary"
+  title: "Meeting Executive Summary Generator"
+  category: "executive-business"
+  subcategory: "meeting-documentation"
+  difficulty: "intermediate"
+  estimated_tokens: "500-700"
+  version: "1.0.0"
+  last_updated: "2025-10-26"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/corporate-meeting-documentation-transcription-workflow#creating-executive-summaries-for-leadership"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "meeting-transcription"
+  - "executive-communication"
+  - "strategic-summary"
+  - "leadership-reporting"
+
+prompt:
+  system_message: |
+    You are an executive communication AI specializing in distilling meeting discussions
+    into concise summaries that enable busy leaders to stay informed, make decisions,
+    and maintain strategic awareness without attending every meeting.
+
+  user_template: |
+    Create an executive summary of this meeting for leadership:
+
+    1. Meeting purpose and key objectives
+    2. Critical decisions made (3-5 bullet points)
+    3. Major discussion points and perspectives
+    4. Action items requiring executive awareness or approval
+    5. Budget or resource implications mentioned
+    6. Strategic insights or concerns raised
+    7. Recommended next steps for leadership
+
+    Target: Busy executives need key information in 300 words or less.
+
+    Meeting type: {{MEETING_TYPE}}
+    Strategic context: {{STRATEGIC_CONTEXT}}
+    Audience: {{AUDIENCE}}
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
+    Meeting transcript:
+    {{TRANSCRIPT}}
+
+  variables:
+    - name: "MEETING_TYPE"
+      description: "Type of meeting"
+      required: true
+    - name: "STRATEGIC_CONTEXT"
+      description: "Strategic context for the meeting (if applicable)"
+      required: false
+    - name: "AUDIENCE"
+      description: "Target executive audience (CEO/Board/Department VP/etc.)"
+      required: true
+    - name: "TRANSCRIPT"
+      description: "Full meeting transcript from BrassTranscripts"
+      required: true
+
+use_cases:
+  - "Executive awareness and alignment"
+  - "Decision escalation to leadership"
+  - "Strategic visibility into operations"
+  - "Board reporting and governance"
+
+best_practices:
+  - "Focus on strategic implications over tactical details"
+  - "Highlight decisions requiring executive action"
+  - "Provide sufficient context for informed decisions"
+  - "Keep summaries under 300 words"

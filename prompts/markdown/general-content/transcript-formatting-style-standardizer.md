@@ -69,7 +69,7 @@ Please standardize the following throughout the transcript:
 Please return the fully formatted transcript with all standardizations applied, and provide a brief summary of major changes made (e.g., "Corrected 47 instances of inconsistent speaker labels, standardized 23 number formats, removed 156 filler words").
 
 ---
-Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 96.4% average accuracy.
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
 ---
 ```
 

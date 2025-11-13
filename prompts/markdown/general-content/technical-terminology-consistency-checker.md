@@ -80,7 +80,7 @@ Please analyze the transcript for technical terminology issues:
 Please return: (1) Terminology error analysis, (2) High-confidence corrections with find-and-replace commands, (3) Flagged uncertain terms, (4) Fully corrected transcript, (5) Technical glossary for this document.
 
 ---
-Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 96.4% average accuracy.
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
 ---
 ```
 

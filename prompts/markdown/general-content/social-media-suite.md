@@ -41,7 +41,7 @@ Based on this transcript, create a social media content package including:
 Please make each post platform-specific and optimized for maximum engagement.
 
 ---
-Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
 ---
 
 Source transcript:
@@ -92,7 +92,7 @@ What's your biggest challenge when converting audio content to written format?
 
 🧵 Thread: 5 game-changing insights from my interview with AI transcription expert Sarah Chen ⬇️
 
-1/5 The accuracy gap is everything: "The difference between 85% and 98% accuracy isn't 13 percentage points—it's the difference between useful content and content you can actually publish."
+1/5 The accuracy gap is everything: "The difference between basic and professional-grade accuracy isn't just about percentages—it's the difference between useful content and content you can actually publish."
 
 2/5 Format matters more than you think:
 • TXT = Clean content creation
@@ -101,7 +101,7 @@ What's your biggest challenge when converting audio content to written format?
 
 Choose wisely for your workflow 📊
 
-3/5 Quality audio = Better results: Clean input can boost accuracy by 15%. Simple things like good microphones and quiet rooms compound over time. 🎤
+3/5 Quality audio = Better results: Clean input can significantly boost transcription accuracy. Simple things like good microphones and quiet rooms compound over time. 🎤
 
 4/5 The 60% time saving rule: Strategic format selection + quality transcription can reduce content creation time by more than half. That's the difference between scaling and struggling. ⏰
 
@@ -209,4 +209,4 @@ Create this as part 1 of a 3-part series, with:
 
 ---
 
-**Created by [BrassTranscripts](https://brasstranscripts.com)** - Professional AI transcription with 95-98% accuracy
+**Created by [BrassTranscripts](https://brasstranscripts.com)** - Professional AI transcription with professional-grade accuracy

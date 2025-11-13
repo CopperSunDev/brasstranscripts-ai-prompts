@@ -1,0 +1,63 @@
+name: "Technical Terminology Consistency Checker"
+category: "General Content"
+difficulty: "Advanced"
+estimated_tokens: "1500-2500"
+version: "1.0.0"
+
+description: "Technical discussions require precise terminology. This prompt automatically identifies and corrects industry-specific terms, jargon, acronyms, and specialized vocabulary that AI transcription commonly misinterprets due to phonetic similarity or uncommon usage patterns."
+
+metadata:
+  industry: "Multi-Industry Technical"
+  use_cases:
+    - "Software development meetings"
+    - "Medical dictation"
+    - "Legal depositions"
+    - "Financial analysis"
+    - "Engineering specifications"
+    - "Scientific research"
+
+  target_audience:
+    - "Software developers"
+    - "Medical professionals"
+    - "Legal professionals"
+    - "Financial analysts"
+    - "Engineers"
+    - "Scientists"
+
+  prerequisites:
+    - "Technical transcript"
+    - "Industry/domain context"
+    - "Known technical terms (optional but helpful)"
+
+  outputs:
+    - "Corrected technical terminology"
+    - "Domain-specific glossary"
+    - "Find-and-replace commands"
+    - "Error analysis report"
+
+prompt_template: |
+  [Full prompt content from markdown file - see markdown version for complete text]
+
+best_practices:
+  - "Provide domain context: Specifying the industry enables domain-specific terminology validation"
+  - "List known terms: Providing even 3-5 known technical terms dramatically improves detection accuracy"
+  - "Verify high-impact corrections: Terms appearing 20+ times should be manually verified before bulk replacement"
+  - "Cross-reference authoritative sources: For uncertain terms, verify against official documentation or industry standards"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "corrected_transcript_with_glossary"
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/audio-transcription-questions-answered-expert-guide#ai-prompt-4-technical-terminology-consistency-checker"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "technical-terminology"
+  - "domain-specific"
+  - "terminology-validation"
+  - "accuracy"
+  - "industry-jargon"
+  - "specialized-vocabulary"

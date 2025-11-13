@@ -1,0 +1,167 @@
+name: "Training Material and Documentation"
+category: "General Content"
+difficulty: "Advanced"
+estimated_tokens: "1000-1500"
+version: "1.2.0"
+
+description: "Convert expert knowledge into structured training content and comprehensive documentation. Perfect for transforming expert discussions, workshops, presentations, and knowledge-sharing sessions into organized learning materials that enable skill development and knowledge transfer."
+
+metadata:
+  industry: "Training and Development"
+  use_cases:
+    - "Employee onboarding"
+    - "Product training"
+    - "Skills development"
+    - "Compliance training"
+    - "Process documentation"
+    - "Customer education"
+
+  target_audience:
+    - "Training managers"
+    - "Instructional designers"
+    - "HR professionals"
+    - "Subject matter experts"
+    - "Learning and development teams"
+
+  prerequisites:
+    - "Expert discussion transcript"
+    - "Understanding of learning objectives"
+    - "Knowledge of target learner audience"
+    - "Familiarity with training standards"
+
+  outputs:
+    - "Complete training module"
+    - "Learning objectives and outcomes"
+    - "Assessment questions"
+    - "Implementation guidelines"
+
+prompt_template: |
+  Transform this expert discussion transcript into comprehensive training materials:
+
+  ## Training Module Structure
+
+  **Module Title:** [Extract main topic]
+
+  **Learning Objectives:**
+  - What participants will know after completion
+  - Specific skills they'll develop
+  - Practical applications they can implement
+
+  **Key Concepts (with definitions):**
+  - Technical terms explained in simple language
+  - Industry-specific terminology
+  - Process steps or methodologies
+
+  **Practical Examples:**
+  - Real-world scenarios discussed
+  - Case studies mentioned
+  - Success/failure examples
+
+  **Step-by-Step Processes:**
+  - Any workflows or procedures mentioned
+  - Best practices highlighted
+  - Common mistakes to avoid
+
+  **Assessment Questions:**
+  - 5-10 questions to test understanding
+  - Mix of multiple choice and scenario-based questions
+
+  **Additional Resources:**
+  - Referenced tools, books, or websites
+  - Suggested further reading
+  - Related training modules
+
+  Please structure this as a complete training module ready for implementation.
+
+  Expert transcript:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
+  [PASTE YOUR TRANSCRIPT HERE]
+
+example_input: "Expert workshop transcript covering advanced AI transcription implementation strategies, targeting enterprise teams responsible for content workflow optimization and process improvement."
+
+example_output: |
+  ### Training Module: Advanced AI Transcription Implementation
+
+  **Module Title:** Implementing AI Transcription for Enterprise Content Workflows
+
+  **Learning Objectives:**
+  By the end of this module, participants will be able to:
+  - Evaluate transcription accuracy requirements for different business use cases
+  - Select appropriate transcript formats (TXT, JSON, SRT, VTT) based on workflow needs
+  - Implement quality control processes for transcription-based content creation
+  - Design efficient workflows that reduce content creation time by 60%
+  - Troubleshoot common transcription quality issues
+
+  **Key Concepts (with definitions):**
+  - **Transcription Accuracy:** The percentage of correctly transcribed words; enterprise standard is 95-98%
+  - **Format Selection:** Choosing the right transcript output type based on intended use and required metadata
+  - **Speaker Identification:** Technology that distinguishes between different speakers in multi-person recordings
+  - **Workflow Integration:** The process of incorporating transcription services into existing content creation pipelines
+  - **Quality Threshold:** The minimum accuracy level required for specific business applications
+
+  **Practical Examples:**
+  - **Case Study 1:** Marketing team reduced blog post creation time from 8 hours to 2 hours by implementing strategic transcription workflow
+  - **Success Example:** Customer support team created comprehensive FAQ database from support call transcriptions, reducing ticket volume by 30%
+  - **Implementation Example:** Sales team automated call summarization, improving follow-up response time by 75%
+
+  **Step-by-Step Processes:**
+
+  **Process 1: Selecting Optimal Transcript Format**
+  1. Identify primary use case (content creation, documentation, video production, analysis)
+  2. Determine if speaker identification is required
+  3. Assess need for timestamp information
+  4. Choose format: TXT (clean content), JSON (speaker data), SRT/VTT (video timing)
+  5. Test with sample content to validate choice
+
+  **Assessment Questions:**
+
+  1. **Multiple Choice:** What is the recommended accuracy threshold for enterprise content creation?
+     a) 80-85%  b) 85-90%  c) 90-95%  d) 95-98%
+
+  2. **Scenario:** Your marketing team needs to create blog posts from podcast interviews with speaker attribution. Which format should you choose and why?
+
+  3. **Multiple Choice:** Which factor has the biggest impact on transcription accuracy?
+     a) Speaker accent  b) Audio quality  c) Content complexity  d) Recording length
+
+best_practices:
+  - "Interactive elements: Suggest where to add quizzes, polls, or hands-on exercises to increase engagement and knowledge retention"
+  - "Accessibility: Ensure content works for different learning styles (visual, auditory, kinesthetic) and skill levels"
+  - "Progress tracking: Include checkpoints and milestones to help learners measure their advancement through the material"
+  - "Practical application: Focus on actionable, implementable knowledge that learners can apply immediately in their work context"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "structured_training_module"
+
+  integration_examples:
+    - name: "Learning Management System"
+      description: "Export training modules to LMS platforms"
+      code_snippet: |
+        training_module = create_training_module(transcript)
+        lms.upload_module(training_module, course_id)
+
+    - name: "Assessment Generator"
+      description: "Auto-generate quizzes and assessments"
+      code_snippet: |
+        content = extract_training_content(transcript)
+        questions = generate_assessment_questions(content)
+        quiz = create_interactive_quiz(questions)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/powerful-llm-prompts-transcript-optimization#prompt-4-training-material-and-documentation"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "training-development"
+  - "instructional-design"
+  - "knowledge-transfer"
+  - "employee-education"
+  - "skill-development"
+  - "learning-materials"
+  - "documentation"

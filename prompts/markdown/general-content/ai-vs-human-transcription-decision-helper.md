@@ -7,7 +7,7 @@
 
 ## Overview
 
-This prompt analyzes project requirements to recommend whether AI transcription (95-98% accuracy, fast, affordable) or human transcription (99% accuracy, slow, expensive) is the better choice. It provides honest trade-off analysis, cost comparisons, and hybrid strategies when appropriate.
+This prompt analyzes project requirements to recommend whether AI transcription (professional-grade accuracy, fast, affordable) or human transcription (premium accuracy, slow, expensive) is the better choice. It provides honest trade-off analysis, cost comparisons, and hybrid strategies when appropriate.
 
 ## When to Use This Prompt
 
@@ -45,7 +45,7 @@ Please analyze my project and provide:
 Be honest about trade-offs. If human transcription is genuinely necessary for my use case, explain why the 10× cost is justified. If AI is sufficient, explain what quality checks I should implement.
 
 ---
-Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
 ---
 ```
 
@@ -66,7 +66,7 @@ Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcript
 **Expected Output**:
 - **Recommendation**: AI transcription (BrassTranscripts)
 - **Cost**: $72/month (AI) vs $720/month (human)
-- **Accuracy**: 96-97% sufficient for editorial use
+- **Accuracy**: Professional-grade accuracy sufficient for editorial use
 - **Risk**: Minimal - content undergoes editing anyway
 - **Quality assurance**: Spot-check quotes before publishing
 - **Reasoning**: 10× cost premium not justified for content that's edited
@@ -86,7 +86,7 @@ Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcript
 **Expected Output**:
 - **Recommendation**: Human transcription (Rev)
 - **Cost**: $270 (human, certified) vs $27 (AI, not admissible)
-- **Accuracy**: 99% required for court admissibility
+- **Accuracy**: Premium accuracy required for court admissibility
 - **Risk**: AI transcript may not be legally acceptable
 - **Deal-breaker**: Court requirements mandate human transcription
 - **Reasoning**: $243 premium prevents thousands in attorney time if transcript rejected
@@ -98,7 +98,7 @@ Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcript
 - Audio quality: Interview recordings, mostly clear
 - Speaker characteristics: Some participants with accents
 - Volume: 20 hours total for dissertation
-- Accuracy requirements: 95%+ for thematic analysis
+- Accuracy requirements: Professional-grade accuracy for thematic analysis
 - Timeline: 2-3 weeks acceptable
 - Use case: Research analysis, will verify critical quotes
 - Budget: $300 total project budget
@@ -117,7 +117,7 @@ Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcript
 - Audio quality: Clinical setting, some background noise
 - Speaker characteristics: Medical terminology, some patient accents
 - Volume: 10 hours monthly
-- Accuracy requirements: 99%+ for medical records compliance
+- Accuracy requirements: Premium accuracy for medical records compliance
 - Timeline: 48 hours acceptable
 - Use case: Official medical records
 - Budget: Compliance-driven, flexible

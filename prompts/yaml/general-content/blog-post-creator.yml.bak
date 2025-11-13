@@ -1,0 +1,121 @@
+name: "Blog Post Creation from Interviews or Podcasts"
+category: "General Content"
+difficulty: "Intermediate"
+estimated_tokens: "800-1200"
+version: "1.2.0"
+
+description: "Transform interview recordings into engaging blog content that captures key insights and maintains reader interest. Perfect for converting podcast interviews, expert discussions, and panel conversations into compelling written content that drives traffic and engagement."
+
+metadata:
+  industry: "Content Marketing"
+  use_cases:
+    - "Thought leadership content"
+    - "Expert insights"
+    - "Product demos"
+    - "Customer success stories"
+    - "Industry trends"
+    - "Educational content"
+
+  target_audience:
+    - "Content creators"
+    - "Marketing professionals"
+    - "Podcast producers"
+    - "Industry experts"
+    - "Business bloggers"
+
+  prerequisites:
+    - "Interview or podcast transcript"
+    - "Understanding of target audience"
+    - "Knowledge of brand voice"
+    - "SEO keyword awareness"
+
+  outputs:
+    - "Complete blog post"
+    - "SEO-optimized content"
+    - "Structured article with sections"
+    - "Call-to-action elements"
+
+prompt_template: |
+  I have a transcript from a [podcast interview/expert interview/panel discussion] about [TOPIC]. Please transform this into a compelling blog post that:
+
+  1. Creates an engaging headline and introduction
+  2. Identifies and highlights the 3-5 key insights
+  3. Structures the content with clear sections and subheadings
+  4. Includes relevant quotes that showcase expertise
+  5. Ends with actionable takeaways for readers
+  6. Maintains a [professional/conversational/technical] tone throughout
+
+  The target audience is [describe your audience]. The blog post should be approximately [word count] words.
+
+  Here's the transcript:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
+  [PASTE YOUR TRANSCRIPT HERE]
+
+  Please format the output as a complete blog post ready for publication.
+
+example_input: "Transcript from a 45-minute expert interview about AI transcription technology, targeting content marketing professionals interested in workflow optimization."
+
+example_output: |
+  ### "5 Game-Changing Insights from Our AI Transcription Expert Interview"
+
+  The future of content creation is here, and it's powered by AI transcription technology that's transforming how businesses capture and leverage spoken content. In our recent interview with [Expert Name], Chief Technology Officer at [Company], we uncovered insights that could revolutionize your content workflow.
+
+  #### Key Insight #1: Accuracy Drives Everything
+
+  "The difference between 85% and 98% accuracy isn't just 13 percentage points—it's the difference between useful content and content you can actually publish," explains [Expert Name]. This highlights why investing in high-quality transcription services pays dividends in reduced editing time and improved content quality.
+
+  #### Key Insight #2: Format Selection Impacts Results
+
+  Different transcript formats serve different purposes:
+  - **TXT format:** Best for clean content creation and blog posts
+  - **JSON format:** Ideal when you need speaker identification and metadata
+  - **SRT/VTT format:** Perfect for video content and timestamp-sensitive projects
+
+  #### Actionable Takeaways
+
+  1. **Start with quality audio:** Clean input creates better transcript output
+  2. **Choose the right format:** Match your transcript format to your intended use case
+  3. **Implement a systematic workflow:** Create templates and processes for consistent results
+
+best_practices:
+  - "Speaker identification: If using JSON format, reference specific speakers by name to add credibility"
+  - "Quote selection: Choose 2-3 powerful quotes that encapsulate main points"
+  - "SEO optimization: Ask the LLM to suggest relevant keywords and meta descriptions"
+  - "Call-to-action: Always include a CTA that drives readers to your main service"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "structured_markdown"
+
+  integration_examples:
+    - name: "Content Management System"
+      description: "Auto-publish generated blog posts to CMS platforms"
+      code_snippet: |
+        blog_post = create_blog_post(transcript)
+        cms.publish_post(blog_post, schedule_time)
+
+    - name: "SEO Optimization"
+      description: "Extract keywords and optimize for search engines"
+      code_snippet: |
+        content = generate_blog_content(transcript)
+        seo_data = extract_seo_keywords(content)
+        optimized_post = apply_seo_optimization(content, seo_data)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/powerful-llm-prompts-transcript-optimization#prompt-1-blog-post-creation-from-interviews-or-podcasts"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "content-creation"
+  - "blog-writing"
+  - "interview-transcription"
+  - "podcast-content"
+  - "seo-optimization"
+  - "content-marketing"
+  - "thought-leadership"

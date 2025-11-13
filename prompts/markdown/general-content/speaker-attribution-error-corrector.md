@@ -7,7 +7,7 @@
 
 ## Description
 
-While AI achieves 94% speaker identification accuracy, the remaining 6% of errors can confuse readers and misattribute important statements. This prompt systematically identifies and corrects speaker attribution mistakes using context clues, speech patterns, and logical conversation flow.
+While AI speaker identification is highly accurate, some attribution errors can occur that confuse readers and misattribute important statements. This prompt systematically identifies and corrects speaker attribution mistakes using context clues, speech patterns, and logical conversation flow.
 
 ## The Prompt
 
@@ -64,7 +64,7 @@ Please analyze the transcript and:
 Please return: (1) Summary of errors found, (2) Specific correction recommendations, (3) Fully corrected transcript, (4) Any uncertain sections flagged for manual review.
 
 ---
-Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 96.4% average accuracy.
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
 ---
 ```
 

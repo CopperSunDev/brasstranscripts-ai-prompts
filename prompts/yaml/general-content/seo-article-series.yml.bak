@@ -1,0 +1,162 @@
+name: "SEO-Optimized Article Series"
+category: "General Content"
+difficulty: "Advanced"
+estimated_tokens: "1200-1800"
+version: "1.2.0"
+
+description: "Break down comprehensive content into a strategic series of SEO-focused articles. Perfect for transforming lengthy discussions, comprehensive interviews, or detailed presentations into multiple interconnected articles that build topical authority and capture long-tail keyword opportunities."
+
+metadata:
+  industry: "SEO and Content Marketing"
+  use_cases:
+    - "Thought leadership campaigns"
+    - "Product education"
+    - "Industry analysis"
+    - "Technical documentation"
+    - "Event content"
+    - "Customer education"
+
+  target_audience:
+    - "SEO specialists"
+    - "Content strategists"
+    - "Marketing managers"
+    - "Digital marketing teams"
+    - "Content marketing agencies"
+
+  prerequisites:
+    - "Comprehensive content transcript"
+    - "Understanding of target keywords"
+    - "Knowledge of SEO best practices"
+    - "Familiarity with content series strategy"
+
+  outputs:
+    - "Strategic content series plan"
+    - "Individual article outlines"
+    - "SEO strategy framework"
+    - "Content calendar with timing"
+
+prompt_template: |
+  Analyze this comprehensive transcript and create a strategic content series plan:
+
+  ## Content Series Overview
+  - Main theme/topic cluster
+  - Target keyword strategy
+  - Internal linking opportunities
+  - Content progression from basic to advanced
+
+  ## Individual Article Outlines (5-7 articles)
+
+  For each article, provide:
+
+  **Article [#]: [Title]**
+  - Primary keyword target
+  - Word count recommendation (800-2000 words)
+  - Key points to cover
+  - Target audience level (beginner/intermediate/advanced)
+  - Internal linking opportunities to other articles in series
+  - External reference suggestions
+  - Meta description (150-160 characters)
+
+  ## SEO Strategy
+  - Keyword clustering approach
+  - Content hub structure
+  - Pillar page recommendations
+  - Featured snippet opportunities
+
+  ## Content Calendar
+  - Publishing sequence for maximum SEO impact
+  - Seasonal considerations
+  - Promotion strategy for each piece
+
+  Transform the insights from this transcript into this strategic content approach:
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
+  [PASTE YOUR TRANSCRIPT HERE]
+
+example_input: "Comprehensive expert interview about AI transcription technology covering accuracy, formats, implementation, workflows, and business impact - suitable for creating an authoritative content series."
+
+example_output: |
+  ### Content Series: "Mastering AI Transcription for Business Growth"
+
+  **Content Series Overview**
+  - **Main Theme:** AI transcription implementation and optimization for business content workflows
+  - **Target Keyword Strategy:** Focus on "AI transcription," "business transcription," "content workflow," and related long-tail keywords
+  - **Internal Linking Opportunities:** Create hub-and-spoke model with pillar page connecting all articles
+  - **Content Progression:** Basic introduction → format selection → implementation → optimization → advanced strategies
+
+  **Individual Article Outlines**
+
+  **Article 1: "The Complete Guide to AI Transcription for Business: Why Accuracy Matters More Than Speed"**
+  - **Primary Keyword:** "AI transcription for business"
+  - **Word Count:** 1,500 words
+  - **Key Points:** Accuracy thresholds, business use cases, ROI calculations, quality vs. cost analysis
+  - **Target Audience:** Beginner (decision-makers evaluating transcription solutions)
+  - **Internal Links:** Links to articles 2, 3, and 6 for deeper implementation guidance
+  - **External References:** Industry studies on transcription accuracy, business productivity research
+  - **Meta Description:** "Discover why 98% accuracy AI transcription transforms business workflows. Complete guide to choosing enterprise transcription solutions."
+
+  **Article 2: "TXT vs JSON vs SRT: Choosing the Right Transcript Format for Your Business Needs"**
+  - **Primary Keyword:** "transcript format comparison"
+  - **Word Count:** 1,200 words
+  - **Key Points:** Format specifications, use case matching, workflow integration, technical requirements
+  - **Target Audience:** Intermediate (team leads implementing transcription)
+  - **Internal Links:** Links to article 1 (foundation), article 3 (implementation), article 4 (quality control)
+  - **External References:** Technical documentation, format specification guides
+  - **Meta Description:** "Choose the perfect transcript format for your workflow. Complete comparison of TXT, JSON, SRT, and VTT formats with use cases."
+
+  **SEO Strategy**
+  - **Keyword Clustering:** Primary cluster around "AI transcription" with secondary clusters for "transcript formats," "workflow implementation," and "quality control"
+  - **Content Hub Structure:** Article 1 serves as pillar page, with articles 2-7 as supporting content linked in hub-and-spoke pattern
+  - **Pillar Page:** "The Complete Guide to AI Transcription for Business" becomes comprehensive resource linking to all specialized articles
+  - **Featured Snippet Opportunities:** Target definition-based snippets for "What is AI transcription," process-based snippets for "How to implement transcription workflow"
+
+  **Content Calendar**
+  - **Week 1:** Publish Article 1 (pillar page foundation)
+  - **Week 3:** Publish Article 2 (format comparison - high search volume)
+  - **Week 5:** Publish Article 3 (implementation guide - converts well)
+  - **Week 7:** Publish Article 6 (ROI calculator - decision-maker focused)
+  - **Week 9:** Publish Article 4 (quality control - supports implementation)
+  - **Week 11:** Publish Article 5 (advanced techniques - technical audience)
+  - **Week 13:** Publish Article 7 (troubleshooting - long-tail capture)
+
+best_practices:
+  - "Topic authority: Establish expertise through comprehensive coverage of related subtopics and interconnected content"
+  - "Keyword ranking: Target multiple related keywords strategically across the series to capture various search intents"
+  - "User engagement: Keep readers on your site longer with interconnected content that provides progressive value"
+  - "Conversion optimization: Guide readers through your expertise funnel from awareness to consideration to decision"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "seo_content_strategy"
+
+  integration_examples:
+    - name: "Content Strategy Platform"
+      description: "Export content series plan to editorial calendar tools"
+      code_snippet: |
+        content_series = generate_seo_article_series(transcript)
+        editorial_calendar.schedule_series(content_series)
+
+    - name: "SEO Analysis Integration"
+      description: "Validate keyword strategy with SEO tools"
+      code_snippet: |
+        series_plan = create_content_series(transcript)
+        seo_data = seo_tool.analyze_keywords(series_plan.keywords)
+        optimized_plan = optimize_series_strategy(series_plan, seo_data)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/powerful-llm-prompts-transcript-optimization#prompt-5-seo-optimized-article-series"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "seo-strategy"
+  - "content-series"
+  - "keyword-optimization"
+  - "topical-authority"
+  - "content-planning"
+  - "search-marketing"
+  - "content-clusters"

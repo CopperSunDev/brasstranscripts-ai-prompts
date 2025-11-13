@@ -1,0 +1,126 @@
+name: "Transcription Cost Analyzer"
+category: "general-content"
+version: "1.0"
+created_date: "2025-10-20"
+last_updated: "2025-10-20"
+
+description: "Analyzes transcription service options based on usage patterns, budget constraints, and quality requirements to recommend the most cost-effective solution with hidden cost awareness."
+
+use_cases:
+  - "Service selection and comparison"
+  - "Budget planning for transcription projects"
+  - "Cost optimization in existing workflows"
+  - "Subscription vs pay-per-use decision-making"
+  - "Volume discount opportunity analysis"
+
+complexity: "intermediate"
+
+source_url: "https://brasstranscripts.com/blog/ai-transcription-pricing-deals-2025-cost-comparison#ai-prompt-transcription-cost-analyzer"
+
+markdown_url: "https://github.com/CopperSunDev/brasstranscripts-ai-prompts/blob/main/prompts/markdown/general-content/transcription-cost-analyzer.md"
+
+prompt_text: |
+  I need help choosing the most cost-effective transcription service for my needs.
+
+  My transcription requirements:
+  - **Monthly volume**: [Specify hours per month, e.g., "5-8 hours monthly" or "varies between 2-20 hours"]
+  - **Usage pattern**: [Specify consistency, e.g., "consistent every month" or "sporadic - heavy some months, light others"]
+  - **Audio quality**: [Specify typical quality, e.g., "clear studio recordings" or "conference calls with background noise"]
+  - **Accuracy requirements**: [Specify needs, e.g., "95%+ for blog content" or "99%+ for legal depositions"]
+  - **Turnaround needs**: [Specify timing, e.g., "same-day preferred" or "24-48 hours acceptable"]
+  - **Budget constraints**: [Specify limits, e.g., "$50/month maximum" or "willing to pay premium for quality"]
+  - **Additional features**: [Specify needs, e.g., "need SRT captions" or "multi-language support" or "speaker identification"]
+
+  Please analyze my requirements and recommend:
+
+  1. **Primary service recommendation** with specific reasoning based on my usage pattern
+  2. **Cost calculation** showing expected monthly costs based on my volume
+  3. **Alternative options** if my usage patterns change (lighter or heavier months)
+  4. **Cost-saving strategies** specific to my needs (batching, format optimization, volume discounts)
+  5. **Hidden costs to watch for** based on the services you recommend
+  6. **Hybrid approach** if combining multiple services would save money
+
+  Compare at least 3 services and show the math on why your recommendation is most cost-effective for my specific situation, not just the lowest per-minute rate.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+  ---
+
+input_variables:
+  monthly_volume:
+    description: "Hours of audio transcribed per month"
+    type: "string"
+    required: true
+    example: "5-8 hours monthly"
+
+  usage_pattern:
+    description: "Consistency of transcription needs"
+    type: "string"
+    required: true
+    example: "consistent every month"
+
+  audio_quality:
+    description: "Typical quality of source audio"
+    type: "string"
+    required: true
+    example: "clear studio recordings"
+
+  accuracy_requirements:
+    description: "Minimum accuracy needed for use case"
+    type: "string"
+    required: true
+    example: "95%+ for blog content"
+
+  turnaround_needs:
+    description: "Time sensitivity requirements"
+    type: "string"
+    required: true
+    example: "same-day preferred"
+
+  budget_constraints:
+    description: "Maximum spending limits"
+    type: "string"
+    required: true
+    example: "$50/month maximum"
+
+  additional_features:
+    description: "Required features beyond basic transcription"
+    type: "string"
+    required: false
+    example: "need SRT captions"
+
+expected_output_structure:
+  - "Primary service recommendation with reasoning"
+  - "Monthly cost calculation with real numbers"
+  - "Alternative scenarios for volume changes"
+  - "Actionable cost-saving strategies"
+  - "Hidden costs to watch for"
+  - "Hybrid approach recommendations"
+
+tips_for_best_results:
+  - "Be specific about volume ranges, not vague estimates"
+  - "Describe usage consistency (regular vs bursty)"
+  - "Mention all required output formats"
+  - "State real budget constraints honestly"
+  - "Include quality tolerance levels"
+
+related_prompts:
+  - "ai-vs-human-transcription-decision-helper"
+  - "meeting-summary-generator"
+  - "podcast-show-notes-generator"
+
+compatible_ai_models:
+  - "ChatGPT (GPT-3.5, GPT-4)"
+  - "Claude (Claude 3 Opus, Sonnet, Haiku)"
+  - "Google Gemini"
+  - "Any general-purpose LLM"
+
+tags:
+  - "cost-analysis"
+  - "service-selection"
+  - "budget-planning"
+  - "transcription-services"
+  - "pricing-comparison"
+  - "cost-optimization"
+
+license: "MIT"

@@ -1,0 +1,81 @@
+name: "Transcript Section Finder & Timestamp Locator"
+category: "General Content"
+difficulty: "Intermediate"
+estimated_tokens: "1500-2500"
+version: "1.0.0"
+
+description: "Long transcripts (60+ minutes, 10,000+ words) are difficult to navigate manually. This prompt quickly locates specific topics, quotes, discussion sections, or key moments using semantic search, timestamp extraction, and intelligent topic clustering—eliminating the need to manually scan thousands of lines."
+
+metadata:
+  industry: "Content Management"
+  use_cases:
+    - "Meeting review"
+    - "Research interviews"
+    - "Podcast/video production"
+    - "Legal/compliance"
+    - "Academic research"
+
+  target_audience:
+    - "Business professionals"
+    - "Researchers"
+    - "Content creators"
+    - "Legal professionals"
+    - "Academics"
+
+  prerequisites:
+    - "Long transcript (30+ minutes)"
+    - "Specific search query or topic"
+    - "Basic understanding of transcript content"
+
+  outputs:
+    - "Located sections with timestamps"
+    - "Topic clustering analysis"
+    - "Navigation map"
+    - "Searchable index"
+
+prompt_template: |
+  [Full prompt content from markdown file - see markdown version for complete text]
+
+best_practices:
+  - "Ideal for long transcripts: Most valuable for 30+ minute transcripts (4,500+ words) where manual scanning is time-consuming"
+  - "Specific search terms: The more specific your search description, the more accurate the results"
+  - "Review full transcript first: Use after initial full transcript review to understand overall structure"
+  - "Build cumulative indexes: For recurring meetings, maintain cumulative index tracking topics across multiple sessions"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "indexed_sections_with_timestamps"
+
+  integration_examples:
+    - name: "Automated Topic Extraction"
+      description: "Build searchable indexes for transcript libraries"
+      code_snippet: |
+        sections = find_all_sections(transcript, search_topics)
+        index = build_searchable_index(sections)
+        save_to_database(index, metadata)
+
+    - name: "Video Editing Workflow"
+      description: "Extract timestamp ranges for video editing"
+      code_snippet: |
+        clips = locate_funny_moments(transcript)
+        for clip in clips:
+            export_video_segment(
+                video_file,
+                start_time=clip.timestamp,
+                duration=clip.duration
+            )
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/audio-transcription-questions-answered-expert-guide#ai-prompt-5-transcript-section-finder--timestamp-locator"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "navigation"
+  - "search"
+  - "timestamps"
+  - "section-finding"
+  - "topic-clustering"
+  - "indexing"
+  - "long-transcripts"

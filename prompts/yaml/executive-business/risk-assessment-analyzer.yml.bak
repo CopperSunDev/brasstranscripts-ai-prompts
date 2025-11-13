@@ -1,0 +1,189 @@
+metadata:
+  id: "risk-assessment-analyzer"
+  title: "Risk Assessment & Mitigation Analyzer"
+  category: "executive-business"
+  subcategory: "strategic-planning"
+  difficulty: "advanced"
+  estimated_tokens: "800-1200"
+  version: "1.2.0"
+  last_updated: "2025-01-16"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/meeting-transcripts-executive-summaries-ai-prompts#prompt-3-risk-assessment--mitigation-analyzer"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "risk-management"
+  - "strategic-planning"
+  - "business-intelligence"
+  - "mitigation-strategies"
+  - "executive-analysis"
+
+prompt:
+  system_message: |
+    You are a risk management AI specialized in identifying potential threats,
+    opportunities, and mitigation strategies from meeting discussions.
+
+  user_template: |
+    Analyze this meeting transcript for risk factors, concerns, and potential issues. Create a comprehensive risk assessment:
+
+    ## Risk Identification Matrix
+
+    For each risk, concern, or challenge mentioned:
+
+    **Risk Category:** [Operational/Financial/Strategic/Technical/Market/Legal]
+    **Risk Description:** [Specific concern as discussed]
+    **Probability Assessment:** [Based on discussion tone: High/Medium/Low likelihood]
+    **Impact Severity:** [Potential consequences: High/Medium/Low]
+    **Timeline:** [When this risk could materialize]
+    **Current Mitigation:** [Any solutions or safeguards already mentioned]
+
+    ## Priority Risk Summary
+
+    **Red Flag Issues (High Impact, High Probability):**
+    - [Risk description]
+    - Immediate action required: [specific next steps]
+    - Owner: [who should address this]
+
+    **Watch List Items (Medium Priority):**
+    - [Risk description]
+    - Monitoring approach: [how to track this]
+    - Trigger points: [what would escalate this to high priority]
+
+    **Long-term Considerations (Lower Priority but Important):**
+    - [Risk description]
+    - Review timeline: [when to reassess]
+
+    ## Opportunity Identification
+    Also extract any opportunities mentioned that aren't being actively pursued:
+    - **Opportunity:** [description]
+    - **Potential Value:** [business impact if captured]
+    - **Requirements:** [what would be needed to pursue]
+
+    ## Recommended Risk Management Actions
+
+    **Immediate (Next 30 Days):**
+    1. [Specific action for highest priority risks]
+    2. [Risk monitoring setup requirements]
+
+    **Short-term (Next Quarter):**
+    1. [Mitigation strategies to implement]
+    2. [Process improvements to prevent recurrence]
+
+    **Long-term (Strategic Level):**
+    1. [Systematic changes needed]
+    2. [Investment or resource allocation recommendations]
+
+    ## Decision-Making Implications
+    How identified risks should influence:
+    - Current project timelines and scope
+    - Resource allocation decisions
+    - Strategic planning assumptions
+    - Communication with stakeholders
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
+    Meeting transcript:
+    {transcript_content}
+
+example:
+  input_sample: |
+    [Strategic Planning Meeting]
+    CFO: I'm concerned about our concentration risk. Three major clients represent 65% of our revenue.
+
+    CEO: Yes, and Client A mentioned they're evaluating alternatives due to budget pressures.
+
+    Sales Director: The new competitor entered our market with 20% lower pricing. We're seeing some client inquiries about their services.
+
+    Operations: Our legacy billing system integration is behind schedule. If it's not ready by Q1, we'll have manual processes that could cause service disruptions.
+
+    CFO: That could impact our SLA compliance and potentially trigger penalty clauses.
+
+    [Meeting continues...]
+
+  expected_output: |
+    ## Risk Identification Matrix
+
+    **Risk Category:** Financial
+    **Risk Description:** Client concentration risk with 65% revenue from three major clients
+    **Probability Assessment:** High (CEO confirmed client evaluation of alternatives)
+    **Impact Severity:** High (significant revenue loss potential)
+    **Timeline:** Q1-Q2 2025 based on client budget cycles
+    **Current Mitigation:** None specifically mentioned
+
+    **Risk Category:** Market
+    **Risk Description:** New competitor offering 20% lower pricing affecting client retention
+    **Probability Assessment:** Medium (some client inquiries noted)
+    **Impact Severity:** Medium (gradual market share erosion)
+    **Timeline:** Ongoing competitive pressure
+    **Current Mitigation:** None specifically mentioned
+
+    **Risk Category:** Operational
+    **Risk Description:** Legacy billing system integration delays causing service disruptions
+    **Probability Assessment:** Medium (project currently behind schedule)
+    **Impact Severity:** High (SLA violations, potential penalty clauses)
+    **Timeline:** Q1 2025 if integration not completed
+    **Current Mitigation:** Manual processes as backup (insufficient)
+
+    ## Priority Risk Summary
+
+    **Red Flag Issues (High Impact, High Probability):**
+    - Client concentration risk with major client evaluating alternatives
+    - Immediate action required: Client retention strategy, diversification plan
+    - Owner: CEO and Sales Director
+
+    **Watch List Items (Medium Priority):**
+    - Competitive pricing pressure from new market entrant
+    - Monitoring approach: Monthly client feedback, competitive analysis
+    - Trigger points: Loss of first client to competitor, pricing inquiry increases
+
+    - Legacy system integration delays
+    - Monitoring approach: Weekly project status reviews
+    - Trigger points: Missing next milestone, December deadline slip
+
+    ## Opportunity Identification
+    - **Opportunity:** Client diversification strategy development
+    - **Potential Value:** Reduced concentration risk, more stable revenue base
+    - **Requirements:** Sales team expansion, marketing investment, new client acquisition strategy
+
+    ## Recommended Risk Management Actions
+
+    **Immediate (Next 30 Days):**
+    1. Develop Client A retention strategy with enhanced service offerings
+    2. Establish weekly billing system integration status reviews
+    3. Create competitive analysis dashboard for pricing strategy
+
+    **Short-term (Next Quarter):**
+    1. Launch targeted client diversification campaign
+    2. Develop pricing strategy response to competitive pressure
+    3. Implement billing system contingency planning
+
+    **Long-term (Strategic Level):**
+    1. Establish client concentration limits in business strategy
+    2. Invest in technology modernization to prevent future integration risks
+    3. Develop competitive differentiation beyond pricing
+
+    ## Decision-Making Implications
+    - **Project timelines:** Accelerate billing system integration timeline
+    - **Resource allocation:** Increase sales team budget for client diversification
+    - **Strategic planning:** Revise revenue projections assuming potential client loss
+    - **Stakeholder communication:** Board should be informed of concentration risk immediately
+
+use_cases:
+  - "Strategic planning sessions and business objective assessment"
+  - "Project planning meetings and implementation roadblock identification"
+  - "Financial planning discussions and market risk evaluation"
+  - "Operational reviews and systemic issue identification"
+  - "Compliance meetings and regulatory exposure assessment"
+  - "Crisis management and rapid risk assessment"
+
+performance:
+  typical_processing_time: "90-120 seconds"
+  optimal_transcript_length: "20-45 minutes"

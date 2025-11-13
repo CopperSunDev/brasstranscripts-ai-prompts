@@ -4,7 +4,7 @@ difficulty: "Intermediate"
 estimated_tokens: "1200-1800"
 version: "1.0.0"
 
-description: "While AI achieves 94% speaker identification accuracy, the remaining 6% of errors can confuse readers and misattribute important statements. This prompt systematically identifies and corrects speaker attribution mistakes using context clues, speech patterns, and logical conversation flow."
+description: "While AI speaker identification is highly accurate, some attribution errors can occur that confuse readers and misattribute important statements. This prompt systematically identifies and corrects speaker attribution mistakes using context clues, speech patterns, and logical conversation flow."
 
 metadata:
   industry: "Transcription Services"
@@ -87,7 +87,7 @@ prompt_template: |
   Please return: (1) Summary of errors found, (2) Specific correction recommendations, (3) Fully corrected transcript, (4) Any uncertain sections flagged for manual review.
 
   ---
-  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 96.4% average accuracy.
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
   ---
 
 example_input: "4-person panel discussion transcript where Speaker 2 and Speaker 3 are consistently confused, with generic labels instead of actual names (John Smith, Sarah Johnson, etc.)"

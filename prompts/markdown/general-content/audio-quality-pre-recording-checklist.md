@@ -51,7 +51,7 @@ Please generate a practical checklist covering:
 Format the checklist as a simple, actionable list I can print or save. Include approximate time needed for each section and mark critical items that absolutely cannot be skipped.
 
 ---
-Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 96.4% average accuracy.
+Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
 ---
 ```
 

@@ -1,0 +1,75 @@
+metadata:
+  id: "microsoft-ads-language-pattern-analyzer"
+  title: "Microsoft Ads Language Pattern Analyzer"
+  category: "content-marketing"
+  subcategory: "voice-of-customer"
+  difficulty: "intermediate"
+  estimated_tokens: "500-800"
+  version: "1.0.0"
+  last_updated: "2025-10-08"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/microsoft-ads-customer-interview-insights#prompt-2-language-pattern-analysis"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "language-analysis"
+  - "customer-voice"
+  - "ad-tone-matching"
+  - "copywriting"
+  - "brand-messaging"
+
+prompt:
+  user_template: |
+    Review this interview transcript and identify:
+    1. The 10 most repeated phrases or words
+    2. The overall tone (formal, casual, technical, conversational)
+    3. Any memorable analogies or metaphors used
+    4. Specific adjectives that describe their feelings
+
+    Format the output as a reference sheet for ad copywriting.
+
+    [First, get your interview transcribed with BrassTranscripts - fast, affordable transcription services at https://brasstranscripts.com]
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with 95-98% accuracy.
+    ---
+
+    Transcript: [paste transcript]
+
+example:
+  input_sample: |
+    "I need something my team can use on day one, not something that requires
+    a PhD to figure out. You know what I mean? It should just work, like,
+    immediately. Simple. Not rocket science."
+
+  expected_output: |
+    **Top 10 Repeated Phrases:**
+    1. "day one" (3x)
+    2. "just work" (2x)
+    3. "you know" (2x)
+
+    **Overall Tone:** Casual, conversational with frustration undertones
+
+    **Memorable Analogies:**
+    - "requires a PhD" (complexity metaphor)
+    - "not rocket science" (simplicity desire)
+
+    **Emotional Adjectives:** Simple, immediate, frustrated, seeking ease
+
+use_cases:
+  - "Ad copywriters matching authentic customer tone"
+  - "Brand managers ensuring voice consistency"
+  - "Marketing teams identifying memorable customer phrases"
+  - "Content strategists understanding audience communication style"
+  - "PPC specialists creating relatable ad messaging"
+  - "UX writers aligning product language with user expectations"
+
+performance:
+  typical_processing_time: "30-60 seconds"
+  optimal_transcript_length: "15-45 minutes"
