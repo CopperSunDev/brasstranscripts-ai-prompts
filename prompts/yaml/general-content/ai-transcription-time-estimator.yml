@@ -1,0 +1,108 @@
+name: AI Transcription Time Estimator
+slug: ai-transcription-time-estimator
+category: general-content
+complexity: simple
+version: "1.0"
+
+metadata:
+  created_by: BrassTranscripts Team
+  last_updated: "2025-11"
+  source_url: "https://brasstranscripts.com/blog/how-long-does-ai-transcription-take-real-processing-times"
+  license: MIT
+
+use_cases:
+  - Time Planning
+  - Workflow Optimization
+  - Deadline Management
+  - Timeline Estimation
+  - Project Scheduling
+
+description: |
+  Calculate accurate AI transcription processing times for BrassTranscripts and understand realistic delivery expectations for your audio files. Helps with deadline planning, workflow optimization, and managing client expectations.
+
+prompt: |
+  Calculate my AI transcription processing time:
+
+  **My Files:**
+  - Total audio duration: [X hours and X minutes, e.g., "2 hours 30 minutes"]
+  - Number of files: [X files]
+  - Average file length: [X minutes per file]
+  - Upload method: [Single file / Multiple files in sequence]
+
+  **BrassTranscripts Processing Guidelines:**
+  - Processing speed: 1-3 minutes per hour of audio
+  - Typical processing time: ~2 minutes per hour of audio
+  - Files process sequentially (one at a time if uploading multiple)
+
+  **Please Calculate:**
+
+  1. **Per-file processing time**
+     - Fast estimate (1 min/hour of audio)
+     - Typical estimate (2 min/hour of audio)
+     - Conservative estimate (3 min/hour of audio)
+
+  2. **Total processing time**
+     - If uploading all files at once (sequential processing)
+     - If uploading files one-by-one (includes my upload time)
+
+  3. **Timeline with buffer**
+     - Add recommended time buffer for safety
+     - Suggested "delivery by" time if I upload now
+
+  **Then provide:**
+  - **Realistic deadline**: When I can expect all transcripts
+  - **Buffer recommendation**: How much extra time to allow
+  - **Workflow tips**: Best practices for my specific scenario
+
+  Be specific with time estimates and show the math.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
+  ---
+
+input_variables:
+  - name: total_audio_duration
+    required: true
+    type: string
+    example: "5 hours 45 minutes"
+    purpose: Determines total processing time calculation
+
+  - name: number_of_files
+    required: true
+    type: integer
+    example: 12
+    purpose: Helps understand sequential processing implications
+
+  - name: average_file_length
+    required: true
+    type: string
+    example: "30 minutes per file"
+    purpose: Allows per-file time estimates
+
+  - name: upload_method
+    required: true
+    type: string
+    example: "Multiple files in sequence"
+    purpose: Determines if sequential processing delay applies
+
+expected_output:
+  - Per-file processing time estimates (fast, typical, conservative)
+  - Total processing time calculation for all files
+  - Sequential processing timeline if uploading multiple files
+  - Realistic delivery time from upload to final transcript
+  - Buffer time recommendation for deadline planning
+  - Workflow optimization tips specific to file count and sizes
+  - Example timeline showing when each file would complete
+
+compatible_models:
+  - ChatGPT (GPT-3.5, GPT-4, GPT-4o)
+  - Claude (Claude 3 Opus, Sonnet, Haiku)
+  - Google Gemini
+  - Microsoft Copilot
+
+tags:
+  - time-estimation
+  - processing-time
+  - workflow-planning
+  - deadline-management
+  - transcription-speed
