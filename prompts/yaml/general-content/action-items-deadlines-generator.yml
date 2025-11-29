@@ -1,0 +1,136 @@
+name: "Action Items and Deadlines Generator"
+category: "General Content"
+difficulty: "Intermediate"
+estimated_tokens: "500-700"
+version: "1.0.0"
+
+description: "Convert conversational commitments into trackable tasks with clear ownership and deadlines. This prompt transforms casual discussion points into structured accountability systems for freelancer-client collaboration."
+
+metadata:
+  industry: "Project Management"
+  use_cases:
+    - "Project kickoff meetings"
+    - "Progress review calls"
+    - "Scope change discussions"
+    - "Client check-ins"
+    - "Team coordination"
+    - "Project management"
+
+  target_audience:
+    - "Freelancers"
+    - "Project managers"
+    - "Consultants"
+    - "Team leads"
+    - "Account managers"
+
+  prerequisites:
+    - "Meeting or call transcript"
+    - "Understanding of project context"
+    - "Knowledge of participant roles"
+
+  outputs:
+    - "Structured action items list"
+    - "Clear ownership assignments"
+    - "Timeline tracking"
+    - "Follow-up questions"
+
+prompt_template: |
+  Please analyze this transcript and create a comprehensive action items list from our client conversation.
+
+  TRANSCRIPT: [Paste your client call transcript here]
+
+  Extract all commitments, tasks, and deadlines mentioned, then organize them into this format:
+
+  ## IMMEDIATE ACTION ITEMS (This Week)
+
+  ### Freelancer Responsibilities:
+  - [ ] [Specific task] - Due: [Date/Timeline]
+  - [ ] [Specific task] - Due: [Date/Timeline]
+
+  ### Client Responsibilities:
+  - [ ] [Specific task] - Due: [Date/Timeline]
+  - [ ] [Specific task] - Due: [Date/Timeline]
+
+  ## UPCOMING MILESTONES (Next 2-4 Weeks)
+
+  ### Project Deliverables:
+  - [ ] [Milestone] - Target: [Date]
+  - [ ] [Milestone] - Target: [Date]
+
+  ### Review Points:
+  - [ ] [Review item] - Scheduled: [Date]
+  - [ ] [Review item] - Scheduled: [Date]
+
+  ## PENDING ITEMS (Waiting for Information)
+  - [ ] [Item waiting on client input] - Needed by: [Date]
+  - [ ] [External dependency] - Expected: [Date]
+
+  ## FOLLOW-UP QUESTIONS
+  Items that need clarification in next conversation:
+  1. [Question about ambiguous requirement]
+  2. [Question about timeline or priority]
+
+  Please be specific about deadlines and responsibilities. If dates weren't explicitly mentioned, note "Timeline TBD" and flag for follow-up discussion.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "Transcript from a project kickoff call discussing website redesign timeline, client responsibilities for providing content, and freelancer deliverables."
+
+example_output: |
+  ### Action Items from Website Redesign Kickoff Call
+
+  #### IMMEDIATE ACTION ITEMS (This Week)
+
+  **Freelancer Responsibilities:**
+  - [ ] Create initial wireframes for homepage and product pages - Due: Friday, March 15
+  - [ ] Set up staging environment for development - Due: Wednesday, March 13
+  - [ ] Send brand questionnaire to client - Due: Tomorrow, March 11
+
+  **Client Responsibilities:**
+  - [ ] Provide high-resolution logo files and brand assets - Due: Thursday, March 14
+  - [ ] Compile list of competitor websites for reference - Due: Friday, March 15
+
+  #### PENDING ITEMS (Waiting for Information)
+  - [ ] Final decision on e-commerce platform integration - Needed by: March 20
+  - [ ] Approval from legal team on privacy policy updates - Expected: March 18
+
+best_practices:
+  - "Clear ownership: Always specify who is responsible for each action item to avoid confusion"
+  - "Realistic deadlines: Flag unrealistic timelines for discussion rather than accepting them blindly"
+  - "Dependency tracking: Note items that depend on other tasks or external resources"
+  - "Follow-up planning: Include items that need clarification to prevent project delays"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "structured_checklist"
+
+  integration_examples:
+    - name: "Task Management Integration"
+      description: "Import action items into project management tools"
+      code_snippet: |
+        action_items = extract_action_items(transcript)
+        for item in action_items:
+            task_manager.create_task(item)
+
+    - name: "Calendar Scheduling"
+      description: "Add deadlines to project calendars"
+      code_snippet: |
+        deadlines = extract_deadlines(action_items)
+        calendar.add_events(deadlines, reminder=24_hours)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/freelancer-client-call-transcription-productivity-guide#ai-prompt-action-items-and-deadlines-generator"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "action-items"
+  - "project-management"
+  - "deadline-tracking"
+  - "accountability"
+  - "task-management"
+  - "client-communication"
+  - "freelancer-tools"

@@ -1,0 +1,124 @@
+metadata:
+  id: "deposition-analysis-case-strategy"
+  title: "Deposition Analysis for Case Strategy"
+  category: "legal-professional"
+  subcategory: "litigation-support"
+  difficulty: "advanced"
+  estimated_tokens: "1000-1400"
+  version: "1.0.0"
+  last_updated: "2025-11-28"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/legal-practice-ai-tools-solo-firm-transcription#prompt-1-deposition-analysis-for-case-strategy"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "legal"
+  - "deposition"
+  - "litigation"
+  - "case-strategy"
+  - "discovery"
+
+prompt:
+  system_message: |
+    You are a legal analysis AI specialized in analyzing deposition transcripts
+    to extract critical information for case strategy and preparation.
+    Important: AI transcription is for internal reference only, not official court records.
+
+  user_template: |
+    Analyze this deposition transcript to extract critical information for case strategy and preparation:
+
+    **DEPOSITION SUMMARY**
+
+    **Case Information:**
+    - Witness Name: [Extract from transcript]
+    - Date and Duration: [Deposition details]
+    - Counsel Present: [Attorney identifications]
+    - Case Topic/Subject: [Primary legal issues discussed]
+
+    **KEY ADMISSIONS AND TESTIMONY**
+
+    **Favorable Admissions:**
+    [Statements supporting your client's position]
+    - Direct quotes with page/time references
+    - Witness acknowledgments of facts
+    - Admissions of fault or responsibility
+    - Confirmations of damages or injury
+
+    **Adverse Statements:**
+    [Statements that may challenge your client's position]
+    - Contradictory testimony
+    - Denials of key facts
+    - Alternative explanations provided
+    - Potential credibility issues
+
+    **FACTUAL FINDINGS**
+
+    **Timeline Construction:**
+    [Chronological sequence of events from testimony]
+    - Key dates and timeframes mentioned
+    - Sequence of actions described
+    - Witness location and activities
+    - Communication patterns and timing
+
+    **Damages Documentation:**
+    [Financial and personal injury information]
+    - Specific monetary amounts mentioned
+    - Medical treatment descriptions
+    - Impact on daily life and work
+    - Future consequences discussed
+
+    **DISCOVERY OPPORTUNITIES**
+
+    **Follow-up Questions:**
+    [Areas requiring additional investigation]
+    - Incomplete answers requiring clarification
+    - References to documents not yet produced
+    - Mentions of other potential witnesses
+    - Technical details needing expert review
+
+    **Document Requests:**
+    [Materials referenced but not provided]
+    - Contracts, agreements, or correspondence mentioned
+    - Medical records or treatment documentation
+    - Financial records supporting damages
+    - Communication records (emails, texts, calls)
+
+    **STRATEGIC ANALYSIS**
+
+    **Witness Credibility Assessment:**
+    - Consistency of statements throughout deposition
+    - Areas of uncertainty or unclear memory
+    - Defensive or evasive responses
+    - Corroboration with other evidence
+
+    **Case Strengths and Weaknesses:**
+    - Strong points supporting your client's position
+    - Potential vulnerabilities requiring attention
+    - Areas needing additional evidence or witnesses
+    - Settlement leverage points identified
+
+    Focus on extracting specific, actionable information that directly supports case preparation and strategic decision-making.
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
+    ---
+
+    Deposition transcript:
+    {transcript_content}
+
+use_cases:
+  - "Litigation preparation and case strategy"
+  - "Motion drafting support"
+  - "Settlement analysis and negotiation"
+  - "Trial preparation and cross-examination planning"
+  - "Case file documentation and organization"
+
+performance:
+  typical_processing_time: "90-150 seconds"
+  optimal_transcript_length: "60-180 minutes"

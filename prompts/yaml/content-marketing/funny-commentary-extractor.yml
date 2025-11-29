@@ -1,0 +1,145 @@
+name: "Funny Commentary Extractor"
+category: "Content Marketing"
+difficulty: "Intermediate"
+estimated_tokens: "600-800"
+version: "1.0.0"
+
+description: "Identify humorous commentary, witty observations, and entertaining personality moments perfect for social media. This prompt helps streamers find their funniest moments for viral content creation."
+
+metadata:
+  industry: "Gaming & Entertainment"
+  use_cases:
+    - "Comedy compilation videos"
+    - "TikTok content creation"
+    - "Twitter clip sharing"
+    - "Instagram Reels"
+    - "Community engagement"
+    - "Brand building"
+
+  target_audience:
+    - "Gaming streamers"
+    - "Content creators"
+    - "Social media managers"
+    - "Comedy content creators"
+    - "Gaming influencers"
+
+  prerequisites:
+    - "Gaming stream transcript"
+    - "Understanding of humor styles"
+    - "Knowledge of social media platforms"
+    - "Familiarity with gaming culture"
+
+  outputs:
+    - "Timestamped funny moments"
+    - "Humor type categorization"
+    - "Platform-specific recommendations"
+    - "Social media captions"
+
+prompt_template: |
+  Please analyze this gaming stream transcript and extract the funniest commentary and entertaining personality moments.
+
+  STREAM TRANSCRIPT: [Paste your gaming stream transcript here]
+
+  Find these types of funny content:
+
+  ## SPONTANEOUS HUMOR
+  - Unexpected funny observations about the game
+  - Witty responses to in-game situations
+  - Spontaneous jokes or commentary
+  - Funny reactions to game mechanics or glitches
+
+  ## CHAT INTERACTIONS
+  - Humorous responses to viewer comments
+  - Funny reading of usernames, donations, or messages
+  - Interactive jokes with the community
+  - Entertaining responses to trolls or funny questions
+
+  ## PERSONALITY MOMENTS
+  - Self-deprecating humor about gameplay mistakes
+  - Funny personal stories shared during gameplay
+  - Entertaining rants or passionate opinions
+  - Humorous character voices or impressions
+
+  ## RELATABLE CONTENT
+  - Comments that resonate with general audiences
+  - Gaming frustrations that non-gamers understand
+  - Universal experiences told in a funny way
+  - Life observations made during gameplay
+
+  For each funny moment, provide:
+  - **Timestamp**: Exact start and end time
+  - **Humor Type**: Observational, self-deprecating, interactive, etc.
+  - **Standalone Value**: Whether it's funny without game context
+  - **Social Platform**: Best suited for TikTok/Twitter/Instagram
+  - **Caption Suggestion**: Engaging social media caption
+  - **Hashtag Ideas**: Relevant hashtags for discovery
+
+  Focus on content that showcases your personality and humor style rather than just gaming skill.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "3-hour horror game stream transcript with chat interactions, funny reactions to jump scares, commentary on game mechanics, and spontaneous humor throughout."
+
+example_output: |
+  ### Funny Moments from 3-Hour Horror Game Stream
+
+  #### SPONTANEOUS HUMOR
+
+  **Moment 1: Game Glitch Reaction**
+  - **Timestamp**: 1:23:45 - 1:24:15
+  - **Humor Type**: Observational comedy
+  - **Standalone Value**: Yes - funny without game knowledge
+  - **Social Platform**: TikTok (perfect for trending sounds)
+  - **Caption Suggestion**: "When the game breaks but you're already broken inside 💀"
+  - **Hashtag Ideas**: #gaming #glitch #relatable #broken
+
+  #### PERSONALITY MOMENTS
+
+  **Moment 2: Self-Roasting Skills**
+  - **Timestamp**: 0:45:20 - 0:45:50
+  - **Humor Type**: Self-deprecating humor
+  - **Standalone Value**: Partially - gaming context helpful but not required
+  - **Social Platform**: Twitter (perfect for quote tweets)
+  - **Caption Suggestion**: "Sometimes the real enemy is yourself"
+  - **Hashtag Ideas**: #selfroast #gaming #truth #mood
+
+best_practices:
+  - "Personality over performance: Prioritize funny commentary over impressive gameplay for broader appeal"
+  - "Universal humor: Focus on moments that work for both gaming and general audiences"
+  - "Authenticity matters: Genuine, spontaneous humor performs better than forced jokes"
+  - "Context consideration: Note which moments need gaming knowledge versus universal appeal"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "comedy_highlights"
+
+  integration_examples:
+    - name: "Comedy Compilation Creator"
+      description: "Automatically create funny moment compilations"
+      code_snippet: |
+        funny_moments = extract_funny_commentary(transcript)
+        compilation = create_comedy_reel(funny_moments)
+
+    - name: "Social Media Scheduler"
+      description: "Queue funny clips for optimal posting"
+      code_snippet: |
+        humor_clips = identify_funny_moments(transcript)
+        for clip in humor_clips:
+            schedule_social_post(clip, optimal_time)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/gaming-stream-transcription-highlight-creation-guide#ai-prompt-funny-commentary-extractor"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "comedy-content"
+  - "funny-moments"
+  - "gaming-humor"
+  - "personality-content"
+  - "viral-clips"
+  - "stream-highlights"
+  - "social-media"

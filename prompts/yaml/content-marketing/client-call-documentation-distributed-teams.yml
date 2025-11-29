@@ -1,0 +1,80 @@
+metadata:
+  id: "client-call-documentation-distributed-teams"
+  title: "Client Call Documentation for Distributed Teams"
+  category: "content-marketing"
+  subcategory: "async-communication"
+  difficulty: "intermediate"
+  estimated_tokens: "500-700"
+  version: "1.0.0"
+  last_updated: "2025-11-28"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/remote-work-transcription-playbook-async-communication#prompt-3-client-call-documentation-for-distributed-teams"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "client-communication"
+  - "remote-work"
+  - "async-communication"
+  - "account-management"
+  - "distributed-teams"
+
+prompt:
+  system_message: |
+    You are a documentation AI specialized in transforming client call transcripts
+    into comprehensive documentation for distributed teams.
+
+  user_template: |
+    Transform this client call transcript into documentation that keeps distributed team members informed and aligned:
+
+    **CLIENT CALL OVERVIEW**
+    - Client: [Name/Company]
+    - Date & Attendees: [Include timezones]
+    - Call Purpose: [Objective achieved]
+    - Outcome: [Success/Next steps]
+
+    **KEY CLIENT FEEDBACK**
+    [Direct quotes and specific feedback on deliverables]
+
+    **SCOPE CHANGES OR REQUESTS**
+    [New requirements, modifications, timeline impacts]
+
+    **DECISIONS REQUIRING TEAM INPUT**
+    [Items where distributed team expertise is needed]
+
+    **ACTION ITEMS BY TEAM**
+    [Specific tasks for different team members/departments]
+
+    **CLIENT CONTEXT FOR FUTURE INTERACTIONS**
+    [Preferences, concerns, communication style notes]
+
+    **TIMELINE IMPLICATIONS**
+    [How discussion affects current project timeline]
+
+    **FOLLOW-UP COMMUNICATIONS**
+    [Emails to send, meetings to schedule, documents to share]
+
+    Format for easy scanning by team members in different timezones who need to understand client status quickly.
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
+    ---
+
+    Client call transcript:
+    {transcript_content}
+
+use_cases:
+  - "Client status updates for project teams"
+  - "Account management documentation and handoffs"
+  - "Sales follow-up documentation for proposal teams"
+  - "Support escalation documentation for technical teams"
+  - "Stakeholder briefings on client relationships"
+
+performance:
+  typical_processing_time: "45-75 seconds"
+  optimal_transcript_length: "20-60 minutes"

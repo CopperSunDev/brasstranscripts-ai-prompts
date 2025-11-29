@@ -1,0 +1,76 @@
+metadata:
+  id: "async-standup-documentation"
+  title: "Async Standup Documentation"
+  category: "content-marketing"
+  subcategory: "async-communication"
+  difficulty: "beginner"
+  estimated_tokens: "400-600"
+  version: "1.0.0"
+  last_updated: "2025-11-28"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/remote-work-transcription-playbook-async-communication#prompt-2-async-standup-documentation"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "remote-work"
+  - "async-communication"
+  - "standup-meetings"
+  - "agile"
+  - "distributed-teams"
+
+prompt:
+  system_message: |
+    You are a documentation AI specialized in converting team standup meetings
+    into structured async-friendly formats for distributed teams.
+
+  user_template: |
+    Convert this team standup transcript into structured async communication that allows distributed teammates to contribute asynchronously:
+
+    **TEAM VELOCITY SNAPSHOT**
+    [Overall team progress, blockers, momentum indicators]
+
+    **INDIVIDUAL UPDATES**
+    For each team member:
+    - **[Name] ([Timezone])**
+    - Yesterday: [Key accomplishments]
+    - Today: [Planned work]
+    - Blockers: [Specific obstacles requiring help]
+    - Available for: [Collaboration windows in multiple timezones]
+
+    **CROSS-TEAM DEPENDENCIES**
+    [Work requiring coordination between team members]
+
+    **ASYNC COLLABORATION OPPORTUNITIES**
+    [Tasks suitable for handoff between timezones]
+
+    **URGENT ITEMS REQUIRING 24-HOUR RESPONSE**
+    [Time-sensitive decisions or blockers]
+
+    **RESOURCE SHARING**
+    [Tools, documentation, or knowledge shared during standup]
+
+    Include timezone conversions for all mentioned times and deadlines.
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
+    ---
+
+    Standup transcript:
+    {transcript_content}
+
+use_cases:
+  - "Daily standups for remote teams"
+  - "Sprint planning updates for distributed Agile teams"
+  - "Project team coordination across timezones"
+  - "Follow-the-sun workflow handoffs"
+  - "Manager briefings on team status"
+
+performance:
+  typical_processing_time: "30-45 seconds"
+  optimal_transcript_length: "10-30 minutes"

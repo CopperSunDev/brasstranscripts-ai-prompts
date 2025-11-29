@@ -1,0 +1,116 @@
+metadata:
+  id: "social-media-content-extraction-suite"
+  title: "Social Media Content Extraction Suite"
+  category: "content-marketing"
+  subcategory: "content-repurposing"
+  difficulty: "intermediate"
+  estimated_tokens: "1000-1500"
+  version: "1.0.0"
+  last_updated: "2025-11-28"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/content-creator-transcription-stack-youtube-blog-pipeline#prompt-2-social-media-content-extraction-suite"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "social-media"
+  - "content-repurposing"
+  - "multi-platform"
+  - "content-creators"
+  - "instagram"
+  - "tiktok"
+
+prompt:
+  system_message: |
+    You are a social media content AI specialized in extracting platform-optimized
+    content from video transcripts for multi-platform distribution.
+
+  user_template: |
+    Extract platform-optimized social media content from this video transcript for multi-platform distribution:
+
+    **INSTAGRAM CONTENT PACKAGE**
+
+    **Carousel Post (6-8 slides):**
+    - Slide 1: Eye-catching title slide with main video insight
+    - Slides 2-6: Key takeaways formatted for visual consumption
+    - Slide 7: Call-to-action directing to full video
+    - Slide 8: Creator branding and social proof
+
+    **Instagram Stories (8-10 story sequence):**
+    - Stories 1-2: Behind-the-scenes or creator introduction
+    - Stories 3-7: Bite-sized insights with interactive elements (polls, questions)
+    - Stories 8-9: Quick tips or actionable advice
+    - Story 10: Swipe-up to full video content
+
+    **TIKTOK/SHORTS SCRIPTS**
+
+    **Hook-Based Short Content (3-5 scripts):**
+    - Script 1: Surprising fact or statistic from video (hook + reveal format)
+    - Script 2: "Before you..." warning or advice format
+    - Script 3: Quick tutorial or demonstration
+    - Script 4: Controversial opinion or hot take
+    - Script 5: Transformation or before/after concept
+
+    Each script should include:
+    - Strong opening hook (first 3 seconds)
+    - Main content delivery (15-45 seconds)
+    - Clear call-to-action
+    - Trending audio suggestions if applicable
+
+    **TWITTER/X THREAD SERIES**
+
+    **Thread Structure (8-12 tweets):**
+    - Tweet 1: Hook with thread announcement
+    - Tweets 2-9: Main insights broken into digestible pieces
+    - Tweet 10: Key takeaway or actionable advice
+    - Tweet 11: Link to full video content
+    - Tweet 12: Engagement question for discussion
+
+    **LINKEDIN PROFESSIONAL CONTENT**
+
+    **Thought Leadership Post:**
+    - Professional insight derived from video content
+    - Industry-relevant statistics and data
+    - Call-to-action for professional networking
+    - Connection to creator's expertise and background
+
+    **PINTEREST STRATEGY**
+
+    **Pin Descriptions and Boards:**
+    - SEO-optimized pin descriptions for blog traffic
+    - Board categories for content organization
+    - Seasonal or trending hashtags for discovery
+    - Visual content suggestions for pin creation
+
+    **CROSS-PLATFORM SCHEDULING STRATEGY**
+
+    **Content Calendar Recommendations:**
+    - Optimal posting times for each platform
+    - Content sequencing for maximum cross-platform synergy
+    - Platform-specific hashtag strategies
+    - Engagement optimization techniques
+
+    Focus on creating content that feels native to each platform while maintaining consistent messaging and creator brand voice.
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
+    ---
+
+    Video transcript for social media extraction:
+    {transcript_content}
+
+use_cases:
+  - "Content creator workflow optimization"
+  - "Brand marketing content repurposing"
+  - "Thought leadership content creation"
+  - "E-commerce product marketing"
+  - "Event promotion across platforms"
+
+performance:
+  typical_processing_time: "90-150 seconds"
+  optimal_transcript_length: "15-45 minutes"

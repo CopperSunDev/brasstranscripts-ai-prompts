@@ -1,0 +1,146 @@
+name: "Action Items and Responsibility Tracker"
+category: "Executive Business"
+difficulty: "Intermediate"
+estimated_tokens: "600-900"
+version: "1.0.0"
+
+description: "Transform meeting discussions into clear action items with specific ownership and deadlines. This prompt creates accountability systems that prevent tasks from falling through the cracks in small business teams."
+
+metadata:
+  industry: "Business & Corporate"
+  use_cases:
+    - "Small business team meetings"
+    - "Project planning sessions"
+    - "Client meeting follow-up"
+    - "Strategic planning meetings"
+    - "Performance review meetings"
+    - "Cross-department coordination"
+
+  target_audience:
+    - "Small business owners"
+    - "Team leaders"
+    - "Project managers"
+    - "Operations managers"
+    - "Department heads"
+
+  prerequisites:
+    - "Meeting transcript"
+    - "Understanding of team structure"
+    - "Knowledge of project context"
+    - "Awareness of business objectives"
+
+  outputs:
+    - "Organized action items"
+    - "Clear responsibility assignments"
+    - "Deadline tracking"
+    - "Accountability documentation"
+
+prompt_template: |
+  Please analyze this business meeting transcript and extract all action items, commitments, and responsibilities with clear ownership.
+
+  MEETING TRANSCRIPT: [Paste your meeting transcript here]
+
+  Organize the action items in this format:
+
+  ## IMMEDIATE ACTION ITEMS (This Week)
+  Extract specific tasks with clear ownership:
+
+  ### [Person Name] - Responsibilities:
+  - [ ] [Specific actionable task] - Due: [Date/Timeline]
+  - [ ] [Specific actionable task] - Due: [Date/Timeline]
+
+  ### [Person Name] - Responsibilities:
+  - [ ] [Specific actionable task] - Due: [Date/Timeline]
+  - [ ] [Specific actionable task] - Due: [Date/Timeline]
+
+  ## PROJECT MILESTONES (Next 2-4 Weeks)
+  Major deliverables and deadlines mentioned:
+
+  ### Week of [Date]:
+  - [ ] [Milestone/Deliverable] - Owner: [Name] - Status: [New/In Progress/Review]
+  - [ ] [Milestone/Deliverable] - Owner: [Name] - Status: [New/In Progress/Review]
+
+  ## DECISIONS MADE
+  Important decisions that affect ongoing work:
+  - [Decision topic]: [What was decided] - Impact: [How this affects current projects]
+  - [Decision topic]: [What was decided] - Impact: [How this affects current projects]
+
+  ## FOLLOW-UP REQUIRED
+  Items that need additional discussion or information:
+  - [ ] [Topic for follow-up] - Owner: [Name] - Deadline: [When this needs resolution]
+  - [ ] [Topic for follow-up] - Owner: [Name] - Deadline: [When this needs resolution]
+
+  ## CLIENT/EXTERNAL DEPENDENCIES
+  Items waiting on external parties:
+  - [ ] [External requirement] - Contact: [Who to follow up with] - Expected: [Timeline]
+
+  ## BUDGET/RESOURCE COMMITMENTS
+  Financial or resource allocations discussed:
+  - [Resource/Budget item]: [Amount/Details] - Approved by: [Name] - For: [Purpose]
+
+  Please be specific about deadlines and ownership. If dates weren't explicitly mentioned, use phrases like "by end of week" or "before next meeting" and flag for clarification.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "Small business team meeting with project updates, resource allocation discussions, and deadline setting."
+
+example_output: |
+  ### Action Items from Q1 Planning Meeting
+
+  #### IMMEDIATE ACTION ITEMS (This Week)
+
+  **Sarah (Marketing Manager) - Responsibilities:**
+  - [ ] Finalize Q1 campaign budget allocation - Due: Friday, March 15
+  - [ ] Schedule content calendar review with design team - Due: Wednesday, March 13
+  - [ ] Submit social media advertising proposals - Due: End of week
+
+  **Mike (Operations) - Responsibilities:**
+  - [ ] Research new inventory management software - Due: Tuesday, March 12
+  - [ ] Complete vendor contract negotiations - Due: Thursday, March 14
+  - [ ] Update team on shipping process changes - Due: Before next meeting
+
+  #### DECISIONS MADE
+  - Budget allocation: Marketing gets additional $5,000 for Q1 campaigns - Impact: Need to adjust other department budgets
+  - Meeting schedule: Weekly check-ins moved from Monday to Wednesday - Impact: All team members need calendar updates
+
+best_practices:
+  - "Individual accountability: Always assign specific people to tasks to prevent confusion"
+  - "Timeline clarity: Use specific dates when mentioned, or relative timeframes when dates are unclear"
+  - "Dependency tracking: Note external dependencies that could impact internal deadlines"
+  - "Decision documentation: Record decisions that affect ongoing work for future reference"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "structured_action_items"
+
+  integration_examples:
+    - name: "Project Management Sync"
+      description: "Import action items directly into PM tools"
+      code_snippet: |
+        action_items = extract_action_items(transcript)
+        for item in action_items:
+            pm_tool.create_task(item, owner, deadline)
+
+    - name: "Calendar Integration"
+      description: "Create calendar events for deadlines"
+      code_snippet: |
+        action_items = analyze_meeting_transcript(transcript)
+        for item in action_items:
+            calendar.create_reminder(item.deadline, item.owner)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/small-business-meeting-minutes-ai-transcription-accountability#ai-prompt-action-items-and-responsibility-tracker"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "action-items"
+  - "responsibility-tracking"
+  - "team-accountability"
+  - "project-management"
+  - "meeting-follow-up"
+  - "deadline-management"
+  - "small-business"

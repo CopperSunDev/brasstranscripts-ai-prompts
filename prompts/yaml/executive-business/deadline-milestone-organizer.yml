@@ -1,0 +1,156 @@
+name: "Deadline and Milestone Organizer"
+category: "Executive Business"
+difficulty: "Advanced"
+estimated_tokens: "800-1200"
+version: "1.0.0"
+
+description: "Transform scattered timeline discussions into organized project schedules with clear dependencies. This prompt creates comprehensive project timelines from meeting conversations."
+
+metadata:
+  industry: "Business & Corporate"
+  use_cases:
+    - "Project planning"
+    - "Resource allocation"
+    - "Risk management"
+    - "Team coordination"
+    - "Stakeholder communication"
+    - "Milestone tracking"
+
+  target_audience:
+    - "Project managers"
+    - "Team leaders"
+    - "Operations managers"
+    - "Business owners"
+    - "Department heads"
+
+  prerequisites:
+    - "Meeting transcript with timeline discussions"
+    - "Understanding of project scope"
+    - "Knowledge of team capabilities"
+    - "Awareness of external dependencies"
+
+  outputs:
+    - "Comprehensive project timelines"
+    - "Dependency maps"
+    - "Resource schedules"
+    - "Risk assessments"
+
+prompt_template: |
+  Please analyze this meeting transcript and organize all deadlines, milestones, and time-sensitive commitments into a clear project timeline.
+
+  MEETING TRANSCRIPT: [Paste your meeting transcript here]
+
+  Create an organized timeline:
+
+  ## THIS WEEK (Immediate Deadlines)
+  **[Day of Week, Date]**:
+  - [Task/Deadline] - Owner: [Name] - Priority: [High/Medium/Low]
+  - [Task/Deadline] - Owner: [Name] - Priority: [High/Medium/Low]
+
+  **[Day of Week, Date]**:
+  - [Task/Deadline] - Owner: [Name] - Priority: [High/Medium/Low]
+
+  ## NEXT WEEK ([Date Range])
+  **Week of [Date]**:
+  - [Milestone/Deliverable] - Owner: [Name] - Dependencies: [What must be done first]
+  - [Milestone/Deliverable] - Owner: [Name] - Dependencies: [What must be done first]
+
+  ## MONTH AHEAD ([Date Range])
+  **[Specific Date or Week]**:
+  - [Major milestone] - Owner: [Name] - Significance: [Why this matters]
+  - [Major milestone] - Owner: [Name] - Significance: [Why this matters]
+
+  ## CRITICAL PATH ITEMS
+  Most important deadlines that could delay other work:
+  1. [Deadline] - [Date] - Impact if missed: [Consequences]
+  2. [Deadline] - [Date] - Impact if missed: [Consequences]
+  3. [Deadline] - [Date] - Impact if missed: [Consequences]
+
+  ## DEPENDENCY MAPPING
+  Tasks that depend on other work being completed first:
+  - [Task A] must be completed before [Task B] can start
+  - [External dependency] required before [Internal task] can proceed
+  - [Team member] needs [resource/information] from [other person] by [date]
+
+  ## RESOURCE SCHEDULING
+  People and resources needed at specific times:
+  - **[Date/Week]**: [Person] needed for [task] - [Time commitment]
+  - **[Date/Week]**: [Resource] required for [project] - [Details]
+
+  ## REVIEW AND CHECK-IN SCHEDULE
+  Suggested progress review points:
+  - **[Date]**: Progress check on [specific items]
+  - **[Date]**: Final review before [major deadline]
+  - **[Date]**: Post-completion analysis and next phase planning
+
+  ## RISK DEADLINES
+  Items with tight timelines or external constraints:
+  - [Deadline] - Risk level: [High/Medium/Low] - Mitigation: [How to prevent delays]
+
+  Please identify any scheduling conflicts or unrealistic timelines that need discussion.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "Project planning meeting transcript with timeline discussions, resource allocation, and milestone planning for Q4 product launch."
+
+example_output: |
+  ### Project Timeline: Q4 Product Launch
+
+  #### THIS WEEK (November 26-30, 2024)
+  **Tuesday, November 26**:
+  - Complete user interface mockups - Owner: Sarah - Priority: High
+  - Review vendor contracts for final approval - Owner: Mike - Priority: Medium
+
+  **Thursday, November 28**:
+  - Submit budget proposal to finance team - Owner: Lisa - Priority: High
+  - Finalize marketing copy for review - Owner: Sarah - Priority: Medium
+
+  **Friday, November 29**:
+  - Complete technical architecture review - Owner: John - Priority: High
+  - Send client presentation for Monday meeting - Owner: Mike - Priority: High
+
+  #### CRITICAL PATH ITEMS
+  1. **Budget approval** - December 1 - Impact if missed: Development cannot begin, entire timeline shifts right
+  2. **Technical architecture review** - November 29 - Impact if missed: Development team blocked, potential scope changes
+  3. **Client beta feedback** - December 15 - Impact if missed: No time for fixes before launch, quality risk
+
+best_practices:
+  - "Critical path identification: Highlight dependencies that could delay multiple other tasks"
+  - "Resource conflict detection: Identify when team members have overlapping commitments"
+  - "Buffer time planning: Suggest realistic timelines that account for potential delays"
+  - "External dependency tracking: Clearly mark items requiring coordination outside the team"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "project_timeline"
+
+  integration_examples:
+    - name: "Project Management Sync"
+      description: "Export timelines to Gantt charts and PM software"
+      code_snippet: |
+        timeline = organize_project_timeline(transcript)
+        gantt_chart = export_to_project_tool(timeline)
+
+    - name: "Calendar Integration"
+      description: "Sync deadlines and milestones to team calendars"
+      code_snippet: |
+        milestones = extract_deadlines(transcript)
+        for milestone in milestones:
+            add_to_calendar(milestone, team_members)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/small-business-meeting-minutes-ai-transcription-accountability#ai-prompt-deadline-and-milestone-organizer"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "project-timelines"
+  - "deadline-management"
+  - "milestone-tracking"
+  - "dependency-mapping"
+  - "resource-scheduling"
+  - "critical-path"
+  - "project-planning"

@@ -1,0 +1,74 @@
+metadata:
+  id: "remote-meeting-summary-generator"
+  title: "Remote Meeting Summary Generator"
+  category: "content-marketing"
+  subcategory: "async-communication"
+  difficulty: "beginner"
+  estimated_tokens: "400-600"
+  version: "1.0.0"
+  last_updated: "2025-11-28"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/remote-work-transcription-playbook-async-communication#prompt-1-remote-meeting-summary-generator"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "remote-work"
+  - "async-communication"
+  - "meeting-summary"
+  - "distributed-teams"
+  - "timezone-friendly"
+
+prompt:
+  system_message: |
+    You are a documentation AI specialized in creating comprehensive meeting summaries
+    optimized for distributed teams and asynchronous communication workflows.
+
+  user_template: |
+    Transform this meeting transcript into a comprehensive summary for distributed team members who couldn't attend. Structure the output for async consumption:
+
+    **EXECUTIVE SUMMARY** (3-4 sentences maximum)
+    [Key decisions, major outcomes, critical action items]
+
+    **PARTICIPANTS & TIMEZONES**
+    [List each speaker with their role and timezone, note if they left early/joined late]
+
+    **DECISIONS MADE**
+    [Specific decisions with context and rationale]
+
+    **ACTION ITEMS**
+    [Owner name, specific task, deadline, dependencies]
+
+    **DISCUSSION CONTEXT**
+    [Background information, assumptions, alternatives considered]
+
+    **QUESTIONS FOR ASYNC TEAM**
+    [Specific questions requiring input from team members not present]
+
+    **NEXT STEPS**
+    [Timeline, next meeting, required approvals]
+
+    Focus on providing enough context for team members to contribute meaningfully to follow-up discussions without needing to watch/listen to the entire recording.
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
+    ---
+
+    Meeting transcript:
+    {transcript_content}
+
+use_cases:
+  - "Daily standups for global teams"
+  - "Project status meetings for remote workers"
+  - "Decision-making sessions requiring async input"
+  - "Client meetings with internal team follow-up"
+  - "All-hands meetings for distributed organizations"
+
+performance:
+  typical_processing_time: "30-60 seconds"
+  optimal_transcript_length: "30-90 minutes"

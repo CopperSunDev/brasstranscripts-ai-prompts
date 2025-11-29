@@ -1,0 +1,143 @@
+name: "Scope Change Identifier"
+category: "General Content"
+difficulty: "Advanced"
+estimated_tokens: "700-1000"
+version: "1.0.0"
+
+description: "Detect when conversations introduce new requirements that weren't in the original project scope. This prompt helps freelancers identify scope creep early and manage client expectations professionally."
+
+metadata:
+  industry: "Project Management"
+  use_cases:
+    - "Project progress meetings"
+    - "Client brainstorming sessions"
+    - "Feature request discussions"
+    - "Timeline review meetings"
+    - "Budget planning calls"
+    - "Contract renegotiation"
+
+  target_audience:
+    - "Freelancers"
+    - "Project managers"
+    - "Consultants"
+    - "Service providers"
+    - "Contract workers"
+
+  prerequisites:
+    - "Original project scope documentation"
+    - "Client meeting transcript"
+    - "Understanding of project boundaries"
+    - "Contract negotiation knowledge"
+
+  outputs:
+    - "Scope change analysis"
+    - "Cost and time impact assessment"
+    - "Diplomatic communication templates"
+    - "Change order recommendations"
+
+prompt_template: |
+  Please analyze this client call transcript and identify any potential scope changes or additions to the original project.
+
+  ORIGINAL PROJECT SCOPE: [Paste your original project description/contract scope here]
+
+  CALL TRANSCRIPT: [Paste your client call transcript here]
+
+  Please identify and categorize any scope changes:
+
+  ## NEW REQUIREMENTS INTRODUCED
+  Items mentioned in the call that weren't in original scope:
+  - [Specific new requirement] - Impact: [Time/Cost estimate]
+  - [Specific new requirement] - Impact: [Time/Cost estimate]
+
+  ## SCOPE CLARIFICATIONS
+  Items that may be within scope but need clarification:
+  - [Clarification needed] - Current assumption: [Your understanding]
+  - [Clarification needed] - Current assumption: [Your understanding]
+
+  ## CONFIRMED ORIGINAL SCOPE
+  Elements discussed that confirm original project boundaries:
+  - [Confirmed requirement]
+  - [Confirmed requirement]
+
+  ## RECOMMENDED NEXT STEPS
+  1. Items to propose as paid scope additions
+  2. Items to clarify with client before proceeding
+  3. Items that can be absorbed within current scope
+
+  ## EMAIL TEMPLATE FOR SCOPE DISCUSSION
+  Draft a diplomatic email addressing the scope changes:
+  - Acknowledge the great ideas they've shared
+  - Explain which items are scope additions
+  - Provide time/cost estimates for additions
+  - Confirm the original scope remains on track
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "Transcript from a progress meeting where client discusses adding mobile app integration and multi-language support to an originally web-only e-commerce project."
+
+example_output: |
+  ### Scope Analysis: E-commerce Website Redesign Call
+
+  #### NEW REQUIREMENTS INTRODUCED
+
+  **Mobile App Integration**
+  - Requirement: Native mobile app with push notifications
+  - Impact: +4 weeks development, +$8,000 cost
+  - Status: Not in original web-only project scope
+
+  **Multi-language Support**
+  - Requirement: Spanish and French translations
+  - Impact: +2 weeks for implementation, ongoing translation costs
+  - Status: Original scope specified English-only
+
+  #### SCOPE CLARIFICATIONS
+
+  **Payment Gateway Options**
+  - Clarification needed: Client mentioned "multiple payment options"
+  - Current assumption: Stripe + PayPal (as originally specified)
+
+  #### RECOMMENDED NEXT STEPS
+
+  **Propose as Paid Additions:**
+  - Mobile app development (+$8,000, 4 weeks)
+  - Multi-language support (+$2,500, 2 weeks)
+
+best_practices:
+  - "Documentation protection: Always compare new requests against written project scope to avoid disputes"
+  - "Diplomatic communication: Frame scope changes as exciting opportunities rather than problems"
+  - "Clear impact assessment: Provide specific time and cost estimates for all scope additions"
+  - "Proactive clarification: Address ambiguous items before they become bigger issues"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "scope_analysis_report"
+
+  integration_examples:
+    - name: "Change Order Generation"
+      description: "Automatically create formal change orders"
+      code_snippet: |
+        scope_changes = identify_scope_changes(transcript, original_scope)
+        change_order = generate_change_order(scope_changes)
+
+    - name: "Project Tracking Integration"
+      description: "Update project management systems with scope changes"
+      code_snippet: |
+        scope_analysis = analyze_scope_changes(transcript)
+        project_tracker.update_scope(project_id, scope_analysis)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/freelancer-client-call-transcription-productivity-guide#ai-prompt-scope-change-identifier"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "scope-management"
+  - "project-boundaries"
+  - "change-management"
+  - "client-expectations"
+  - "contract-management"
+  - "freelancer-protection"
+  - "project-analysis"

@@ -1,0 +1,141 @@
+name: "Project Requirements Extractor"
+category: "General Content"
+difficulty: "Intermediate"
+estimated_tokens: "600-900"
+version: "1.0.0"
+
+description: "Transform rambling client conversations into organized project specifications. This prompt helps freelancers convert unstructured client discussions into professional project briefs with clear requirements, timelines, and deliverables."
+
+metadata:
+  industry: "Freelance Services"
+  use_cases:
+    - "Discovery call documentation"
+    - "Scope clarification"
+    - "Project onboarding"
+    - "Client approval"
+    - "Change management"
+    - "Proposal preparation"
+
+  target_audience:
+    - "Freelancers"
+    - "Consultants"
+    - "Agency project managers"
+    - "Service providers"
+    - "Account managers"
+
+  prerequisites:
+    - "Client call transcript"
+    - "Basic project management knowledge"
+    - "Understanding of client business"
+
+  outputs:
+    - "Structured project brief"
+    - "Requirements documentation"
+    - "Timeline and milestones"
+    - "Clarification questions list"
+
+prompt_template: |
+  Please analyze this client call transcript and extract the project requirements in a professional, organized format.
+
+  TRANSCRIPT: [Paste your client call transcript here]
+
+  Please organize the requirements into these sections:
+
+  ## PROJECT OVERVIEW
+  - Brief project summary in 1-2 sentences
+  - Primary business objective or goal
+
+  ## FUNCTIONAL REQUIREMENTS
+  - Core features and capabilities needed
+  - Technical specifications mentioned
+  - Integration requirements with existing systems
+
+  ## DESIGN REQUIREMENTS
+  - Visual style preferences or brand guidelines
+  - User experience expectations
+  - Reference examples or inspirations mentioned
+
+  ## TIMELINE AND MILESTONES
+  - Project deadline or launch date
+  - Key milestones or review points
+  - Dependencies or blocking factors mentioned
+
+  ## BUDGET AND RESOURCES
+  - Budget range or constraints discussed
+  - Resource requirements (content, images, access)
+  - Third-party tools or services needed
+
+  ## ASSUMPTIONS AND CLARIFICATIONS NEEDED
+  - Items that need follow-up or confirmation
+  - Assumptions made during the conversation
+  - Questions for next discussion
+
+  Format this as a professional project brief that both client and freelancer can reference throughout the project. Use clear, specific language and note any ambiguous requirements that need clarification.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "Transcript from a 45-minute discovery call about redesigning an e-commerce website, including discussions about mobile optimization, checkout flow improvements, and timeline constraints."
+
+example_output: |
+  ### Project Requirements: E-commerce Website Redesign
+
+  #### PROJECT OVERVIEW
+  - Redesign existing Shopify store to improve conversion rates and mobile experience
+  - Primary objective: Increase online sales by improving user experience and checkout flow
+
+  #### FUNCTIONAL REQUIREMENTS
+  - Mobile-responsive design optimized for tablets and smartphones
+  - Streamlined checkout process with guest purchase option
+  - Product filtering by category, price range, and customer ratings
+  - Integration with existing inventory management system
+
+  #### TIMELINE AND MILESTONES
+  - Project launch: 8 weeks from project start
+  - Design mockups: Week 2
+  - Development completion: Week 6
+  - Dependency: Product photos from client by Week 3
+
+  #### ASSUMPTIONS AND CLARIFICATIONS NEEDED
+  - Confirm if current hosting plan supports new design requirements
+  - Verify which payment gateways client wants to maintain
+  - Clarify if blog integration is included in scope
+
+best_practices:
+  - "Documentation clarity: Extract exact quotes for critical requirements to avoid miscommunication"
+  - "Timeline tracking: Note any dependencies or external factors that could impact the project schedule"
+  - "Scope definition: Clearly separate what's included versus what might be additional work"
+  - "Follow-up management: Always include a section for items that need clarification"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "structured_markdown"
+
+  integration_examples:
+    - name: "Project Management System"
+      description: "Import requirements directly into project tracking tools"
+      code_snippet: |
+        requirements = extract_project_requirements(transcript)
+        project_manager.create_project(requirements)
+
+    - name: "CRM Integration"
+      description: "Add project brief to client records"
+      code_snippet: |
+        project_brief = generate_requirements(transcript)
+        crm.update_client_record(client_id, project_brief)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/freelancer-client-call-transcription-productivity-guide#ai-prompt-project-requirements-extractor"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "project-management"
+  - "requirements-gathering"
+  - "client-communication"
+  - "freelancer-tools"
+  - "discovery-calls"
+  - "scope-management"
+  - "project-documentation"

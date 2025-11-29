@@ -1,0 +1,143 @@
+name: "Social Media Clip Creator"
+category: "Content Marketing"
+difficulty: "Advanced"
+estimated_tokens: "800-1200"
+version: "1.0.0"
+
+description: "Transform identified highlights into optimized social media content with platform-specific formatting. This prompt creates tailored content strategies for TikTok, YouTube Shorts, Instagram Reels, and Twitter."
+
+metadata:
+  industry: "Gaming & Entertainment"
+  use_cases:
+    - "Multi-platform content strategy"
+    - "Content repurposing"
+    - "Engagement optimization"
+    - "Algorithm leveraging"
+    - "Community building"
+    - "Brand consistency"
+
+  target_audience:
+    - "Gaming streamers"
+    - "Content creators"
+    - "Social media managers"
+    - "Gaming influencers"
+    - "Multi-platform creators"
+
+  prerequisites:
+    - "Identified highlight moments"
+    - "Understanding of platform algorithms"
+    - "Knowledge of social media trends"
+    - "Gaming community awareness"
+
+  outputs:
+    - "Platform-specific content plans"
+    - "Optimized captions and descriptions"
+    - "Hashtag strategies"
+    - "Cross-promotion tactics"
+
+prompt_template: |
+  Please take these highlight moments from my gaming stream and create optimized social media content for different platforms.
+
+  HIGHLIGHT MOMENTS: [Paste the moments identified by previous prompts]
+  STREAM TRANSCRIPT CONTEXT: [Paste relevant sections of transcript around each moment]
+
+  Create platform-specific content:
+
+  ## TIKTOK CONTENT (15-60 seconds)
+  For each highlight, create:
+  - **Hook Line**: Opening text that grabs attention in first 2 seconds
+  - **Optimal Length**: Recommended clip duration for maximum engagement
+  - **Trending Hashtags**: Current gaming/entertainment hashtags to use
+  - **Text Overlay**: Key phrases to display on screen
+  - **Sound Strategy**: Whether to use original audio or trending sounds
+
+  ## YOUTUBE SHORTS (15-60 seconds)
+  For each highlight, create:
+  - **SEO Title**: Searchable title that includes game name and action
+  - **Description**: Brief description with relevant keywords
+  - **Thumbnail Moment**: Best frame for click-worthy thumbnail
+  - **End Screen**: Call-to-action for full stream or subscribe
+  - **Keywords**: Tags for YouTube search optimization
+
+  ## INSTAGRAM REELS (15-30 seconds)
+  For each highlight, create:
+  - **Caption**: Engaging caption that encourages comments
+  - **Story Integration**: How to tease this content in Instagram Stories
+  - **Community Hashtags**: Gaming community hashtags for discovery
+  - **Interactive Elements**: Questions or polls to boost engagement
+  - **Cross-Promotion**: How to drive traffic to Twitch/YouTube
+
+  ## TWITTER CLIPS (15-45 seconds)
+  For each highlight, create:
+  - **Tweet Text**: Engaging text that works with or without video
+  - **Thread Opportunity**: Whether this could start a discussion thread
+  - **Reply Strategy**: How to engage with comments on this post
+  - **Retweet Value**: Why other gamers would want to share this
+  - **Community Tags**: Relevant gaming community accounts to mention
+
+  Please provide specific, actionable content suggestions that maximize each platform's algorithm and audience preferences.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "Epic 1v4 clutch moment with excited reaction, plus context transcript showing setup and aftermath."
+
+example_output: |
+  ### Platform-Optimized Content for Epic Clutch Moment
+
+  **Original Highlight**: 45-second clutch 1v4 victory with excited reaction
+
+  #### TIKTOK CONTENT (30 seconds)
+  - **Hook Line**: "POV: Your team dies but you're built different 💪"
+  - **Optimal Length**: 25-30 seconds (includes setup + payoff + reaction)
+  - **Trending Hashtags**: #clutch #gaming #built different #fyp #gamer #epic
+  - **Text Overlay**: "Watch till the end" → "How?!" → "BUILT DIFFERENT"
+  - **Sound Strategy**: Use original audio for authentic reaction, trending sound in background
+
+  #### YOUTUBE SHORTS (35 seconds)
+  - **SEO Title**: "INSANE 1v4 Clutch That Made Me Scream (Valorant Highlights)"
+  - **Description**: "This clutch had me questioning reality 🤯 #Valorant #Clutch #Gaming #Highlights"
+  - **Thumbnail Moment**: Frame showing 1v4 situation with shocked expression
+  - **End Screen**: "Subscribe for more epic moments like this!"
+  - **Keywords**: valorant, clutch, 1v4, highlights, epic moments, gaming
+
+best_practices:
+  - "Platform-native content: Adapt content style to match each platform's unique culture and expectations"
+  - "Algorithm optimization: Use platform-specific features like hashtags, keywords, and engagement tactics"
+  - "Cross-promotion strategy: Design content that drives traffic between platforms effectively"
+  - "Consistent branding: Maintain your personality and style across all platforms while optimizing for each audience"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "platform_optimized_content"
+
+  integration_examples:
+    - name: "Multi-Platform Publisher"
+      description: "Automatically create platform-specific versions"
+      code_snippet: |
+        highlight_content = create_platform_content(moments)
+        for platform, content in highlight_content.items():
+            schedule_post(platform, content, optimal_time)
+
+    - name: "Performance Optimizer"
+      description: "A/B test different content variations"
+      code_snippet: |
+        variations = generate_content_variations(highlight)
+        for variation in variations:
+            test_performance(platform, variation)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/gaming-stream-transcription-highlight-creation-guide#ai-prompt-social-media-clip-creator"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "multi-platform"
+  - "social-media"
+  - "content-optimization"
+  - "platform-specific"
+  - "engagement-tactics"
+  - "cross-promotion"
+  - "algorithm-optimization"

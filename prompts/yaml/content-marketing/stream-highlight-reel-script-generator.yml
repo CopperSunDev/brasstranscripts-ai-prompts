@@ -1,0 +1,152 @@
+name: "Stream Highlight Reel Script Generator"
+category: "Content Marketing"
+difficulty: "Advanced"
+estimated_tokens: "900-1300"
+version: "1.0.0"
+
+description: "Create compelling highlight reel scripts that showcase your best moments in professional compilation videos. This prompt organizes multiple highlights into cohesive, engaging video content."
+
+metadata:
+  industry: "Gaming & Entertainment"
+  use_cases:
+    - "Channel trailers"
+    - "Compilation videos"
+    - "Social media promotion"
+    - "Sponsorship portfolios"
+    - "Community building"
+    - "Archive preservation"
+
+  target_audience:
+    - "Gaming streamers"
+    - "Video editors"
+    - "Content creators"
+    - "Gaming influencers"
+    - "Channel managers"
+
+  prerequisites:
+    - "Gaming stream transcript"
+    - "Video editing knowledge"
+    - "Understanding of pacing"
+    - "Platform requirements awareness"
+
+  outputs:
+    - "Professional highlight scripts"
+    - "Technical specifications"
+    - "Transition timing guides"
+    - "Multi-platform adaptations"
+
+prompt_template: |
+  Please create a highlight reel script using the best moments from this gaming stream transcript.
+
+  STREAM TRANSCRIPT: [Paste your gaming stream transcript here]
+  TARGET REEL LENGTH: [Specify 60 seconds, 90 seconds, 3 minutes, etc.]
+
+  Create a professional highlight reel that includes:
+
+  ## OPENING HOOK (5-10 seconds)
+  - **Opening Line**: Compelling statement that promises exciting content
+  - **Energy Level**: High-impact moment to grab immediate attention
+  - **Context Setup**: Brief intro to the game/stream without boring viewers
+
+  ## MAIN CONTENT SEGMENTS (organized by type)
+
+  ### Skill Showcase (20-30% of reel)
+  - **Epic Plays**: Best mechanical skill demonstrations
+  - **Clutch Moments**: High-pressure situations with successful outcomes  
+  - **Strategy Execution**: Smart plays that showcase game knowledge
+
+  ### Entertainment Value (40-50% of reel)
+  - **Funny Reactions**: Authentic emotional responses to unexpected events
+  - **Community Interaction**: Best chat interactions and viewer responses
+  - **Personality Moments**: Commentary that shows your streaming style
+
+  ### Educational Content (20-30% of reel)
+  - **Quick Tips**: Brief educational moments that provide value
+  - **Strategy Insights**: Smart decisions explained concisely
+  - **Learning Moments**: Mistakes and recoveries that teach lessons
+
+  ## PACING AND FLOW
+  - **Transition Timing**: Optimal moment length before switching scenes
+  - **Energy Curve**: How to build and maintain excitement throughout
+  - **Music Sync**: Where background music should align with action
+  - **Text Overlays**: Key phrases or explanations to add context
+
+  ## CLOSING SEGMENT (5-10 seconds)
+  - **Call to Action**: Encouraging viewers to follow/subscribe/watch streams
+  - **Channel Branding**: How to end with memorable channel identity
+  - **Next Content**: Teaser for upcoming streams or content
+
+  ## TECHNICAL SPECIFICATIONS
+  - **Resolution**: 1080p recommended settings
+  - **Aspect Ratio**: 16:9 for YouTube, 9:16 for TikTok/Instagram
+  - **Caption Strategy**: How to make content accessible and engaging
+  - **Thumbnail Selection**: Best moments for video thumbnail
+
+  Provide specific timestamps and transition suggestions to create a professional, engaging highlight reel that represents your best streaming content.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "4-hour gaming session transcript with epic moments, funny reactions, educational segments, and community interactions."
+
+example_output: |
+  ### 90-Second Highlight Reel Script: "Epic Gaming Session Compilation"
+
+  #### OPENING HOOK (8 seconds) - Timestamps: 0:00-0:08
+  - **Opening Line**: "What happens when everything goes perfectly wrong?"
+  - **Energy Level**: Start with biggest reaction moment (2:45:30 - epic fail scream)
+  - **Context Setup**: Quick text overlay: "4 hours of chaos in 90 seconds"
+
+  #### MAIN CONTENT SEGMENTS
+
+  **Skill Showcase (25 seconds) - Timestamps: 0:08-0:33**
+  - **Epic Play 1**: 1:23:15 - 1:23:35 (clutch 1v3 victory)
+  - **Strategic Moment**: 3:12:20 - 3:12:40 (smart positioning explanation)
+  - **Mechanical Skill**: 0:45:10 - 0:45:25 (perfect combo execution)
+  - **Transition**: Quick cuts with "But wait, there's more" text overlay
+
+  **Entertainment Value (40 seconds) - Timestamps: 0:33-1:13**
+  - **Funny Reaction**: 2:45:25 - 2:45:45 (complete shock at game glitch)
+  - **Chat Interaction**: 1:15:30 - 1:15:50 (hilarious username pronunciation fail)
+  - **Personality Moment**: 3:05:15 - 3:05:35 (passionate rant about game balance)
+  - **Community Moment**: 0:30:20 - 0:30:40 (wholesome subscriber interaction)
+
+best_practices:
+  - "Strategic pacing: Balance high-energy moments with brief breathing room for maximum impact"
+  - "Narrative flow: Create a story arc that builds excitement and showcases different aspects of your streaming"
+  - "Brand consistency: Ensure the reel accurately represents your typical streaming style and personality"
+  - "Technical polish: Include specific technical details for professional video production quality"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "highlight_reel_script"
+
+  integration_examples:
+    - name: "Automated Reel Creator"
+      description: "Generate multiple reel versions for different platforms"
+      code_snippet: |
+        reel_script = create_highlight_reel(transcript, target_length)
+        for platform in platforms:
+            adapt_reel_for_platform(reel_script, platform)
+
+    - name: "Timeline Generator"
+      description: "Create video editing timelines from scripts"
+      code_snippet: |
+        script = generate_reel_script(transcript)
+        timeline = create_editing_timeline(script, clips)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/gaming-stream-transcription-highlight-creation-guide#ai-prompt-stream-highlight-reel-script-generator"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "highlight-reels"
+  - "video-scripts"
+  - "compilation-videos"
+  - "content-organization"
+  - "professional-editing"
+  - "multi-platform"
+  - "video-production"

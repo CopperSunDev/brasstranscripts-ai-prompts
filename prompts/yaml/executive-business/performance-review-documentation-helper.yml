@@ -1,0 +1,187 @@
+name: "Performance Review Documentation Helper"
+category: "Executive Business"
+difficulty: "Advanced"
+estimated_tokens: "800-1200"
+version: "1.0.0"
+
+description: "Extract performance-related discussions and contributions for employee development and review processes. This prompt identifies achievements, growth areas, and development opportunities from meeting conversations."
+
+metadata:
+  industry: "Business & Corporate"
+  use_cases:
+    - "Annual performance reviews"
+    - "Development planning"
+    - "Recognition programs"
+    - "Team optimization"
+    - "Succession planning"
+    - "Goal setting"
+
+  target_audience:
+    - "Human resources managers"
+    - "Team leaders"
+    - "Managers"
+    - "Business owners"
+    - "Department heads"
+
+  prerequisites:
+    - "Meeting transcript with team interactions"
+    - "Understanding of team members' roles"
+    - "Knowledge of performance expectations"
+    - "Awareness of development objectives"
+
+  outputs:
+    - "Performance documentation"
+    - "Development insights"
+    - "Recognition opportunities"
+    - "Career planning data"
+
+prompt_template: |
+  Please analyze this meeting transcript and extract performance-related information that could be useful for employee development and review discussions.
+
+  MEETING TRANSCRIPT: [Paste your meeting transcript here]
+
+  Document performance insights:
+
+  ## INDIVIDUAL CONTRIBUTIONS
+
+  ### [Employee Name]
+  **Positive Contributions**:
+  - [Specific contribution or achievement mentioned]
+  - [Problem-solving or initiative demonstrated]
+  - [Leadership or collaboration example]
+
+  **Areas of Expertise Demonstrated**:
+  - [Skill or knowledge area showcased]
+  - [Technical competency displayed]
+
+  **Growth Areas Identified**:
+  - [Development opportunity mentioned]
+  - [Skill gap or learning need discussed]
+
+  ### [Employee Name]
+  [Repeat format for each team member who participated significantly]
+
+  ## TEAM COLLABORATION PATTERNS
+  **Effective Partnerships**:
+  - [Names] worked well together on [project/task]
+  - [Example of good cross-team collaboration]
+
+  **Communication Strengths**:
+  - [Who communicated complex ideas clearly]
+  - [Who asked insightful questions]
+  - [Who facilitated productive discussion]
+
+  ## INITIATIVE AND OWNERSHIP
+  **Self-Directed Work**:
+  - [Who took initiative on problems without being asked]
+  - [Who volunteered for additional responsibilities]
+  - [Who demonstrated ownership of outcomes]
+
+  **Innovation and Problem-Solving**:
+  - [Creative solutions proposed and by whom]
+  - [Process improvements suggested]
+  - [Challenges addressed proactively]
+
+  ## PROFESSIONAL DEVELOPMENT OPPORTUNITIES
+  **Training Needs Identified**:
+  - [Skill development that would benefit individual/team]
+  - [Knowledge gaps that limit project effectiveness]
+
+  **Leadership Development**:
+  - [Who showed leadership potential in discussions]
+  - [Opportunities for increased responsibility]
+  - [Mentoring relationships that could be beneficial]
+
+  ## GOAL SETTING INSIGHTS
+  **Individual Goals Mentioned**:
+  - [Person]: [Goal or aspiration discussed]
+  - [Person]: [Development objective identified]
+
+  **Team Goals Alignment**:
+  - [How individual contributions support team objectives]
+  - [Gaps between personal goals and business needs]
+
+  ## RECOGNITION OPPORTUNITIES
+  **Achievements Worth Highlighting**:
+  - [Accomplishment that should be formally recognized]
+  - [Extra effort or exceptional work noted]
+  - [Positive client or stakeholder feedback mentioned]
+
+  ## AREAS FOR MANAGER FOLLOW-UP
+  Items requiring one-on-one discussion:
+  - [Development conversation needed with specific person]
+  - [Performance concern that needs addressing]
+  - [Career development discussion opportunity]
+
+  Please focus on constructive, specific examples that can inform meaningful development conversations and performance recognition.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "Team meeting transcript with project discussions, individual contributions, collaboration examples, and development opportunities."
+
+example_output: |
+  ### Performance Insights from Q4 Planning Meeting
+
+  #### INDIVIDUAL CONTRIBUTIONS
+
+  **Sarah Martinez (Marketing Manager)**
+  **Positive Contributions**:
+  - Presented comprehensive market analysis that influenced product positioning strategy
+  - Volunteered to coordinate cross-departmental content creation for product launch
+  - Provided constructive feedback on development timeline that helped identify realistic milestones
+
+  **Areas of Expertise Demonstrated**:
+  - Deep understanding of customer segments and competitive landscape
+  - Strong project coordination and stakeholder management skills
+  - Data-driven decision making with clear presentation of insights
+
+  **Growth Areas Identified**:
+  - Expressed interest in learning more about product development processes
+  - Could benefit from training in advanced analytics tools for campaign measurement
+
+  #### RECOGNITION OPPORTUNITIES
+  **Achievements Worth Highlighting**:
+  - Mike's vendor cost analysis exceeded expectations and demonstrates proactive value creation
+  - Sarah's market research quality impressed client and strengthened relationship
+  - Lisa's technical documentation has become team standard and improved onboarding efficiency
+  - John's innovative solution approach saved development time and improved product quality
+
+best_practices:
+  - "Objective documentation: Focus on specific behaviors and contributions rather than subjective interpretations"
+  - "Development-focused: Frame observations in terms of growth opportunities rather than criticisms"
+  - "Recognition balance: Identify both achievements and areas for improvement for comprehensive development planning"
+  - "Confidentiality awareness: Use this information appropriately for constructive performance discussions"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "performance_insights"
+
+  integration_examples:
+    - name: "HR System Integration"
+      description: "Export performance insights to HR management systems"
+      code_snippet: |
+        performance_data = extract_performance_insights(transcript)
+        hr_system.add_performance_notes(performance_data)
+
+    - name: "Development Plan Generator"
+      description: "Create actionable development plans from insights"
+      code_snippet: |
+        insights = analyze_performance_meeting(transcript)
+        development_plans = generate_growth_plans(insights)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/small-business-meeting-minutes-ai-transcription-accountability#ai-prompt-performance-review-documentation-helper"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "performance-reviews"
+  - "employee-development"
+  - "talent-management"
+  - "recognition"
+  - "career-planning"
+  - "team-assessment"
+  - "professional-growth"

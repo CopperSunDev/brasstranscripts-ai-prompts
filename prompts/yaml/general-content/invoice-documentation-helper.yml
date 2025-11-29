@@ -1,0 +1,146 @@
+name: "Invoice Documentation Helper"
+category: "General Content"
+difficulty: "Intermediate"
+estimated_tokens: "500-700"
+version: "1.0.0"
+
+description: "Extract billable time details and project milestone achievements for accurate invoicing. This prompt helps freelancers create comprehensive billing documentation from client conversations."
+
+metadata:
+  industry: "Billing & Finance"
+  use_cases:
+    - "Monthly invoicing cycles"
+    - "Project milestone billing"
+    - "Consultation documentation"
+    - "Scope change billing"
+    - "Retainer accounting"
+    - "Dispute prevention"
+
+  target_audience:
+    - "Freelancers"
+    - "Consultants"
+    - "Service providers"
+    - "Independent contractors"
+    - "Agency owners"
+
+  prerequisites:
+    - "Client call transcript"
+    - "Understanding of billing rates"
+    - "Knowledge of project milestones"
+    - "Familiarity with invoicing practices"
+
+  outputs:
+    - "Billable time breakdown"
+    - "Milestone achievement documentation"
+    - "Invoice line item suggestions"
+    - "Client satisfaction notes"
+
+prompt_template: |
+  Please analyze this client call transcript to extract billing-relevant information and project milestone documentation.
+
+  TRANSCRIPT: [Paste your client call transcript here]
+
+  Please organize billing information:
+
+  ## BILLABLE TIME BREAKDOWN
+  - Call duration: [Length of call in hours/minutes]
+  - Consultation time: [Time spent on strategic discussion]
+  - Problem-solving time: [Time spent addressing challenges]
+  - Additional research/follow-up committed: [Hours estimated]
+
+  ## MILESTONE ACHIEVEMENTS DISCUSSED
+  Completed work mentioned in call:
+  - [Milestone completed] - Date completed: [Date]
+  - [Deliverable finished] - Client approval: [Yes/No/Pending]
+
+  ## WORK AUTHORIZED IN CALL
+  New work approved or requested:
+  - [Task authorized] - Estimated hours: [Hours]
+  - [Additional service requested] - Scope: [Description]
+
+  ## CLIENT SATISFACTION INDICATORS
+  Positive feedback mentioned:
+  - [Specific praise or approval noted]
+  - [Client satisfaction with deliverables]
+
+  ## PAYMENT DISCUSSION SUMMARY
+  If payment terms were discussed:
+  - Invoice timing preferences
+  - Payment method confirmations
+  - Budget approvals for additional work
+
+  ## INVOICE LINE ITEM SUGGESTIONS
+  Based on conversation content:
+  - [Service description] - Hours: [X] - Rate: [Rate]
+  - [Service description] - Hours: [X] - Rate: [Rate]
+
+  ## PROFESSIONAL NOTES FOR INVOICE
+  Brief project progress notes to include:
+  - [Professional summary of work completed]
+  - [Status of current project phase]
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "90-minute client call discussing project progress, milestone approvals, additional work authorization, and next phase planning for a website redesign project."
+
+example_output: |
+  ### Invoice Documentation: Website Redesign Project Call
+
+  #### BILLABLE TIME BREAKDOWN
+  - Call duration: 1.5 hours (90 minutes)
+  - Consultation time: 45 minutes strategic planning discussion
+  - Problem-solving time: 30 minutes troubleshooting integration issues
+  - Additional research committed: 2 hours competitive analysis (approved in call)
+
+  #### MILESTONE ACHIEVEMENTS DISCUSSED
+  - Homepage design mockups completed - Date: March 10 - Client approval: Yes
+  - Mobile responsive layouts finalized - Date: March 12 - Client approval: Pending review
+
+  #### WORK AUTHORIZED IN CALL
+  - Competitive analysis research - Estimated hours: 2 hours
+  - Additional product page templates - Estimated hours: 4 hours
+
+  #### INVOICE LINE ITEM SUGGESTIONS
+  - Web Design Consultation - Hours: 1.5 - Rate: $150/hr = $225
+  - Competitive Analysis Research - Hours: 2 - Rate: $125/hr = $250
+  - Additional Page Templates - Hours: 4 - Rate: $135/hr = $540
+
+best_practices:
+  - "Time tracking accuracy: Document all billable consultation time, not just direct work hours"
+  - "Milestone documentation: Record client acknowledgment of completed deliverables for payment justification"
+  - "Scope authorization: Note verbal approvals for additional work to support billing"
+  - "Professional presentation: Use client-friendly language in invoice descriptions"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "billing_documentation"
+
+  integration_examples:
+    - name: "Invoicing Software Integration"
+      description: "Auto-populate billing software with extracted time and milestones"
+      code_snippet: |
+        billing_data = extract_billing_info(transcript)
+        invoice_system.create_line_items(billing_data)
+
+    - name: "Time Tracking Sync"
+      description: "Verify documented time against actual recordings"
+      code_snippet: |
+        documented_time = extract_billable_time(transcript)
+        time_tracker.verify_hours(documented_time, actual_duration)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/freelancer-client-call-transcription-productivity-guide#ai-prompt-invoice-documentation-helper"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "billing-documentation"
+  - "invoice-preparation"
+  - "time-tracking"
+  - "milestone-tracking"
+  - "freelancer-billing"
+  - "client-accounting"
+  - "project-billing"

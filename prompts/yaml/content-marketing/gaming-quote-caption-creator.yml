@@ -1,0 +1,150 @@
+name: "Gaming Quote and Caption Creator"
+category: "Content Marketing"
+difficulty: "Intermediate"
+estimated_tokens: "600-900"
+version: "1.0.0"
+
+description: "Extract quotable moments and create engaging captions for social media posts across all platforms. This prompt identifies memorable statements and transforms them into shareable content."
+
+metadata:
+  industry: "Gaming & Entertainment"
+  use_cases:
+    - "Daily social media content"
+    - "Meme creation"
+    - "Community building"
+    - "Brand personality development"
+    - "Viral content opportunities"
+    - "Cross-platform content strategy"
+
+  target_audience:
+    - "Gaming streamers"
+    - "Content creators"
+    - "Social media managers"
+    - "Gaming influencers"
+    - "Community managers"
+
+  prerequisites:
+    - "Gaming stream transcript"
+    - "Understanding of social media trends"
+    - "Knowledge of gaming culture"
+    - "Platform-specific best practices"
+
+  outputs:
+    - "Quotable moments"
+    - "Platform-specific captions"
+    - "Meme potential identification"
+    - "Engagement strategies"
+
+prompt_template: |
+  Please analyze this gaming stream transcript and extract quotable moments that work well for social media posts, memes, and community engagement.
+
+  STREAM TRANSCRIPT: [Paste your gaming stream transcript here]
+
+  Create different types of social media content:
+
+  ## QUOTABLE MOMENTS
+  Find statements that are:
+  - **Relatable**: Thoughts other gamers have but haven't expressed well
+  - **Funny**: Humorous observations that work out of context
+  - **Inspirational**: Motivational thoughts about gaming, improvement, or perseverance
+  - **Controversial**: Opinions that will spark friendly debate and engagement
+
+  ## MEME POTENTIAL
+  Identify moments that could become:
+  - **Reaction Images**: Expressions that others could use to respond
+  - **Format Templates**: Statements that could become meme formats
+  - **Community Inside Jokes**: References that your audience could adopt
+  - **Viral Phrases**: Catchphrases that could spread beyond your community
+
+  ## INSTAGRAM CAPTIONS
+  For each quote, create:
+  - **Hook**: Opening line that stops scrolling
+  - **Context**: Brief setup without over-explaining
+  - **Engagement Question**: Question that encourages comments
+  - **Hashtag Strategy**: Mix of trending and niche gaming hashtags
+  - **Call to Action**: Gentle encouragement to follow or engage
+
+  ## TWITTER CONTENT
+  For each quote, create:
+  - **Standalone Tweet**: Quote that works without additional context
+  - **Thread Starter**: Opinion that could begin a discussion thread
+  - **Reply Value**: Statement that invites thoughtful responses
+  - **Retweet Factor**: Why other gamers would want to share this
+  - **Community Engagement**: How this connects with gaming culture
+
+  ## TikTok TEXT OVERLAYS
+  For each quote, suggest:
+  - **Opening Text**: Attention-grabbing statement for video start
+  - **Build-Up Text**: How to create anticipation before the quote
+  - **Punchline Delivery**: Optimal timing for maximum impact
+  - **Follow-Up Text**: How to extend engagement after the quote
+  - **Hashtag Integration**: How to make content discoverable
+
+  Please focus on authentic moments that showcase personality while being entertaining and shareable across gaming communities.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "6-hour competitive gaming session with funny commentary, inspirational moments, hot takes, and relatable gaming struggles."
+
+example_output: |
+  ### Quotable Moments from Competitive Gaming Session
+
+  #### RELATABLE QUOTE
+  **Quote**: "I'm not bad at this game, I'm just... creatively challenged by the controls."
+  - **Timestamp**: 2:15:30
+  - **Type**: Self-deprecating humor
+
+  **Instagram Caption**:
+  "🎮 When the game says you're the problem but you know it's definitely the controller's fault...
+
+  Okay but real talk, we've all been there right? That moment when you KNOW what you want to do but somehow your fingers just... don't cooperate? 😅
+
+  What's your most creative excuse for a gaming fail? Drop it below! 👇
+
+  #gaming #gamerlife #relatable #fail #controller #mood #struggle #truth"
+
+  **Twitter Content**:
+  "I'm not bad at this game, I'm just... creatively challenged by the controls. 🎮
+
+  (This is my story and I'm sticking to it)"
+
+best_practices:
+  - "Authenticity first: Choose genuine moments over manufactured quotable content"
+  - "Platform adaptation: Tailor the same quote differently for each social media platform's culture"
+  - "Community relevance: Focus on quotes that resonate with gaming culture and shared experiences"
+  - "Engagement optimization: Create captions that encourage interaction and discussion"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "quotable_content"
+
+  integration_examples:
+    - name: "Daily Quote Scheduler"
+      description: "Automatically schedule quotable content across platforms"
+      code_snippet: |
+        quotes = extract_quotable_moments(transcript)
+        for platform in social_platforms:
+            schedule_quote_post(quotes, platform, optimal_time)
+
+    - name: "Viral Moment Detector"
+      description: "Identify quotes with high viral potential"
+      code_snippet: |
+        quotes = analyze_quotable_content(transcript)
+        viral_candidates = rank_viral_potential(quotes)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/gaming-stream-transcription-highlight-creation-guide#ai-prompt-gaming-quote-and-caption-creator"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "quotable-moments"
+  - "social-media"
+  - "meme-potential"
+  - "captions"
+  - "viral-content"
+  - "community-engagement"
+  - "brand-personality"

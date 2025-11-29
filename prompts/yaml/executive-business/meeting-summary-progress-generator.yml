@@ -1,0 +1,168 @@
+name: "Meeting Summary and Progress Generator"
+category: "Executive Business"
+difficulty: "Intermediate"
+estimated_tokens: "700-1000"
+version: "1.0.0"
+
+description: "Create professional meeting summaries that can be shared with team members, clients, or stakeholders. This prompt transforms meeting discussions into clear progress reports and next steps."
+
+metadata:
+  industry: "Business & Corporate"
+  use_cases:
+    - "Executive reporting"
+    - "Client communication"
+    - "Team alignment"
+    - "Project documentation"
+    - "Stakeholder updates"
+    - "Cross-team coordination"
+
+  target_audience:
+    - "Project managers"
+    - "Team leaders"
+    - "Executives"
+    - "Business owners"
+    - "Client relationship managers"
+
+  prerequisites:
+    - "Meeting transcript"
+    - "Understanding of project context"
+    - "Knowledge of attendee roles"
+    - "Awareness of business objectives"
+
+  outputs:
+    - "Professional meeting summaries"
+    - "Progress reports"
+    - "Decision documentation"
+    - "Stakeholder-ready communications"
+
+prompt_template: |
+  Please create a professional meeting summary from this transcript that clearly communicates decisions, progress, and next steps.
+
+  MEETING TRANSCRIPT: [Paste your meeting transcript here]
+
+  Create a comprehensive summary in this format:
+
+  ## MEETING OVERVIEW
+  - **Date**: [Meeting Date]
+  - **Participants**: [List attendees]
+  - **Duration**: [Meeting length]
+  - **Purpose**: [Main meeting objective]
+
+  ## KEY DECISIONS MADE
+  Summarize important decisions reached:
+  1. [Decision topic] - [What was decided and why]
+  2. [Decision topic] - [What was decided and why]
+  3. [Decision topic] - [What was decided and why]
+
+  ## PROJECT PROGRESS UPDATES
+  Current status of ongoing initiatives:
+
+  ### [Project Name]
+  - **Status**: [On track/Behind/Ahead of schedule]
+  - **Progress**: [What has been completed]
+  - **Challenges**: [Any obstacles discussed]
+  - **Next Steps**: [Immediate next actions]
+
+  ### [Project Name]
+  - **Status**: [On track/Behind/Ahead of schedule]
+  - **Progress**: [What has been completed]
+  - **Challenges**: [Any obstacles discussed]
+  - **Next Steps**: [Immediate next actions]
+
+  ## ACTION ITEMS SUMMARY
+  High-level overview of commitments made:
+  - [Number] total action items assigned
+  - [Number] items due this week
+  - [Number] items due next week
+  - [Number] items requiring external coordination
+
+  ## PRIORITY FOCUS AREAS
+  Most important items requiring attention:
+  1. [Priority item] - Why it's critical and who's responsible
+  2. [Priority item] - Why it's critical and who's responsible
+  3. [Priority item] - Why it's critical and who's responsible
+
+  ## UPCOMING MILESTONES
+  Key dates and deliverables discussed:
+  - [Date]: [Milestone/Deadline] - [Owner]
+  - [Date]: [Milestone/Deadline] - [Owner]
+  - [Date]: [Milestone/Deadline] - [Owner]
+
+  ## RESOURCES AND SUPPORT NEEDED
+  Support requirements identified:
+  - [Resource need]: [Details] - [Who will provide]
+  - [Resource need]: [Details] - [Who will provide]
+
+  ## NEXT MEETING
+  - **Date**: [When scheduled or "TBD"]
+  - **Purpose**: [What will be covered]
+  - **Preparation Required**: [What team members should prepare]
+
+  Make this summary professional enough to share with clients or external stakeholders while being detailed enough for internal team accountability.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "45-minute team progress meeting with project updates, decision-making, and milestone planning discussions."
+
+example_output: |
+  ### Weekly Team Progress Meeting Summary
+
+  #### MEETING OVERVIEW
+  - **Date**: November 26, 2024
+  - **Participants**: Sarah (Marketing), Mike (Operations), Lisa (Development), John (Project Manager)
+  - **Duration**: 45 minutes
+  - **Purpose**: Weekly progress review and Q4 milestone planning
+
+  #### KEY DECISIONS MADE
+  1. **Product Launch Timeline** - Moved launch date to December 15th to allow additional testing time
+  2. **Budget Allocation** - Approved additional $5,000 for external QA testing services
+  3. **Marketing Strategy** - Decided to focus launch campaign on educational content rather than feature comparisons
+  4. **Team Structure** - Lisa will lead technical documentation efforts with Sarah providing content strategy support
+
+  #### PROJECT PROGRESS UPDATES
+
+  **Product Development (Q4 Launch)**
+  - **Status**: Behind schedule but recoverable
+  - **Progress**: Core features 85% complete, UI/UX finalized, initial testing begun
+  - **Challenges**: Integration testing revealed performance issues requiring optimization
+  - **Next Steps**: Complete performance optimization by December 1, begin user acceptance testing
+
+best_practices:
+  - "Executive-ready formatting: Create summaries polished enough for senior leadership or client sharing"
+  - "Progress clarity: Focus on measurable progress and concrete deliverables over vague updates"
+  - "Stakeholder transparency: Include enough context for people who missed the meeting to understand decisions"
+  - "Action orientation: Emphasize next steps and accountability rather than just documenting discussion"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "professional_summary"
+
+  integration_examples:
+    - name: "Executive Dashboard"
+      description: "Automatically generate executive progress reports"
+      code_snippet: |
+        summary = create_meeting_summary(transcript)
+        exec_report = generate_executive_dashboard(summary)
+
+    - name: "Client Communication System"
+      description: "Create client-ready progress updates"
+      code_snippet: |
+        meeting_summary = analyze_progress_meeting(transcript)
+        client_update = format_for_stakeholder(meeting_summary)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/small-business-meeting-minutes-ai-transcription-accountability#ai-prompt-meeting-summary-and-progress-generator"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "meeting-summaries"
+  - "progress-reports"
+  - "executive-communication"
+  - "project-management"
+  - "stakeholder-updates"
+  - "team-coordination"
+  - "professional-documentation"

@@ -1,0 +1,137 @@
+name: "Professional Follow-Up Email Creator"
+category: "General Content"
+difficulty: "Beginner"
+estimated_tokens: "400-600"
+version: "1.0.0"
+
+description: "Generate polished client emails that demonstrate professionalism and ensure alignment. This prompt transforms call discussions into well-structured follow-up emails that build confidence and maintain project momentum."
+
+metadata:
+  industry: "Professional Services"
+  use_cases:
+    - "Discovery call follow-up"
+    - "Progress meeting recap"
+    - "Scope discussion summary"
+    - "Timeline adjustment confirmation"
+    - "Milestone completion notification"
+    - "Problem resolution recap"
+
+  target_audience:
+    - "Freelancers"
+    - "Consultants"
+    - "Account managers"
+    - "Service providers"
+    - "Sales professionals"
+
+  prerequisites:
+    - "Call or meeting transcript"
+    - "Understanding of client relationship"
+    - "Knowledge of project context"
+
+  outputs:
+    - "Professional email draft"
+    - "Clear next steps"
+    - "Timeline confirmations"
+    - "Action item assignments"
+
+prompt_template: |
+  Create a professional follow-up email for my client based on this call transcript.
+
+  TRANSCRIPT: [Paste your client call transcript here]
+
+  Please write a concise, professional email that includes:
+
+  ## Email Structure:
+  - Professional subject line
+  - Warm opening acknowledging the conversation
+  - Key decisions summary (3-5 bullet points maximum)
+  - Next steps with clear timelines
+  - Professional closing with contact information
+
+  ## Tone Guidelines:
+  - Confident and professional
+  - Collaborative and positive
+  - Clear and specific
+  - Grateful for their time
+
+  ## Key Elements to Include:
+  - Main project decisions made
+  - Timeline confirmations
+  - My immediate next steps
+  - What I need from them
+  - Next meeting/check-in scheduling
+
+  Please make the email concise but comprehensive—something that builds confidence while ensuring we're aligned on project direction.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "Transcript from a website redesign discovery call covering project scope, timeline, design preferences, and technical requirements."
+
+example_output: |
+  ### Follow-Up Email: Website Redesign Discovery Call
+
+  **Subject: Next Steps for Your E-commerce Redesign Project**
+
+  Hi Sarah,
+
+  Thank you for the productive call this afternoon! I'm excited about the direction we discussed for your Shopify store redesign.
+
+  **Key Decisions from Our Call:**
+  - Focus on mobile-first design with improved checkout flow
+  - Integrate with your existing inventory management system
+  - Launch target: 8 weeks from project start (April 15th)
+  - Include product filtering by category and customer reviews
+
+  **My Next Steps (This Week):**
+  - Create initial wireframes for homepage and product pages (by Friday)
+  - Set up staging environment for development work
+  - Send brand questionnaire for visual direction
+
+  **What I Need from You:**
+  - High-resolution logo files and brand assets (by Thursday)
+  - List of competitor websites you admire (by Friday)
+
+  Looking forward to bringing your vision to life!
+
+  Best regards,
+  [Your Name]
+
+best_practices:
+  - "Timing matters: Send follow-up emails within 24 hours while the conversation is fresh"
+  - "Subject line clarity: Make the subject specific to the project and conversation topic"
+  - "Action items separation: Clearly distinguish between what you'll do and what they need to do"
+  - "Professional tone: Maintain confidence without being pushy or overly casual"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "structured_email"
+
+  integration_examples:
+    - name: "Email System Integration"
+      description: "Auto-generate and send follow-up emails"
+      code_snippet: |
+        email_content = create_followup_email(transcript)
+        email_system.send_email(client_email, email_content)
+
+    - name: "CRM Documentation"
+      description: "Save follow-up emails to client records"
+      code_snippet: |
+        followup = generate_email_summary(transcript)
+        crm.add_interaction(client_id, followup, "email")
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/freelancer-client-call-transcription-productivity-guide#ai-prompt-professional-follow-up-email-creator"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "client-communication"
+  - "follow-up-emails"
+  - "professional-correspondence"
+  - "project-management"
+  - "freelancer-tools"
+  - "email-templates"
+  - "client-relations"

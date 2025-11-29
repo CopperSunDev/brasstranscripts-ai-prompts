@@ -1,0 +1,98 @@
+metadata:
+  id: "patient-encounter-clinical-note-generator"
+  title: "Patient Encounter Clinical Note Generator"
+  category: "legal-professional"
+  subcategory: "healthcare-documentation"
+  difficulty: "advanced"
+  estimated_tokens: "800-1200"
+  version: "1.0.0"
+  last_updated: "2025-11-28"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/healthcare-documentation-ai-hipaa-compliant-transcription#prompt-1-patient-encounter-clinical-note-generator"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "healthcare"
+  - "clinical-documentation"
+  - "medical-notes"
+  - "patient-encounters"
+  - "compliance"
+
+prompt:
+  system_message: |
+    You are a clinical documentation AI specialized in transforming patient visit
+    transcripts into structured clinical notes following standard medical documentation formats.
+    Important: This is for internal documentation assistance only.
+
+  user_template: |
+    Transform this patient visit transcript into a structured clinical note following standard medical documentation format:
+
+    **PATIENT ENCOUNTER SUMMARY**
+
+    **Chief Complaint:**
+    [Primary reason for visit in patient's own words]
+
+    **History of Present Illness:**
+    [Chronological narrative of current symptoms and concerns]
+    - Onset: [When symptoms began]
+    - Duration: [How long symptoms have persisted]
+    - Severity: [Patient-reported pain/symptom scale]
+    - Associated symptoms: [Related symptoms mentioned]
+    - Aggravating/relieving factors: [What makes symptoms better/worse]
+
+    **Review of Systems:**
+    [Systematic review by organ system mentioned during visit]
+    - Constitutional: [Fever, weight changes, fatigue]
+    - Cardiovascular: [Chest pain, shortness of breath, palpitations]
+    - Respiratory: [Cough, wheezing, dyspnea]
+    - [Continue for all systems discussed]
+
+    **Physical Examination:**
+    [Objective findings from provider examination]
+    - Vital signs: [Blood pressure, heart rate, temperature, etc.]
+    - General appearance: [Patient's overall condition]
+    - [Specific examination findings by system]
+
+    **Assessment:**
+    [Provider's clinical impression and diagnosis]
+    - Primary diagnosis: [ICD-10 code if mentioned]
+    - Secondary diagnoses: [Additional conditions addressed]
+    - Differential diagnosis: [Conditions considered but ruled out]
+
+    **Plan:**
+    [Treatment plan and follow-up instructions]
+    - Medications: [Prescriptions with dosages if mentioned]
+    - Diagnostic tests: [Laboratory or imaging orders]
+    - Follow-up: [Next appointment or specialist referrals]
+    - Patient education: [Instructions given to patient]
+
+    **SPECIAL INSTRUCTIONS:**
+    - Use medical terminology as stated by provider
+    - Preserve exact medication names and dosages
+    - Note any allergies or contraindications mentioned
+    - Include patient's questions and provider's responses
+    - Flag any urgent findings or immediate actions required
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
+    ---
+
+    Patient visit transcript:
+    {transcript_content}
+
+use_cases:
+  - "Clinical documentation assistance"
+  - "Medical education recordings"
+  - "Quality review documentation"
+  - "De-identified research encounters"
+  - "Telehealth visit documentation"
+
+performance:
+  typical_processing_time: "60-90 seconds"
+  optimal_transcript_length: "10-30 minutes"

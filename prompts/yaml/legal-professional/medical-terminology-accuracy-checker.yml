@@ -1,0 +1,94 @@
+metadata:
+  id: "medical-terminology-accuracy-checker"
+  title: "Medical Terminology Accuracy Checker"
+  category: "legal-professional"
+  subcategory: "healthcare-documentation"
+  difficulty: "advanced"
+  estimated_tokens: "600-900"
+  version: "1.0.0"
+  last_updated: "2025-11-28"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/healthcare-documentation-ai-hipaa-compliant-transcription#prompt-2-medical-terminology-accuracy-checker"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "healthcare"
+  - "quality-assurance"
+  - "medical-terminology"
+  - "accuracy-review"
+  - "compliance"
+
+prompt:
+  system_message: |
+    You are a medical terminology review AI specialized in checking transcripts
+    for accuracy and flagging potential errors that could affect patient care.
+    Important: This is for internal documentation assistance only.
+
+  user_template: |
+    Review this medical transcript for terminology accuracy and flag any potential transcription errors that could affect patient care:
+
+    **TERMINOLOGY REVIEW**
+
+    **Medication Names:**
+    Check all mentioned medications for:
+    - Correct spelling and generic/brand name accuracy
+    - Dosage information clarity
+    - Route of administration (oral, IV, topical, etc.)
+    - Frequency instructions
+    - Flag any unclear or potentially misheard drug names
+
+    **Medical Conditions:**
+    Verify accuracy of:
+    - Disease and condition names
+    - Anatomical terms
+    - Symptom descriptions
+    - Diagnostic terminology
+    - Procedure names
+
+    **Critical Values:**
+    Review for accuracy:
+    - Vital signs (blood pressure, heart rate, temperature)
+    - Laboratory values
+    - Measurement units (mg, mL, mmHg, etc.)
+    - Percentages and ranges
+    - Time-sensitive information
+
+    **SAFETY FLAGS**
+    Identify any sections where transcription errors could impact:
+    - Patient safety (medication dosing, allergy information)
+    - Continuity of care (follow-up instructions, specialist referrals)
+    - Legal documentation (patient consent, procedure risks)
+    - Billing accuracy (procedure codes, diagnosis clarity)
+
+    **RECOMMENDATIONS**
+    For each flagged item, provide:
+    - Most likely correct terminology based on medical context
+    - Confidence level in the correction (high/medium/low)
+    - Suggestion to verify with provider if uncertainty remains
+    - Alternative transcription possibilities if multiple options exist
+
+    Focus on clinical accuracy over perfect grammar. Medical communication often includes abbreviated forms and professional shorthand that should be preserved if clinically clear.
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
+    ---
+
+    Medical transcript to review:
+    {transcript_content}
+
+use_cases:
+  - "Quality assurance review of medical transcriptions"
+  - "Training documentation verification"
+  - "Research transcript accuracy review"
+  - "Telehealth quality control"
+  - "Medical education transcript verification"
+
+performance:
+  typical_processing_time: "45-75 seconds"
+  optimal_transcript_length: "10-30 minutes"

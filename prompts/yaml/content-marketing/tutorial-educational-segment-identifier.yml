@@ -1,0 +1,145 @@
+name: "Tutorial and Educational Segment Identifier"
+category: "Content Marketing"
+difficulty: "Intermediate"
+estimated_tokens: "700-1000"
+version: "1.0.0"
+
+description: "Find moments where you explain strategies, teach mechanics, or provide valuable gaming knowledge. This prompt helps streamers identify educational content perfect for tutorial videos and helpful guides."
+
+metadata:
+  industry: "Gaming & Entertainment"
+  use_cases:
+    - "Tutorial video creation"
+    - "Educational content series"
+    - "Beginner-friendly guides"
+    - "Advanced strategy content"
+    - "Community building"
+    - "SEO content creation"
+
+  target_audience:
+    - "Gaming streamers"
+    - "Educational content creators"
+    - "Gaming instructors"
+    - "Content creators"
+    - "Gaming influencers"
+
+  prerequisites:
+    - "Gaming stream transcript"
+    - "Understanding of game mechanics"
+    - "Knowledge of skill levels"
+    - "Educational content experience"
+
+  outputs:
+    - "Timestamped educational moments"
+    - "Skill level categorization"
+    - "Tutorial potential assessment"
+    - "SEO-optimized titles"
+
+prompt_template: |
+  Please analyze this gaming stream transcript and identify educational moments that could become tutorial content or helpful guides for other players.
+
+  STREAM TRANSCRIPT: [Paste your gaming stream transcript here]
+
+  Look for these educational opportunities:
+
+  ## STRATEGY EXPLANATIONS
+  - Game mechanics tutorials or explanations
+  - Strategic decision-making processes
+  - Map knowledge, positioning, or timing advice
+  - Character/weapon/item optimization discussions
+
+  ## TEACHING MOMENTS
+  - Responses to "how do you..." questions from chat
+  - Demonstration of specific techniques or skills
+  - Common mistake identification and correction
+  - Pro tips shared during gameplay
+
+  ## ANALYTICAL CONTENT
+  - Meta discussions about game balance or updates
+  - Comparison of different strategies or builds
+  - Analysis of opponent behavior or tactics
+  - Game review or critique segments
+
+  ## BEGINNER-FRIENDLY CONTENT
+  - Basic concept explanations that assume no prior knowledge
+  - Step-by-step process breakdowns
+  - "Why" explanations behind strategic choices
+  - Encouragement and mindset advice for improving players
+
+  For each educational segment, provide:
+  - **Timestamp**: When the explanation begins and ends
+  - **Skill Level**: Beginner/Intermediate/Advanced target audience
+  - **Completeness**: Whether explanation is self-contained or needs context
+  - **Tutorial Potential**: Standalone video/guide possibility
+  - **Search Keywords**: What players would search to find this content
+  - **Title Suggestion**: Educational video title for YouTube/TikTok
+
+  Prioritize content that helps other players improve and demonstrates your expertise in an accessible way.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "4-hour strategy stream transcript with map control explanations, chat Q&A sessions, meta analysis, and beginner tip moments."
+
+example_output: |
+  ### Educational Moments from 4-Hour Strategy Stream
+
+  #### STRATEGY EXPLANATIONS
+
+  **Moment 1: Map Control Fundamentals**
+  - **Timestamp**: 1:45:30 - 1:48:15
+  - **Skill Level**: Beginner to Intermediate
+  - **Completeness**: Self-contained explanation with clear examples
+  - **Tutorial Potential**: High - could be standalone "Map Control 101" video
+  - **Search Keywords**: "map control guide", "positioning tutorial", "game strategy basics"
+  - **Title Suggestion**: "Master Map Control: 3-Minute Guide That Will Improve Your Game"
+
+  #### TEACHING MOMENTS
+
+  **Moment 2: Chat Question Response**
+  - **Timestamp**: 2:33:20 - 2:35:45
+  - **Skill Level**: Beginner
+  - **Completeness**: Complete answer with step-by-step breakdown
+  - **Tutorial Potential**: Medium - good for FAQ compilation
+  - **Search Keywords**: "how to improve aim", "aiming tips", "accuracy guide"
+  - **Title Suggestion**: "Viewer Asks: How Do I Improve My Aim? (3 Simple Tips)"
+
+best_practices:
+  - "Clear explanations: Break complex strategies into simple, understandable steps"
+  - "Visual context: Note when visual demonstration enhances the educational value"
+  - "Skill progression: Organize content from basic to advanced concepts"
+  - "Practical application: Focus on tips that viewers can immediately implement"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "educational_segments"
+
+  integration_examples:
+    - name: "Tutorial Series Planner"
+      description: "Automatically organize educational content into series"
+      code_snippet: |
+        educational_moments = extract_tutorial_segments(transcript)
+        series_plan = create_tutorial_series(educational_moments)
+
+    - name: "SEO Content Generator"
+      description: "Generate searchable tutorial content"
+      code_snippet: |
+        tutorial_segments = identify_educational_content(transcript)
+        for segment in tutorial_segments:
+            create_seo_optimized_title(segment, keywords)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/gaming-stream-transcription-highlight-creation-guide#ai-prompt-tutorial-and-educational-segment-identifier"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "educational-content"
+  - "tutorial-creation"
+  - "strategy-guides"
+  - "gaming-education"
+  - "skill-development"
+  - "instructional-content"
+  - "knowledge-sharing"

@@ -1,0 +1,138 @@
+name: "Epic Moment and Reaction Finder"
+category: "Content Marketing"
+difficulty: "Intermediate"
+estimated_tokens: "600-900"
+version: "1.0.0"
+
+description: "Automatically identify emotional peaks and exciting gameplay moments that create viral content. This prompt helps gaming streamers find highlight-worthy moments in long streams without manual review."
+
+metadata:
+  industry: "Gaming & Streaming"
+  use_cases:
+    - "Stream highlight creation"
+    - "Social media content"
+    - "Compilation videos"
+    - "Audience engagement"
+    - "Growth strategy"
+    - "Content planning"
+
+  target_audience:
+    - "Gaming streamers"
+    - "Content creators"
+    - "Video editors"
+    - "Social media managers"
+    - "Gaming influencers"
+
+  prerequisites:
+    - "Gaming stream transcript"
+    - "Understanding of gaming audience"
+    - "Basic video editing knowledge"
+
+  outputs:
+    - "Timestamped highlight moments"
+    - "Viral potential ratings"
+    - "Platform-specific recommendations"
+    - "Suggested clip titles"
+
+prompt_template: |
+  Please analyze this gaming stream transcript and identify the most exciting moments and emotional reactions for highlight clip creation.
+
+  STREAM TRANSCRIPT: [Paste your gaming stream transcript here]
+
+  Look for these types of epic moments:
+
+  ## HIGH-ENERGY REACTIONS
+  Find instances of:
+  - Surprise and shock ("OH MY GOD!" "NO WAY!" "WHAT?!")
+  - Excitement and celebration ("YES!" "LET'S GO!" "THAT'S INSANE!")
+  - Intense focus or concentration (strategic calling, clutch moments)
+  - Frustration that's entertaining rather than toxic
+
+  ## GAMEPLAY HIGHLIGHTS
+  Identify moments featuring:
+  - Clutch plays and game-saving moves
+  - Unexpected victories or comebacks  
+  - Hilarious failures or "how did that happen" moments
+  - Impressive skill demonstrations
+  - Game-breaking or glitch moments
+
+  ## VIRAL POTENTIAL MOMENTS
+  Find content that appeals beyond just gaming audiences:
+  - Relatable reactions that non-gamers understand
+  - Funny commentary that works without game context
+  - Dramatic moments with emotional storytelling
+  - Interactive moments with chat that feel inclusive
+
+  For each moment identified, provide:
+  - **Timestamp**: When the moment begins and ends
+  - **Emotion Level**: High/Medium energy rating
+  - **Clip Potential**: TikTok/YouTube Shorts/Instagram Reels suitability
+  - **Context Needed**: Whether moment requires gaming knowledge to be funny
+  - **Suggested Title**: Catchy title for social media posting
+
+  Please prioritize moments that show authentic emotion and would be entertaining even to people who don't play this specific game.
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with high-quality results.
+  ---
+
+example_input: "4-hour Valorant stream transcript with multiple rounds, chat interactions, clutch plays, and emotional reactions to both victories and defeats."
+
+example_output: |
+  ### Epic Moments from 4-Hour Valorant Stream
+
+  #### HIGH-ENERGY REACTIONS
+
+  **Moment 1: Clutch 1v4 Victory**
+  - **Timestamp**: 2:34:15 - 2:35:30
+  - **Emotion Level**: High
+  - **Clip Potential**: Perfect for YouTube Shorts (skill showcase)
+  - **Context Needed**: Minimal - impressive comeback is universally exciting
+  - **Suggested Title**: "INSANE 1v4 Clutch Had Me SCREAMING!"
+
+  **Moment 2: Unexpected Glitch**
+  - **Timestamp**: 1:42:30 - 1:43:00
+  - **Emotion Level**: Medium
+  - **Clip Potential**: Great for TikTok (funny/weird content)
+  - **Context Needed**: None - funny moment works for anyone
+  - **Suggested Title**: "This Game Bug Broke My Brain"
+
+best_practices:
+  - "Emotional authenticity: Prioritize genuine reactions over forced excitement for better audience connection"
+  - "Cross-audience appeal: Focus on moments that work for both gaming and general audiences"
+  - "Timestamp precision: Provide exact start and end times for efficient clip creation"
+  - "Context evaluation: Note which moments need gaming knowledge versus universal appeal"
+
+automation:
+  api_compatible: true
+  batch_processing: true
+  output_format: "timestamped_highlights"
+
+  integration_examples:
+    - name: "Video Editing Automation"
+      description: "Automatically create clips from identified timestamps"
+      code_snippet: |
+        highlights = find_epic_moments(stream_transcript)
+        for moment in highlights:
+            create_clip(stream_video, moment.start, moment.end)
+
+    - name: "Social Media Scheduler"
+      description: "Queue clips for optimal posting times"
+      code_snippet: |
+        epic_moments = extract_highlights(transcript)
+        for moment in epic_moments:
+            schedule_post(moment.clip, moment.title, optimal_time)
+
+resources:
+  blog_post: "https://brasstranscripts.com/blog/gaming-stream-transcription-highlight-creation-guide#ai-prompt-epic-moment-and-reaction-finder"
+  guide: "https://brasstranscripts.com/ai-prompt-guide"
+  upload: "https://brasstranscripts.com/upload"
+
+tags:
+  - "gaming-highlights"
+  - "stream-clips"
+  - "viral-content"
+  - "gaming-reactions"
+  - "content-creation"
+  - "highlight-detection"
+  - "social-media"

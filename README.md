@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **67 Professional AI Prompts for Transcript Analysis**
+🎯 **93 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -13,7 +13,7 @@ Transform meeting recordings, interviews, and audio content into executive summa
 
 ## 📋 Prompt Categories
 
-### 🏢 Executive & Business (8 prompts)
+### 🏢 Executive & Business (15 prompts)
 Perfect for C-level executives and managers who need strategic insights from meetings.
 
 - **Executive Summary Generator** - Transform meetings into boardroom-ready summaries
@@ -24,10 +24,17 @@ Perfect for C-level executives and managers who need strategic insights from mee
 - **Meeting Minutes Generator** - Create formal meeting documentation automatically
 - **Meeting Action Items Extractor** - Extract every task and commitment from meetings
 - **Meeting Executive Summary** - Concise summaries for busy executives
+- **Action Items and Responsibility Tracker** - Small business team accountability
+- **Meeting Summary and Progress Generator** - Professional progress reports
+- **Deadline and Milestone Organizer** - Project timeline management
+- **Performance Review Documentation Helper** - Employee development tracking
+- **Professional Follow-Up Email Creator** - Meeting follow-up automation
+- **Processing Time ROI Calculator** - Calculate productivity impact of transcription speed
+- **Meeting ROI Calculator** - Comprehensive ROI analysis for AI transcription implementation
 
 [📖 View Details](https://brasstranscripts.com/blog/meeting-transcripts-executive-summaries-ai-prompts) | [📁 Browse Files](./prompts/markdown/executive-business/)
 
-### 📢 Content Marketing (14 prompts)
+### 📢 Content Marketing (19 prompts)
 Transform podcast interviews and video content into comprehensive marketing campaigns.
 
 - **Blog Post Generator** - Create detailed articles from interview content
@@ -43,10 +50,15 @@ Transform podcast interviews and video content into comprehensive marketing camp
 - **Microsoft Ads Language Pattern Analyzer** - Analyze customer language for authentic ad tone
 - **Microsoft Ads Copy Generator** - Generate headlines and ad copy from customer interviews
 - **Google Ads Interview Analyzer** - Extract testimonials and social proof for Google Ads
+- **Remote Meeting Summary Generator** - Async-friendly summaries for distributed teams
+- **Async Standup Documentation** - Convert standups for timezone-friendly consumption
+- **Client Call Documentation** - Keep distributed teams aligned on client interactions
+- **YouTube Video to Blog Post Converter** - Transform videos into SEO-optimized blog content
+- **Social Media Content Extraction Suite** - Multi-platform content from single video transcript
 
 [📖 View Details](https://brasstranscripts.com/blog/podcast-content-empire-ai-prompts-marketing-assets) | [📁 Browse Files](./prompts/markdown/content-marketing/)
 
-### ⚖️ Legal Professional (5 prompts)
+### ⚖️ Legal Professional (9 prompts)
 Specialized tools for legal professionals analyzing depositions and case materials.
 
 - **Contradiction Analyzer** - Identify inconsistencies and conflicting statements
@@ -54,8 +66,35 @@ Specialized tools for legal professionals analyzing depositions and case materia
 - **Cross-Examination Prep** - Develop strategic questioning approaches
 - **Key Facts Extractor** - Systematically identify critical evidence points
 - **Legal Strategy Developer** - Connect facts to case theory and arguments
+- **Patient Encounter Clinical Note Generator** - Structure clinical documentation (for healthcare compliance workflows)
+- **Medical Terminology Accuracy Checker** - Review medical transcripts for terminology errors
+- **Deposition Analysis for Case Strategy** - Extract critical testimony for litigation strategy
+- **Client Intake Summary Generator** - Comprehensive case intake documentation
 
 [📖 View Details](https://brasstranscripts.com/blog/legal-professional-ai-toolkit-deposition-analysis-prompts) | [📁 Browse Files](./prompts/markdown/legal-professional/)
+
+### 🎮 Gaming & Streaming (6 prompts)
+Transform gaming streams into viral highlights and engaging content for social media.
+
+- **Epic Moment and Reaction Finder** - Identify viral-worthy gaming moments
+- **Funny Commentary Extractor** - Extract humorous personality moments
+- **Tutorial and Educational Segment Identifier** - Find teaching moments in streams
+- **Social Media Clip Creator** - Platform-optimized content creation
+- **Stream Highlight Reel Script Generator** - Professional compilation scripts
+- **Gaming Quote and Caption Creator** - Shareable quotes and captions
+
+[📖 View Details](https://brasstranscripts.com/blog/gaming-stream-transcription-highlight-creation-guide) | [📁 Browse Files](./prompts/markdown/content-marketing/)
+
+### 💼 Freelancer & Client Work (5 prompts)
+Professional client communication and project management workflows.
+
+- **Project Requirements Extractor** - Comprehensive project brief creation
+- **Action Items and Deadlines Generator** - Clear task and timeline organization
+- **Professional Follow-Up Email Creator** - Client communication templates
+- **Scope Change Identifier** - Prevent scope creep and miscommunication
+- **Invoice Documentation Helper** - Professional billing documentation
+
+[📖 View Details](https://brasstranscripts.com/blog/freelancer-client-communication-ai-meeting-transcription-workflow) | [📁 Browse Files](./prompts/markdown/general-content/)
 
 ### 📄 General Content (39 prompts)
 Versatile prompts for document creation, training materials, and content optimization.

@@ -1,0 +1,94 @@
+metadata:
+  id: "youtube-video-to-blog-post-converter"
+  title: "YouTube Video to Blog Post Converter"
+  category: "content-marketing"
+  subcategory: "content-repurposing"
+  difficulty: "intermediate"
+  estimated_tokens: "800-1200"
+  version: "1.0.0"
+  last_updated: "2025-11-28"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/content-creator-transcription-stack-youtube-blog-pipeline#prompt-1-youtube-video-to-blog-post-converter"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com/upload"
+
+tags:
+  - "content-repurposing"
+  - "youtube"
+  - "blog-creation"
+  - "seo-optimization"
+  - "content-creators"
+
+prompt:
+  system_message: |
+    You are a content marketing AI specialized in transforming video transcripts
+    into comprehensive, SEO-optimized blog posts for content creators.
+
+  user_template: |
+    Transform this YouTube video transcript into a comprehensive, SEO-optimized blog post that expands on the original content:
+
+    **BLOG POST STRUCTURE**
+
+    **Title and Introduction:**
+    - Create compelling blog post title targeting main keyword from video
+    - Write engaging introduction that hooks readers and previews key insights
+    - Include brief creator introduction for new blog readers
+    - Address the main problem or question the video solves
+
+    **Main Content Sections:**
+    Transform video content into structured blog format:
+    - **Section 1: [Primary topic/insight]** - Expand with additional research and context
+    - **Section 2: [Secondary topic/strategy]** - Include actionable steps and examples
+    - **Section 3: [Supporting information/case study]** - Add relevant data and statistics
+    - **Section 4: [Advanced tips/expert advice]** - Provide deeper insights not fully covered in video
+
+    **Content Enhancement:**
+    For each section, add:
+    - Relevant statistics or research that support video points
+    - Additional examples or case studies
+    - Actionable steps readers can implement
+    - Links to related resources or tools mentioned
+    - FAQ section addressing common questions from video comments
+
+    **SEO Optimization Elements:**
+    - Identify 3-5 target keywords based on video content
+    - Create scannable subheadings using target keywords
+    - Add meta description (150-160 characters)
+    - Include internal links to related blog posts or creator content
+    - Suggest relevant tags for content categorization
+
+    **Call-to-Action Strategy:**
+    - Encourage readers to watch full video for visual examples
+    - Promote email newsletter signup for similar content
+    - Direct to creator's products/services if relevant
+    - Invite engagement through comments and social sharing
+
+    **Visual Content Suggestions:**
+    - Recommend images or graphics that would enhance written content
+    - Suggest video clips or timestamps to embed in blog post
+    - Identify opportunities for downloadable resources or checklists
+
+    Focus on creating standalone value that complements rather than simply summarizes the original video content.
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with professional-grade accuracy.
+    ---
+
+    YouTube video transcript:
+    {transcript_content}
+
+use_cases:
+  - "YouTube content repurposing to blog posts"
+  - "Course content documentation from educational videos"
+  - "Podcast companion blog posts"
+  - "Webinar follow-up content creation"
+  - "Tutorial documentation from how-to videos"
+
+performance:
+  typical_processing_time: "90-120 seconds"
+  optimal_transcript_length: "15-45 minutes"
