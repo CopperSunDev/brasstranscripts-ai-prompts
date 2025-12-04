@@ -94,7 +94,7 @@ Professional client communication and project management workflows.
 - **Scope Change Identifier** - Prevent scope creep and miscommunication
 - **Invoice Documentation Helper** - Professional billing documentation
 
-[📖 View Details](https://brasstranscripts.com/blog/freelancer-client-communication-ai-meeting-transcription-workflow) | [📁 Browse Files](./prompts/markdown/general-content/)
+[📖 View Details](https://brasstranscripts.com/blog/freelancer-client-call-transcription-productivity-guide) | [📁 Browse Files](./prompts/markdown/general-content/)
 
 ### 📄 General Content (39 prompts)
 Versatile prompts for document creation, training materials, and content optimization.
