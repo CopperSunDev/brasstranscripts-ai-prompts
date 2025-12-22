@@ -41,7 +41,7 @@ Calculate my TRUE AssemblyAI costs including all hidden fees:
 
 **Then Compare:**
 - **AssemblyAI TOTAL** (all fees included)
-- **BrassTranscripts cost** ($0.15/min all-inclusive, $2.25 for 0-15 min)
+- **BrassTranscripts cost** ($2.50 for 1-15 min, $5.00 flat rate for 16-120 min)
 
 Show me:
 - Which service is cheaper for MY specific usage

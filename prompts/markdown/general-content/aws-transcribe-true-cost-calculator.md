@@ -46,7 +46,7 @@ Calculate my TRUE AWS Transcribe costs including all hidden fees:
 
 **Then Compare:**
 - **AWS Transcribe TOTAL** (all fees included)
-- **BrassTranscripts cost** ($0.15/min all-inclusive, $2.25 for 0-15 min)
+- **BrassTranscripts cost** ($2.50 for 1-15 min, $5.00 flat rate for 16-120 min)
 
 Show me:
 - Which service is cheaper for MY specific usage
@@ -144,12 +144,12 @@ AWS TRANSCRIBE TOTAL COST:
 TOTAL: $17.41 - $20.41/month
 
 BRASSTRANSCRIPTS COST:
-- 10 hours @ $0.15/min: $90.00/month
+- 10 hours @ $5.00 flat rate per file: $50.00/month
 - Speaker ID: Included
 - Storage: Included
-TOTAL: $90.00/month
+TOTAL: $50.00/month
 
-VERDICT: AWS is cheaper at this volume ($17-20 vs $90)
+VERDICT: AWS is cheaper at this volume ($17-20 vs $50)
 HOWEVER: AWS requires 4-6 hours setup time, S3 management, IAM configuration
 BrassTranscripts offers: Zero setup, included speaker ID, simpler workflow
 ```
@@ -178,12 +178,12 @@ AWS TRANSCRIBE TOTAL COST:
 TOTAL: $12.11/month
 
 BRASSTRANSCRIPTS COST:
-- 5 hours @ $0.15/min after $2.25 minimum: $45.00/month
+- 300 files @ $2.50 each: $750.00/month
 - Speaker ID: Included
 - No per-request minimums
-TOTAL: $45.00/month
+TOTAL: $750.00/month
 
-VERDICT: AWS still cheaper ($12 vs $45)
+VERDICT: AWS significantly cheaper ($12 vs $750)
 BUT WATCH: 15-second minimum costs you $1.95 extra monthly
 If file count increases, this penalty grows rapidly
 ```

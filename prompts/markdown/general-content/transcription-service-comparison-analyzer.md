@@ -47,7 +47,7 @@ Budget Information:
 
 Based on this information:
 
-1. Calculate my monthly costs for both BrassTranscripts (pay-per-file at $2.25 for 1-15 min, $0.15/min for 16+ min) and typical subscription services (assume ~$20-50/month for mid-tier)
+1. Calculate my monthly costs for both BrassTranscripts (pay-per-file at $2.50 for 1-15 min, $5.00 flat rate for 16-120 min) and typical subscription services (assume ~$20-50/month for mid-tier)
 
 2. Identify which features I actually need vs. nice-to-have extras
 
@@ -74,7 +74,7 @@ Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcript
 
 **Typical file length** (required):
 - Example: "30 minutes" or "2 hours"
-- Purpose: Affects which pricing tier applies (BrassTranscripts: $2.25 flat for 1-15 min)
+- Purpose: Affects which pricing tier applies (BrassTranscripts: $2.50 flat for 1-15 min, $5.00 flat for 16-120 min)
 
 **Usage consistency** (required):
 - Example: "Every week" or "Varies significantly"
@@ -169,9 +169,9 @@ The AI will analyze your usage patterns and provide:
 - Budget: $30/month max
 
 **Expected Output**:
-- BrassTranscripts cost: $30/month (4 × 50 min × $0.15)
+- BrassTranscripts cost: $20/month (4 × $5.00 flat rate)
 - Subscription service: ~$20-30/month (Personal tier)
-- Recommendation: Compare specific subscription prices; BrassTranscripts may cost same but offers more flexibility for variable months
+- Recommendation: BrassTranscripts offers same cost with more flexibility for variable months
 
 ### Scenario 2: Business Team
 **Input**:
@@ -182,7 +182,7 @@ The AI will analyze your usage patterns and provide:
 - Budget: $1,000/month max
 
 **Expected Output**:
-- BrassTranscripts cost: $750/month (5,000 × $0.15)
+- BrassTranscripts cost: $420/month (84 × $5.00 flat rate for 60-min files)
 - Subscription service: ~$200-500/month (Business tier with seats)
 - Recommendation: Subscription likely better due to real-time requirement and team features
 
@@ -195,7 +195,7 @@ The AI will analyze your usage patterns and provide:
 - Budget: Minimize costs
 
 **Expected Output**:
-- BrassTranscripts cost: $0-75/month (pay only when using)
+- BrassTranscripts cost: $0-50/month (pay only when using)
 - Subscription service: $20-30/month (even when not using)
 - Recommendation: Pay-per-use significantly better for variable patterns
 
