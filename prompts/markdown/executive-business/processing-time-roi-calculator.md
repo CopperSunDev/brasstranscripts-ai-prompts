@@ -50,7 +50,7 @@ With 1-3 minute processing:
 
 **Cost Improvement:**
 Calculate new costs:
-- AI transcription cost: $[0.15/minute × average meeting length]
+- AI transcription cost: $[2.50 for 1-15 min, $6.00 for 16-120 min per file]
 - Eliminated opportunity costs: $[Saved hours × hourly rate]
 - Reduced rush processing needs: $[Monthly savings]
 - Staff productivity improvement: $[Hours saved × hourly rate]
