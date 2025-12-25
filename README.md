@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **93 Professional AI Prompts for Transcript Analysis**
+🎯 **94 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -13,7 +13,7 @@ Transform meeting recordings, interviews, and audio content into executive summa
 
 ## 📋 Prompt Categories
 
-### 🏢 Executive & Business (15 prompts)
+### 🏢 Executive & Business (16 prompts)
 Perfect for C-level executives and managers who need strategic insights from meetings.
 
 - **Executive Summary Generator** - Transform meetings into boardroom-ready summaries
@@ -23,6 +23,7 @@ Perfect for C-level executives and managers who need strategic insights from mee
 - **Executive Communication Package** - Create stakeholder updates and briefings
 - **Meeting Minutes Generator** - Create formal meeting documentation automatically
 - **Meeting Action Items Extractor** - Extract every task and commitment from meetings
+- **Meeting Action Item Extractor (Simple)** - Beginner-friendly action items with owner grouping
 - **Meeting Executive Summary** - Concise summaries for busy executives
 - **Action Items and Responsibility Tracker** - Small business team accountability
 - **Meeting Summary and Progress Generator** - Professional progress reports

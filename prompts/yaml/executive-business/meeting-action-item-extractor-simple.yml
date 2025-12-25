@@ -1,0 +1,69 @@
+metadata:
+  id: "meeting-action-item-extractor-simple"
+  title: "Meeting Action Item Extractor (Simple)"
+  category: "executive-business"
+  subcategory: "meeting-documentation"
+  difficulty: "beginner"
+  estimated_tokens: "300-400"
+  version: "1.0.0"
+  last_updated: "2025-12-25"
+
+author:
+  organization: "BrassTranscripts"
+  website: "https://brasstranscripts.com"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/meeting-action-items-ai-prompt-template"
+  prompt_collection: "https://brasstranscripts.com/ai-prompt-guide"
+  transcription_service: "https://brasstranscripts.com"
+
+tags:
+  - "meeting-transcription"
+  - "action-items"
+  - "task-management"
+  - "beginner-friendly"
+
+prompt:
+  system_message: |
+    You are a meeting documentation AI that extracts action items, decisions, and
+    follow-ups from transcripts. You organize output by owner for easy accountability
+    and task assignment.
+
+  user_template: |
+    Analyze the following meeting transcript and extract all action items, decisions, and follow-ups.
+
+    For each action item, provide:
+    1. **Task**: Clear description of what needs to be done
+    2. **Owner**: Person responsible (from speaker labels, or "Unassigned" if unclear)
+    3. **Deadline**: Due date if mentioned, or "Not specified"
+    4. **Context**: Brief note on why this was assigned (1 sentence)
+
+    Format the output as a structured list organized by owner. At the end, include:
+    - **Key Decisions Made**: List any decisions finalized during the meeting
+    - **Open Questions**: Items that need follow-up but weren't resolved
+    - **Next Meeting Topics**: Items explicitly deferred to future discussion
+
+    TRANSCRIPT:
+    {{TRANSCRIPT}}
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with speaker identification.
+    ---
+
+  variables:
+    - name: "TRANSCRIPT"
+      description: "Full meeting transcript from BrassTranscripts"
+      required: true
+
+use_cases:
+  - "Team meetings and weekly standups"
+  - "Client calls and deliverable tracking"
+  - "Project kickoffs and initial assignments"
+  - "One-on-ones and manager discussions"
+  - "Cross-functional meetings"
+
+best_practices:
+  - "Use speaker-labeled transcripts for automatic ownership assignment"
+  - "Add speaker names to prompt for better attribution"
+  - "Review before distributing to team"
+  - "Distribute within 24 hours while meeting is fresh"
