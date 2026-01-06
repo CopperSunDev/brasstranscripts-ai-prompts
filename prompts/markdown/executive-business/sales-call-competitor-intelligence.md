@@ -106,4 +106,4 @@ TRANSCRIPT:
 
 ## Source
 
-📖 [Original Blog Post](https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#ai-prompt-competitor-intelligence-extractor)
+📖 [Original Blog Post](https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#prompt-4-competitor-intelligence-extractor)

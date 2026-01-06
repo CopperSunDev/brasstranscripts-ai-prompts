@@ -97,4 +97,4 @@ TRANSCRIPT:
 
 ## Source
 
-📖 [Original Blog Post](https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#ai-prompt-buying-signal-detector)
+📖 [Original Blog Post](https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#prompt-3-buying-signal-detector)

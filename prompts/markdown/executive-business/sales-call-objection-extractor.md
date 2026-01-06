@@ -91,4 +91,4 @@ TRANSCRIPT:
 
 ## Source
 
-📖 [Original Blog Post](https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#ai-prompt-objection-pattern-extractor)
+📖 [Original Blog Post](https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#prompt-2-objection-pattern-extractor)

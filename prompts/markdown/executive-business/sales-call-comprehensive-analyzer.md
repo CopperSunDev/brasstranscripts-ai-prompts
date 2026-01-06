@@ -110,4 +110,4 @@ TRANSCRIPT:
 
 ## Source
 
-📖 [Original Blog Post](https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#ai-prompt-comprehensive-sales-call-analyzer)
+📖 [Original Blog Post](https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#prompt-1-comprehensive-sales-call-analyzer)
