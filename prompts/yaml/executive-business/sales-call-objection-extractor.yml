@@ -1,0 +1,63 @@
+name: Sales Call Objection Pattern Extractor
+category: executive-business
+difficulty: intermediate
+estimated_tokens: 600-900
+version: 1.0.0
+
+description: >
+  Extract and categorize all objections from sales call transcripts with detailed
+  analysis of rep responses and suggested improvements. Ideal for sales managers
+  analyzing patterns across multiple calls and developing objection-handling training.
+
+prompt: |
+  Analyze this sales call transcript to extract and categorize all objections raised by the prospect.
+
+  For each objection found:
+
+  1. **Objection Category**:
+     - Price/Budget
+     - Timing/Urgency
+     - Authority/Decision Process
+     - Need/Fit
+     - Trust/Risk
+     - Competition
+     - Status Quo/Inertia
+
+  2. **Exact Quote**: The prospect's words verbatim
+
+  3. **Context**: What prompted this objection
+
+  4. **Rep's Response**: How the salesperson addressed it
+
+  5. **Response Effectiveness**:
+     - Score 1-5 (1=made it worse, 5=fully resolved)
+     - What worked in the response
+     - What could be improved
+
+  6. **Suggested Response Script**:
+     A better way to handle this objection, using the prospect's own language and concerns
+
+  At the end, provide:
+  - **Objection Summary**: Count by category
+  - **Most Critical Objection**: The one most likely to kill this deal
+  - **Coaching Priority**: The objection type this rep needs most practice handling
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with speaker identification.
+  ---
+
+  TRANSCRIPT:
+  [PASTE YOUR SALES CALL TRANSCRIPT HERE]
+
+variables:
+  - name: TRANSCRIPT
+    description: Full sales call transcript with speaker labels
+    required: true
+
+use_cases:
+  - Sales training and playbook development
+  - Cross-call pattern analysis
+  - Rep coaching sessions
+  - Competitive battlecard updates
+
+source_url: https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#ai-prompt-objection-pattern-extractor

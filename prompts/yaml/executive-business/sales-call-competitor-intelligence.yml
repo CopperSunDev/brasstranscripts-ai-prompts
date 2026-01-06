@@ -1,0 +1,67 @@
+name: Sales Call Competitor Intelligence Extractor
+category: executive-business
+difficulty: intermediate
+estimated_tokens: 500-800
+version: 1.0.0
+
+description: >
+  Extract competitive intelligence from sales call transcripts including competitor
+  mentions, prospect sentiment, evaluation criteria, and positioning opportunities.
+  Essential for keeping battlecards current and understanding real competitive dynamics.
+
+prompt: |
+  Analyze this sales call transcript for competitive intelligence. Extract all mentions of competitors, alternative solutions, and the prospect's evaluation criteria.
+
+  ## DIRECT COMPETITOR MENTIONS
+  For each competitor named:
+  - Competitor name
+  - How they came up (prospect mentioned, rep asked, comparison requested)
+  - Prospect's current relationship (evaluating, using, used previously)
+  - Sentiment (positive, negative, neutral)
+  - Specific features or capabilities mentioned
+  - Pricing information shared
+
+  ## INDIRECT COMPETITION
+  - Internal solutions or workarounds mentioned
+  - "Do nothing" indicators (status quo preference)
+  - Build vs buy considerations
+
+  ## EVALUATION CRITERIA
+  What factors is the prospect using to compare options?
+  - Price sensitivity level
+  - Feature requirements (must-have vs nice-to-have)
+  - Integration requirements
+  - Timeline constraints
+  - Risk tolerance
+
+  ## COMPETITIVE POSITIONING OPPORTUNITIES
+  Based on this call:
+  - Where we have clear advantage
+  - Where competitors have advantage
+  - Unaddressed needs our solution uniquely solves
+  - Messaging adjustments for this prospect
+
+  ## WIN/LOSS INDICATORS
+  - Likelihood we win against mentioned competitors
+  - Key differentiators to emphasize in follow-up
+  - Competitive landmines to avoid
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with speaker identification.
+  ---
+
+  TRANSCRIPT:
+  [PASTE YOUR SALES CALL TRANSCRIPT HERE]
+
+variables:
+  - name: TRANSCRIPT
+    description: Full sales call transcript with speaker labels
+    required: true
+
+use_cases:
+  - Competitive battlecard updates
+  - Win/loss analysis
+  - Product feedback and gap identification
+  - Market intelligence gathering
+
+source_url: https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#ai-prompt-competitor-intelligence-extractor

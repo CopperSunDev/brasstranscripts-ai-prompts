@@ -1,0 +1,80 @@
+name: Sales Call Comprehensive Analyzer
+category: executive-business
+difficulty: intermediate
+estimated_tokens: 800-1200
+version: 1.0.0
+
+description: >
+  Complete analysis of sales call transcripts covering buying signals, objections,
+  competitor mentions, action items, and rep performance. Provides deal risk assessment
+  and recommended next steps for advancing opportunities.
+
+prompt: |
+  Analyze this sales call transcript and provide a comprehensive report covering:
+
+  ## CALL OVERVIEW
+  - Call duration and talk-time ratio (rep vs prospect)
+  - Stage in sales cycle (discovery, demo, negotiation, close)
+  - Overall sentiment and engagement level
+
+  ## BUYING SIGNALS
+  Identify and quote specific statements indicating:
+  - Purchase intent or readiness
+  - Timeline urgency
+  - Budget availability
+  - Decision-maker involvement
+  - Pain points requiring immediate solution
+
+  Rate buying signal strength: Strong / Moderate / Weak / None Detected
+
+  ## OBJECTIONS RAISED
+  For each objection:
+  - Quote the exact objection
+  - Timestamp or context
+  - How the rep responded
+  - Effectiveness rating (1-5)
+  - Suggested alternative response
+
+  ## COMPETITOR MENTIONS
+  - Which competitors were mentioned
+  - Context of the mention (considering them, currently using, heard about)
+  - Prospect's sentiment toward competitor
+  - Opportunities to differentiate
+
+  ## ACTION ITEMS
+  - Commitments made by the rep
+  - Information requested by the prospect
+  - Agreed next steps
+  - Follow-up timeline
+
+  ## REP PERFORMANCE ASSESSMENT
+  - Questions asked (discovery quality)
+  - Active listening indicators
+  - Value proposition delivery
+  - Objection handling effectiveness
+  - Areas for coaching
+
+  ## DEAL RISK ASSESSMENT
+  - Red flags identified
+  - Probability estimate (with reasoning)
+  - Recommended next actions to advance the deal
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with speaker identification.
+  ---
+
+  TRANSCRIPT:
+  [PASTE YOUR SALES CALL TRANSCRIPT HERE]
+
+variables:
+  - name: TRANSCRIPT
+    description: Full sales call transcript with speaker labels
+    required: true
+
+use_cases:
+  - Deal review meetings
+  - Sales coaching sessions
+  - Forecast accuracy improvement
+  - Win/loss analysis
+
+source_url: https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#ai-prompt-comprehensive-sales-call-analyzer

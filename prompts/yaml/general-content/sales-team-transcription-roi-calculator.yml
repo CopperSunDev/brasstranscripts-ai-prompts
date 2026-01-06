@@ -1,0 +1,81 @@
+name: Sales Team Transcription ROI Calculator
+category: general-content
+difficulty: intermediate
+estimated_tokens: 500-700
+version: 1.0.0
+
+description: >
+  Calculate whether DIY transcription can replace enterprise conversation intelligence
+  platforms like Gong or Chorus. Compares total costs, feature gaps, and implementation
+  effort for sales teams considering alternatives to expensive per-seat subscriptions.
+
+prompt: |
+  Calculate whether DIY transcription can replace our conversation intelligence platform.
+
+  CURRENT SITUATION:
+  - Number of sales reps: [NUMBER]
+  - Current platform: [GONG/CHORUS/REVENUE.IO/OTHER/NONE]
+  - Current monthly cost: $[AMOUNT] or [UNKNOWN]
+  - Calls recorded per rep per month: [NUMBER]
+  - Average call length: [MINUTES]
+
+  WHAT WE USE THE PLATFORM FOR:
+  - [ ] Call recording
+  - [ ] Automatic transcription
+  - [ ] AI-generated call summaries
+  - [ ] Objection tracking
+  - [ ] Competitor mention alerts
+  - [ ] Coaching scorecards
+  - [ ] CRM integration
+  - [ ] Deal risk scoring
+  - [ ] Pipeline analytics
+
+  CALCULATE DIY ALTERNATIVE:
+
+  1. **Transcription costs** (BrassTranscripts)
+     - Calculate: [reps] × [calls/rep] × $6/call
+     - Monthly and annual projection
+
+  2. **AI analysis costs** (ChatGPT/Claude)
+     - Estimate prompt usage for call analysis
+     - $20/user/month for ChatGPT Plus or Claude Pro
+     - Or API costs at ~$0.01-0.03 per call analysis
+
+  3. **Total DIY cost**
+     - Transcription + AI tools
+     - Compare to current platform cost
+
+  4. **Feature gap analysis**
+     - What we lose without enterprise platform
+     - What we keep with DIY approach
+     - What we might gain (flexibility, no lock-in)
+
+  PROVIDE:
+  - Monthly savings (or additional cost) of DIY approach
+  - Annual savings projection
+  - Break-even team size (where enterprise makes sense)
+  - Recommendation based on our checked features
+  - Implementation effort estimate (hours to set up DIY workflow)
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com)
+  ---
+
+variables:
+  - name: NUMBER (reps)
+    description: Number of sales representatives
+    required: true
+  - name: NUMBER (calls)
+    description: Calls recorded per rep per month
+    required: true
+  - name: MINUTES
+    description: Average call length
+    required: true
+
+use_cases:
+  - Cost reduction initiatives
+  - Small team tool optimization
+  - Startup sales infrastructure
+  - Platform migration analysis
+
+source_url: https://brasstranscripts.com/blog/transcription-api-pricing-calculator-prompts-2026#the-sales-team-calculator

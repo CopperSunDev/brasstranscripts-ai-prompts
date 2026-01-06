@@ -1,0 +1,82 @@
+name: Podcast Transcription Cost Calculator
+category: general-content
+difficulty: beginner
+estimated_tokens: 400-600
+version: 1.0.0
+
+description: >
+  Calculate podcast transcription costs across multiple services based on episode
+  frequency, average length, and feature requirements. Provides monthly and annual
+  projections with effective per-hour rates to identify the best value option.
+
+prompt: |
+  Calculate my podcast transcription costs across different services based on my production schedule.
+
+  MY PODCAST DETAILS:
+  - Episodes per month: [NUMBER]
+  - Average episode length: [MINUTES]
+  - Number of speakers per episode: [NUMBER]
+  - Do I need speaker labels? [YES/NO]
+  - Do I need timestamps? [YES/NO]
+  - Output format needed: [TXT/SRT/VTT/JSON]
+
+  CALCULATE FOR THESE SERVICES:
+
+  1. **BrassTranscripts** (Pay-per-use)
+     - $2.50 flat for 0-15 min files
+     - $6.00 flat for 16-120 min files
+     - Includes speaker ID and all formats
+
+  2. **Otter.ai** (Subscription)
+     - Free: 300 min/month
+     - Pro: $16.99/month for 1,200 min
+     - Business: $30/user/month for 6,000 min
+
+  3. **Temi** (Pay-per-use)
+     - $0.25/minute
+     - Speaker ID included
+
+  4. **Descript** (Subscription + Transcription)
+     - Free: 1 hour/month
+     - Creator: $15/month (10 hours)
+     - Pro: $30/month (30 hours)
+
+  5. **Rev AI** (Pay-per-use)
+     - $0.25/minute base
+     - Speaker diarization included
+
+  FOR EACH SERVICE, PROVIDE:
+  - Monthly cost calculation with math shown
+  - Annual cost projection
+  - Cost per episode
+  - Cost per audio hour (effective rate)
+  - Whether my needs exceed plan limits
+  - Hidden costs I might miss (speaker ID add-ons, format charges, storage)
+
+  THEN RECOMMEND:
+  - Best option for my specific usage pattern
+  - Break-even point where switching services makes sense
+  - What would change my recommendation (more/fewer episodes, longer/shorter)
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com)
+  ---
+
+variables:
+  - name: NUMBER (episodes)
+    description: Episodes produced per month
+    required: true
+  - name: MINUTES
+    description: Average episode length
+    required: true
+  - name: NUMBER (speakers)
+    description: Typical speakers per episode
+    required: true
+
+use_cases:
+  - New podcast budget planning
+  - Service comparison and switching decisions
+  - Annual budget projections
+  - Production scaling analysis
+
+source_url: https://brasstranscripts.com/blog/transcription-api-pricing-calculator-prompts-2026#the-podcaster-calculator

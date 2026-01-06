@@ -1,0 +1,83 @@
+name: Content Creator Transcription Budget Planner
+category: general-content
+difficulty: beginner
+estimated_tokens: 400-600
+version: 1.0.0
+
+description: >
+  Plan transcription budgets for content creators with variable production schedules.
+  Calculates costs across slow, average, and busy month scenarios to identify services
+  that handle production variability without wasting money on unused subscription capacity.
+
+prompt: |
+  Plan my transcription budget as a content creator with variable output.
+
+  MY CONTENT PRODUCTION:
+  - Primary platform: [YOUTUBE/PODCAST/COURSES/MIXED]
+  - Content pieces per month: [RANGE, e.g., "2-6"]
+  - Average content length: [MINUTES]
+  - Busiest month (last year): [PIECES] pieces, [TOTAL HOURS] audio
+  - Slowest month (last year): [PIECES] pieces, [TOTAL HOURS] audio
+
+  WHAT I USE TRANSCRIPTS FOR:
+  - [ ] YouTube captions/subtitles
+  - [ ] Blog post creation
+  - [ ] Social media quotes
+  - [ ] Show notes
+  - [ ] Course materials
+  - [ ] SEO optimization
+  - [ ] Accessibility compliance
+
+  CALCULATE THREE SCENARIOS:
+
+  **Scenario A: Slow Month**
+  - Minimum expected content
+  - Calculate costs across services
+
+  **Scenario B: Average Month**
+  - Typical content volume
+  - Calculate costs across services
+
+  **Scenario C: Busy Month**
+  - Maximum expected content
+  - Calculate costs across services
+
+  FOR EACH SCENARIO, COMPARE:
+  1. BrassTranscripts (pay-per-use): $6/file over 15 min
+  2. Otter Pro ($16.99/mo): 1,200 min included
+  3. Descript Creator ($15/mo): 10 hours included
+  4. Descript Pro ($30/mo): 30 hours included
+
+  ANALYSIS:
+  - Which service wins in each scenario?
+  - What's my expected annual cost with variable production?
+  - At what consistent volume does subscription beat pay-per-use?
+  - Hidden costs for my specific use cases (SRT export, speaker ID, etc.)
+
+  RECOMMENDATION:
+  - Best primary service for my variability pattern
+  - Backup option for overflow months
+  - Annual budget range to plan for
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com)
+  ---
+
+variables:
+  - name: PLATFORM
+    description: Primary content platform
+    required: true
+  - name: RANGE
+    description: Monthly content piece range
+    required: true
+  - name: MINUTES
+    description: Average content length
+    required: true
+
+use_cases:
+  - YouTube caption budgeting
+  - Podcast production planning
+  - Course creation cost projection
+  - Multi-platform content optimization
+
+source_url: https://brasstranscripts.com/blog/transcription-api-pricing-calculator-prompts-2026#the-content-creator-calculator

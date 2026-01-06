@@ -1,0 +1,83 @@
+name: Enterprise Transcription Budget Calculator
+category: general-content
+difficulty: advanced
+estimated_tokens: 600-900
+version: 1.0.0
+
+description: >
+  Calculate organization-wide transcription costs and identify optimization opportunities.
+  Analyzes multi-department usage, consolidation scenarios, compliance requirements, and
+  provides negotiation leverage points for enterprise volume discounts.
+
+prompt: |
+  Calculate transcription costs for our organization and identify optimization opportunities.
+
+  ORGANIZATION DETAILS:
+  - Departments using transcription: [LIST]
+  - Total users who transcribe: [NUMBER]
+  - Monthly audio hours (organization-wide): [HOURS]
+  - Current solution: [CENTRALIZED/DEPARTMENTAL/AD-HOC]
+  - Current annual spend: $[AMOUNT] or [UNKNOWN]
+
+  USAGE BREAKDOWN BY DEPARTMENT:
+  - [DEPT 1]: [HOURS/MONTH], [PRIMARY USE CASE]
+  - [DEPT 2]: [HOURS/MONTH], [PRIMARY USE CASE]
+  - [DEPT 3]: [HOURS/MONTH], [PRIMARY USE CASE]
+
+  REQUIREMENTS:
+  - Compliance needs: [HIPAA/SOC2/GDPR/NONE]
+  - Data residency requirements: [US/EU/NONE]
+  - SSO/enterprise authentication: [REQUIRED/PREFERRED/NOT NEEDED]
+  - Admin controls: [REQUIRED/PREFERRED/NOT NEEDED]
+  - API access: [REQUIRED/PREFERRED/NOT NEEDED]
+
+  CALCULATE:
+
+  **Current State Analysis**
+  - Total current spend across all departments
+  - Per-hour effective rate
+  - Unused capacity (if subscription-based)
+
+  **Consolidation Scenario**
+  - Single enterprise contract pricing (request quotes)
+  - Estimated discount for combined volume (typically 15-30%)
+  - Implementation and change management costs
+
+  **Hybrid Scenario**
+  - Enterprise solution for high-volume departments
+  - Pay-per-use for low-volume/variable departments
+  - Combined cost optimization
+
+  **Build vs Buy Analysis** (if relevant)
+  - Self-hosted WhisperX infrastructure costs
+  - Break-even volume for self-hosting
+  - Hidden costs (maintenance, updates, DevOps time)
+
+  RECOMMENDATIONS:
+  - Optimal structure for our organization
+  - Negotiation leverage points with vendors
+  - Expected savings from optimization
+  - Implementation roadmap
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com)
+  ---
+
+variables:
+  - name: LIST (departments)
+    description: Departments using transcription
+    required: true
+  - name: HOURS
+    description: Total monthly audio hours organization-wide
+    required: true
+  - name: AMOUNT
+    description: Current annual transcription spend
+    required: false
+
+use_cases:
+  - IT procurement standardization
+  - Budget optimization initiatives
+  - Compliance-driven vendor selection
+  - Enterprise contract negotiation
+
+source_url: https://brasstranscripts.com/blog/transcription-api-pricing-calculator-prompts-2026#the-enterprise-volume-calculator

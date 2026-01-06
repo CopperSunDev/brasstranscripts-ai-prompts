@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **94 Professional AI Prompts for Transcript Analysis**
+🎯 **104 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -13,7 +13,7 @@ Transform meeting recordings, interviews, and audio content into executive summa
 
 ## 📋 Prompt Categories
 
-### 🏢 Executive & Business (16 prompts)
+### 🏢 Executive & Business (20 prompts)
 Perfect for C-level executives and managers who need strategic insights from meetings.
 
 - **Executive Summary Generator** - Transform meetings into boardroom-ready summaries
@@ -32,6 +32,10 @@ Perfect for C-level executives and managers who need strategic insights from mee
 - **Professional Follow-Up Email Creator** - Meeting follow-up automation
 - **Processing Time ROI Calculator** - Calculate productivity impact of transcription speed
 - **Meeting ROI Calculator** - Comprehensive ROI analysis for AI transcription implementation
+- **Sales Call Comprehensive Analyzer** - Full sales conversation analysis with methodology and coaching insights
+- **Sales Call Objection Extractor** - Identify objections, responses, and resolution effectiveness
+- **Sales Call Buying Signal Detector** - Extract positive indicators and decision timeline signals
+- **Sales Call Competitor Intelligence** - Analyze competitor mentions and develop counter-positioning
 
 [📖 View Details](https://brasstranscripts.com/blog/meeting-transcripts-executive-summaries-ai-prompts) | [📁 Browse Files](./prompts/markdown/executive-business/)
 
@@ -97,7 +101,7 @@ Professional client communication and project management workflows.
 
 [📖 View Details](https://brasstranscripts.com/blog/freelancer-client-call-transcription-productivity-guide) | [📁 Browse Files](./prompts/markdown/general-content/)
 
-### 📄 General Content (39 prompts)
+### 📄 General Content (45 prompts)
 Versatile prompts for document creation, training materials, and content optimization.
 
 - **Government Meeting Minutes Assistant** - Help government clerks draft comprehensive minutes from AI transcripts of recorded meetings
@@ -140,6 +144,12 @@ Versatile prompts for document creation, training materials, and content optimiz
 - **Otter.ai Pricing Calculator** - Calculate true Otter.ai costs including all hidden fees vs BrassTranscripts
 - **Trint Pricing Calculator** - Calculate true Trint costs including all hidden fees vs BrassTranscripts
 - **Sonix Pricing Calculator** - Calculate true Sonix costs including all hidden fees vs BrassTranscripts
+- **Podcast Transcription Cost Calculator** - Calculate true costs for podcast transcription workflows
+- **Research Project Transcription Budget** - Multi-interview budget planning with timeline optimization
+- **Sales Team Transcription ROI Calculator** - Revenue impact analysis for sales call transcription programs
+- **Content Creator Transcription Budget** - YouTube and content creator transcription cost optimization
+- **Subscription vs Pay-Per-Use Decision Calculator** - Analyze usage patterns to choose optimal pricing model
+- **Enterprise Transcription Budget Calculator** - Organization-wide cost analysis with consolidation scenarios
 
 [📖 View Details](https://brasstranscripts.com/blog/powerful-llm-prompts-transcript-optimization) | [📁 Browse Files](./prompts/markdown/general-content/)
 

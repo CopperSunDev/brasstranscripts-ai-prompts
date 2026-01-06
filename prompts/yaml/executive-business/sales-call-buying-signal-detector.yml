@@ -1,0 +1,65 @@
+name: Sales Call Buying Signal Detector
+category: executive-business
+difficulty: intermediate
+estimated_tokens: 500-800
+version: 1.0.0
+
+description: >
+  Identify verbal cues indicating purchase intent from sales call transcripts.
+  Detects strong and moderate buying signals, highlights missed opportunities
+  where reps didn't capitalize on signals, and recommends next steps based on signal strength.
+
+prompt: |
+  Review this sales call transcript and identify all buying signals—verbal cues indicating the prospect is moving toward a purchase decision.
+
+  ## STRONG BUYING SIGNALS
+  Statements indicating high purchase intent:
+  - Asking about implementation/onboarding
+  - Discussing specific use cases for their team
+  - Inquiring about pricing, contracts, or terms
+  - Mentioning timeline urgency
+  - Asking "what's next?"
+
+  Quote each signal and rate its strength.
+
+  ## MODERATE BUYING SIGNALS
+  Statements indicating growing interest:
+  - Asking detailed technical questions
+  - Sharing internal challenges the solution addresses
+  - Requesting references or case studies
+  - Involving additional stakeholders
+
+  ## MISSED OPPORTUNITIES
+  Moments where buying signals appeared but the rep didn't capitalize:
+  - Signal that was ignored
+  - What the rep said instead
+  - Better response that would have advanced the deal
+
+  ## BUYING SIGNAL TIMELINE
+  Map when signals appeared during the call. Early signals indicate strong fit; late signals may indicate the rep successfully built value.
+
+  ## RECOMMENDED NEXT STEPS
+  Based on the buying signals detected:
+  - Is this prospect ready for a proposal?
+  - What additional information would accelerate the decision?
+  - Who else needs to be involved?
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with speaker identification.
+  ---
+
+  TRANSCRIPT:
+  [PASTE YOUR SALES CALL TRANSCRIPT HERE]
+
+variables:
+  - name: TRANSCRIPT
+    description: Full sales call transcript with speaker labels
+    required: true
+
+use_cases:
+  - Deal acceleration decisions
+  - Rep coaching on signal recognition
+  - Forecast validation
+  - Post-call strategy planning
+
+source_url: https://brasstranscripts.com/blog/sales-call-transcription-ai-analysis-guide-2026#ai-prompt-buying-signal-detector
