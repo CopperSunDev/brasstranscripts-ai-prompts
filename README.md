@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **104 Professional AI Prompts for Transcript Analysis**
+🎯 **107 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -13,7 +13,7 @@ Transform meeting recordings, interviews, and audio content into executive summa
 
 ## 📋 Prompt Categories
 
-### 🏢 Executive & Business (20 prompts)
+### 🏢 Executive & Business (23 prompts)
 Perfect for C-level executives and managers who need strategic insights from meetings.
 
 - **Executive Summary Generator** - Transform meetings into boardroom-ready summaries
@@ -36,6 +36,9 @@ Perfect for C-level executives and managers who need strategic insights from mee
 - **Sales Call Objection Extractor** - Identify objections, responses, and resolution effectiveness
 - **Sales Call Buying Signal Detector** - Extract positive indicators and decision timeline signals
 - **Sales Call Competitor Intelligence** - Analyze competitor mentions and develop counter-positioning
+- **Sales Call Analyzer** - Structured summary for sales managers with coaching notes
+- **Competitor Mention Extractor** - Simple competitor intel extraction from sales calls
+- **Objection Pattern Identifier** - Categorize objections with effectiveness ratings
 
 [📖 View Details](https://brasstranscripts.com/blog/meeting-transcripts-executive-summaries-ai-prompts) | [📁 Browse Files](./prompts/markdown/executive-business/)
 
