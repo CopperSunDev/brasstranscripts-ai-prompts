@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **107 Professional AI Prompts for Transcript Analysis**
+🎯 **113 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -13,7 +13,7 @@ Transform meeting recordings, interviews, and audio content into executive summa
 
 ## 📋 Prompt Categories
 
-### 🏢 Executive & Business (23 prompts)
+### 🏢 Executive & Business (27 prompts)
 Perfect for C-level executives and managers who need strategic insights from meetings.
 
 - **Executive Summary Generator** - Transform meetings into boardroom-ready summaries
@@ -39,6 +39,10 @@ Perfect for C-level executives and managers who need strategic insights from mee
 - **Sales Call Analyzer** - Structured summary for sales managers with coaching notes
 - **Competitor Mention Extractor** - Simple competitor intel extraction from sales calls
 - **Objection Pattern Identifier** - Categorize objections with effectiveness ratings
+- **Structured Interview Evaluator** - Create evidence-based hiring evaluations with STAR methodology
+- **Interview Bias Detector** - Review interview transcripts for potential bias indicators
+- **Resolution Extractor** - Extract formal resolutions and voting records from board meetings
+- **Board Minutes Drafting Assistant** - Create first drafts of formal board meeting minutes
 
 [📖 View Details](https://brasstranscripts.com/blog/meeting-transcripts-executive-summaries-ai-prompts) | [📁 Browse Files](./prompts/markdown/executive-business/)
 
@@ -66,7 +70,7 @@ Transform podcast interviews and video content into comprehensive marketing camp
 
 [📖 View Details](https://brasstranscripts.com/blog/podcast-content-empire-ai-prompts-marketing-assets) | [📁 Browse Files](./prompts/markdown/content-marketing/)
 
-### ⚖️ Legal Professional (9 prompts)
+### ⚖️ Legal Professional (11 prompts)
 Specialized tools for legal professionals analyzing depositions and case materials.
 
 - **Contradiction Analyzer** - Identify inconsistencies and conflicting statements
@@ -78,6 +82,8 @@ Specialized tools for legal professionals analyzing depositions and case materia
 - **Medical Terminology Accuracy Checker** - Review medical transcripts for terminology errors
 - **Deposition Analysis for Case Strategy** - Extract critical testimony for litigation strategy
 - **Client Intake Summary Generator** - Comprehensive case intake documentation
+- **Session Progress Note Generator** - Clinical SOAP notes from therapy session transcripts
+- **Supervision Case Summary** - Prepare therapy sessions for clinical supervision
 
 [📖 View Details](https://brasstranscripts.com/blog/legal-professional-ai-toolkit-deposition-analysis-prompts) | [📁 Browse Files](./prompts/markdown/legal-professional/)
 
@@ -195,7 +201,7 @@ These prompts help professionals:
 
 ### Recommended Workflow:
 1. **Record** your meeting, interview, or content session
-2. **Transcribe** with [BrassTranscripts](https://brasstranscripts.com/upload) (95-98% accuracy)
+2. **Transcribe** with [BrassTranscripts](https://brasstranscripts.com/upload)
 3. **Select** the appropriate prompt for your goal
 4. **Process** with your preferred AI tool (ChatGPT, Claude, etc.)
 5. **Refine** the output for your specific audience and use case
@@ -213,4 +219,4 @@ MIT License - Feel free to use, modify, and distribute these prompts for any pur
 
 ---
 
-**Created by [BrassTranscripts](https://brasstranscripts.com)** - Professional AI transcription services with 95-98% accuracy for all your audio and video content.
+**Created by [BrassTranscripts](https://brasstranscripts.com)** - Professional AI transcription services for all your audio and video content.

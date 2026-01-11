@@ -1,0 +1,73 @@
+metadata:
+  title: "Interview Bias Detector"
+  category: "executive-business"
+  difficulty: "intermediate"
+  description: "Reviews interview transcripts for potential bias indicators and documentation quality issues before finalizing hiring decisions."
+  source_url: "https://brasstranscripts.com/blog/hr-interview-transcription-hiring-guide-2026"
+  use_cases:
+    - "Pre-decision bias review for hiring committees"
+    - "Interview quality audits for HR compliance"
+    - "Interviewer training and calibration"
+    - "EEOC documentation review"
+    - "Diversity and inclusion program support"
+
+prompt:
+  user_template: |
+    Review this interview transcript for potential bias indicators and documentation quality.
+
+    Analyze the following:
+
+    1. **Question Consistency**
+       - Were job-related questions asked consistently?
+       - Any off-topic questions that could indicate bias?
+       - Questions about protected characteristics (even if indirect)?
+
+    2. **Evaluation Quality**
+       - Are there statements about the candidate's "culture fit" without job-related basis?
+       - Any comments based on appearance, background, or demographics?
+       - Assumptions made without evidence from candidate responses?
+
+    3. **Documentation Gaps**
+       - Important candidate statements that weren't explored further
+       - Competencies that weren't adequately assessed
+       - Missing follow-up questions that would strengthen evaluation
+
+    4. **Bias Risk Indicators**
+       - Affinity bias signals (similarity to interviewer)
+       - Confirmation bias patterns (seeking information that confirms initial impression)
+       - Attribution errors (assumptions based on external traits)
+
+    5. **Recommendations**
+       - Documentation improvements needed
+       - Additional evaluation steps required
+       - Training opportunities for interviewers
+
+    OUTPUT FORMAT:
+    - Risk level: [Low/Medium/High]
+    - Priority issues to address
+    - Suggested remediation steps
+
+    TRANSCRIPT:
+    [Paste your interview transcript here]
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with speaker identification.
+    ---
+
+  variables:
+    - name: "transcript"
+      description: "The interview transcript with speaker labels"
+      required: true
+
+expected_output:
+  format: "bias_risk_assessment"
+  sections:
+    - "Question consistency analysis"
+    - "Evaluation quality review"
+    - "Documentation gap identification"
+    - "Bias risk indicators"
+    - "Risk level rating and remediation"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/hr-interview-transcription-hiring-guide-2026"
+  transcription_service: "https://brasstranscripts.com"

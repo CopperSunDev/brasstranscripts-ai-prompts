@@ -1,0 +1,84 @@
+metadata:
+  title: "Structured Interview Evaluator"
+  category: "executive-business"
+  difficulty: "intermediate"
+  description: "Analyzes job interview transcripts to create structured evaluations for hiring committees with STAR methodology analysis and evidence-based scoring."
+  source_url: "https://brasstranscripts.com/blog/hr-interview-transcription-hiring-guide-2026"
+  use_cases:
+    - "Final-round hiring decisions requiring documentation"
+    - "Panel interview evaluations with multiple reviewers"
+    - "Behavioral interview scoring using STAR methodology"
+    - "Compliance documentation for EEOC requirements"
+    - "Structured interview program implementation"
+
+prompt:
+  user_template: |
+    Analyze this job interview transcript and create a structured evaluation for the hiring committee.
+
+    INTERVIEW CONTEXT:
+    - Position: [Job title]
+    - Key competencies to evaluate: [List 3-5 job-related competencies]
+    - Interview format: [Behavioral/Technical/Case study/Panel]
+
+    For each competency listed, extract and evaluate:
+
+    1. **Competency: [Name]**
+       - Relevant candidate statements (quote directly from transcript)
+       - STAR analysis if applicable:
+         * Situation described
+         * Task/responsibility
+         * Action taken
+         * Result achieved
+       - Suggested score (1-5): [Score]
+       - Scoring rationale: [Why this score based on evidence]
+
+    2. **Overall Candidate Assessment**
+       - Strongest competencies demonstrated
+       - Areas requiring further evaluation
+       - Red flags or concerns (if any)
+       - Recommended next steps
+
+    3. **Documentation Notes**
+       - Job-related observations only (exclude protected characteristics)
+       - Specific examples that support or contradict job fit
+       - Questions for reference check (if applicable)
+
+    CRITICAL: Base ALL evaluations on specific statements from the transcript. Do not infer or assume information not explicitly stated by the candidate.
+
+    TRANSCRIPT:
+    [Paste your interview transcript here]
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with speaker identification.
+    ---
+
+  variables:
+    - name: "job_title"
+      description: "The position being interviewed for"
+      required: true
+    - name: "competencies"
+      description: "List of 3-5 job-related competencies to evaluate"
+      required: true
+    - name: "interview_format"
+      description: "Type of interview conducted"
+      required: true
+      options:
+        - "Behavioral"
+        - "Technical"
+        - "Case study"
+        - "Panel"
+    - name: "transcript"
+      description: "The interview transcript with speaker labels"
+      required: true
+
+expected_output:
+  format: "structured_evaluation"
+  sections:
+    - "Competency analysis with evidence and STAR breakdown"
+    - "Numerical scoring recommendations with rationale"
+    - "Overall candidate assessment"
+    - "Compliance-appropriate documentation notes"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/hr-interview-transcription-hiring-guide-2026"
+  transcription_service: "https://brasstranscripts.com"

@@ -1,0 +1,90 @@
+metadata:
+  title: "Supervision Case Summary"
+  category: "legal-professional"
+  difficulty: "intermediate"
+  description: "Prepares therapy session material for clinical supervision meetings with focus on learning opportunities and countertransference awareness."
+  source_url: "https://brasstranscripts.com/blog/therapy-session-transcription-privacy-documentation-guide"
+  use_cases:
+    - "Clinical supervision preparation"
+    - "Trainee skill development review"
+    - "Case conceptualization discussions"
+    - "Intervention effectiveness analysis"
+    - "Countertransference exploration"
+
+prompt:
+  user_template: |
+    Create a supervision case summary from this therapy session transcript. Focus on clinical learning opportunities and areas requiring supervisor input.
+
+    SUPERVISEE CONTEXT:
+    - Training level: [Intern/Postdoc/Early career/Experienced]
+    - Supervision focus: [Skill development/Case conceptualization/Ethics/Countertransference]
+    - Specific questions for supervisor: [List any specific concerns]
+
+    Generate a supervision summary including:
+
+    1. **Session Overview**
+       - Key themes and presenting concerns
+       - Treatment goals addressed
+       - Session structure and flow
+
+    2. **Interventions Used**
+       - Specific techniques employed
+       - Rationale for intervention choices
+       - Client response to interventions
+
+    3. **Clinical Dilemmas**
+       - Decision points in the session
+       - Alternative approaches considered
+       - Areas of uncertainty
+
+    4. **Countertransference Awareness**
+       - Emotional reactions during session
+       - Potential blind spots
+       - Impact on therapeutic stance
+
+    5. **Questions for Supervision**
+       - Conceptualization questions
+       - Technique refinement needs
+       - Ethical considerations
+       - Next session planning
+
+    CONFIDENTIALITY NOTE: This summary is for clinical supervision only. Remove or change identifying information before sharing.
+
+    TRANSCRIPT:
+    [Paste your session transcript here]
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with speaker identification.
+    ---
+
+  variables:
+    - name: "training_level"
+      description: "Supervisee's training level"
+      required: true
+      options:
+        - "Intern"
+        - "Postdoc"
+        - "Early career"
+        - "Experienced"
+    - name: "supervision_focus"
+      description: "Primary focus area for supervision"
+      required: true
+    - name: "specific_questions"
+      description: "Specific concerns or questions for supervisor"
+      required: false
+    - name: "transcript"
+      description: "The session transcript with speaker labels"
+      required: true
+
+expected_output:
+  format: "supervision_summary"
+  sections:
+    - "Session overview"
+    - "Intervention analysis"
+    - "Clinical dilemmas"
+    - "Countertransference notes"
+    - "Supervision questions"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/therapy-session-transcription-privacy-documentation-guide"
+  transcription_service: "https://brasstranscripts.com"

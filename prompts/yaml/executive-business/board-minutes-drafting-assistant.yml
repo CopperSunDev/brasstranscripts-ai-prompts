@@ -1,0 +1,127 @@
+metadata:
+  title: "Board Minutes Drafting Assistant"
+  category: "executive-business"
+  difficulty: "intermediate"
+  description: "Creates first drafts of formal board meeting minutes from transcripts following Robert's Rules of Order principles."
+  source_url: "https://brasstranscripts.com/blog/board-meeting-transcription-corporate-governance-guide"
+  use_cases:
+    - "Board meeting minutes drafting"
+    - "Committee meeting documentation"
+    - "Annual meeting minutes preparation"
+    - "Nonprofit governance documentation"
+    - "Corporate secretary support"
+
+prompt:
+  user_template: |
+    Create a first draft of board meeting minutes from this transcript. Follow formal minutes requirements while avoiding excessive detail.
+
+    MEETING DETAILS:
+    - Organization name: [Organization]
+    - Meeting date: [Date]
+    - Meeting location: [Physical address or "Virtual via Zoom/Teams"]
+    - Meeting type: [Regular/Special/Annual/Emergency]
+    - Scheduled start time: [Time]
+
+    DIRECTORS PRESENT: [List from transcript or provide]
+    DIRECTORS ABSENT: [List from transcript or provide]
+    OTHERS PRESENT: [Management, legal counsel, guests]
+
+    Generate minutes including:
+
+    1. **Call to Order**
+       - Time meeting called to order
+       - Presiding officer (Chair)
+       - Quorum confirmation
+
+    2. **Approval of Prior Minutes**
+       - Reference to prior meeting date
+       - Motion, second, vote
+
+    3. **Reports** (if applicable)
+       - Officer reports received
+       - Committee reports received
+       - Key points (1-2 sentences each, not verbatim)
+
+    4. **Old Business**
+       - Matters continued from prior meetings
+       - Actions taken
+
+    5. **New Business**
+       - Each agenda item addressed
+       - Motions, seconds, votes
+       - Resolutions passed (exact language)
+
+    6. **Executive Session** (if applicable)
+       - Note that board entered executive session
+       - Time entered and returned
+       - DO NOT document discussion content
+
+    7. **Adjournment**
+       - Motion to adjourn
+       - Time of adjournment
+       - Next meeting date (if set)
+
+    8. **Certification**
+       - Signature line for Secretary
+       - Date of approval
+
+    FORMATTING RULES:
+    - Use past tense throughout
+    - Report actions, not discussions
+    - Include exact vote counts when not unanimous
+    - Note formal dissents if recorded
+    - Avoid characterizing discussion or opinions
+
+    TRANSCRIPT:
+    [Paste your board meeting transcript here]
+
+    ---
+    Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with speaker identification.
+    ---
+
+  variables:
+    - name: "organization_name"
+      description: "Name of the organization"
+      required: true
+    - name: "meeting_date"
+      description: "Date of the meeting"
+      required: true
+    - name: "meeting_location"
+      description: "Physical address or virtual platform"
+      required: true
+    - name: "meeting_type"
+      description: "Type of board meeting"
+      required: true
+      options:
+        - "Regular"
+        - "Special"
+        - "Annual"
+        - "Emergency"
+    - name: "directors_present"
+      description: "List of directors in attendance"
+      required: true
+    - name: "directors_absent"
+      description: "List of absent directors"
+      required: true
+    - name: "others_present"
+      description: "Management, counsel, guests present"
+      required: false
+    - name: "transcript"
+      description: "The board meeting transcript with speaker labels"
+      required: true
+
+expected_output:
+  format: "formal_minutes"
+  sections:
+    - "Call to order and quorum"
+    - "Prior minutes approval"
+    - "Reports"
+    - "Old business"
+    - "New business with motions and votes"
+    - "Executive session notation"
+    - "Adjournment"
+    - "Certification"
+
+resources:
+  detailed_guide: "https://brasstranscripts.com/blog/board-meeting-transcription-corporate-governance-guide"
+  transcription_service: "https://brasstranscripts.com"
