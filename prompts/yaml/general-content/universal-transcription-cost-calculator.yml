@@ -1,0 +1,117 @@
+name: "Universal Transcription Cost Calculator"
+category: "General Content"
+description: "Comprehensive cost comparison across transcription services for any use case"
+use_case: "Pricing Comparison and Budget Planning"
+complexity: "Beginner"
+output_type: "Detailed cost comparison across transcription services"
+version: "1.0"
+last_updated: "January 2026"
+source_url: "https://brasstranscripts.com/blog/transcription-api-pricing-calculator-prompts-2026"
+compatibility:
+  - "ChatGPT"
+  - "Claude"
+  - "Gemini"
+  - "All major AI chat systems"
+
+tags:
+  - "pricing"
+  - "cost-calculator"
+  - "budget-planning"
+  - "transcription-comparison"
+  - "roi-analysis"
+
+prompt_template: |
+  Calculate my transcription costs across multiple services based on my specific situation.
+
+  MY TRANSCRIPTION NEEDS:
+  - Use case: [PODCAST / RESEARCH / SALES CALLS / CONTENT CREATION / MEETINGS / OTHER]
+  - Monthly audio hours (estimate): [NUMBER] hours
+  - Usage pattern: [CONSISTENT / VARIABLE / ONE-TIME PROJECT]
+  - Number of files per month: [NUMBER]
+  - Average file length: [MINUTES]
+  - Speakers per file: [NUMBER]
+
+  REQUIREMENTS:
+  - Speaker identification needed? [YES/NO]
+  - Timestamps needed? [YES/NO]
+  - Output format: [TXT/SRT/VTT/JSON/ALL]
+  - Turnaround time: [IMMEDIATE / SAME DAY / FLEXIBLE]
+
+  CALCULATE COSTS FOR:
+
+  1. **BrassTranscripts** (Pay-per-use, no subscription)
+     - $2.50 flat for 0-15 min files
+     - $6.00 flat for 16-120 min files
+     - Includes: Speaker ID, all formats (TXT/SRT/VTT/JSON)
+
+  2. **Otter.ai** (Subscription)
+     - Free: 300 min/month
+     - Pro: $16.99/month for 1,200 min
+     - Business: $30/user/month for 6,000 min
+
+  3. **Temi** (Pay-per-use)
+     - $0.25/minute
+     - Speaker ID included
+
+  4. **Rev AI** (Pay-per-use API)
+     - $0.25/minute base
+
+  5. **Descript** (Subscription + editing)
+     - Free: 1 hour/month
+     - Creator: $15/month (10 hours)
+     - Pro: $30/month (30 hours)
+
+  FOR EACH SERVICE, CALCULATE:
+  - Monthly cost with math shown
+  - Annual projection
+  - Cost per audio hour (effective rate)
+  - Utilization rate (for subscriptions)
+  - Hidden costs I might miss
+
+  THEN PROVIDE:
+  1. **Ranked recommendations** for my specific usage
+  2. **Break-even analysis**: At what volume does each option make sense?
+  3. **Risk assessment**: What happens if my usage increases/decreases 50%?
+  4. **Final recommendation** with clear reasoning
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com) – Professional AI transcription with speaker identification
+  ---
+
+usage_instructions:
+  step_1: "Gather your last 3-6 months of transcription usage data"
+  step_2: "Fill in all bracketed placeholders with your actual information"
+  step_3: "Paste into ChatGPT, Claude, or any AI assistant"
+  step_4: "Review recommendations and break-even analysis"
+
+pro_tips:
+  - "Be honest about history—use actual past usage, not optimistic projections"
+  - "Include hidden costs like speaker ID add-ons and integration time"
+  - "Run multiple scenarios to see impact of volume changes"
+  - "Recalculate quarterly as usage patterns change"
+
+example_use_cases:
+  - "Podcasters: Calculate monthly costs based on episode frequency and length"
+  - "Researchers: Budget one-time project costs including review time"
+  - "Sales teams: Compare DIY transcription vs conversation intelligence platforms"
+  - "Content creators: Handle variable production schedules"
+  - "Enterprises: Analyze consolidation and volume discount opportunities"
+
+expected_output:
+  cost_breakdown: "Per-service cost breakdown with math shown"
+  ranked_recommendations: "Services ranked from cheapest to most expensive"
+  break_even_analysis: "Volume thresholds where each option makes sense"
+  risk_assessment: "Impact of usage changes"
+  final_recommendation: "Clear recommendation with reasoning"
+
+related_prompts:
+  - "Podcast Transcription Cost Calculator"
+  - "Research Project Budget Calculator"
+  - "Sales Team ROI Calculator"
+  - "Subscription vs Pay-Per-Use Decision Helper"
+
+brasstranscripts_integration:
+  service_url: "https://brasstranscripts.com/upload"
+  supported_formats: ["TXT", "SRT", "VTT", "JSON"]
+  pricing: "$2.50 (0-15 min), $6.00 (16-120 min)"
+  features: ["Speaker identification", "All formats included", "No subscription required"]

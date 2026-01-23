@@ -1,0 +1,87 @@
+name: "Speaker Labeler"
+category: "General Content"
+description: "Replace generic speaker labels with actual names or roles"
+use_case: "Transcript Processing and Speaker Attribution"
+complexity: "Beginner"
+output_type: "Transcript with named speakers replacing generic labels"
+version: "1.0"
+last_updated: "January 2026"
+source_url: "https://brasstranscripts.com/blog/transcript-processing-workflow-complete-guide-2026"
+compatibility:
+  - "ChatGPT"
+  - "Claude"
+  - "Gemini"
+  - "All major AI chat systems"
+
+tags:
+  - "transcript-processing"
+  - "speaker-attribution"
+  - "labeling"
+  - "identification"
+  - "editing"
+
+prompt_template: |
+  Replace speaker labels in this transcript with the correct names based on the context I provide.
+
+  SPEAKER INFORMATION:
+  - Speaker A is: [NAME AND ROLE]
+  - Speaker B is: [NAME AND ROLE]
+  - Speaker C is: [NAME AND ROLE]
+  (Add more as needed)
+
+  IF SPEAKERS AREN'T IDENTIFIED:
+  - Analyze speaking patterns to suggest likely roles
+  - Note: "Based on question patterns, Speaker A appears to be the interviewer"
+  - Label by role if names unknown: "Interviewer:", "Guest:", "Host:"
+
+  LABELING RULES:
+  1. Replace ALL instances of "Speaker A/B/C" with provided names
+  2. Use consistent format: "Name:" at start of each speaking turn
+  3. Preserve all original content exactly
+  4. Note any speakers who couldn't be confidently identified
+
+  OUTPUT FORMAT:
+  - Full transcript with corrected speaker labels
+  - If any speakers unclear, add note at the top explaining assumptions
+
+  TRANSCRIPT TO LABEL:
+  [PASTE YOUR CLEANED TRANSCRIPT HERE]
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com)
+  ---
+
+usage_instructions:
+  step_1: "Run through the Transcript Cleaner prompt before labeling speakers"
+  step_2: "List who participated and their roles"
+  step_3: "Replace the placeholder speaker information with actual names and roles"
+  step_4: "Check a few speaker turns to verify correct assignment"
+
+pro_tips:
+  - "Provide roles, not just names: 'Speaker A is: Sarah Chen, VP of Marketing'"
+  - "Use the AI for unknowns—ask it to identify by speaking patterns"
+  - "Verify critical sections for quotes you'll publish"
+  - "Note uncertain attributions for manual review"
+
+example_use_cases:
+  - "Interview transcripts: Assign interviewer and interviewee names"
+  - "Podcast episodes: Label host(s) and guest(s) consistently"
+  - "Meeting transcripts: Attribute statements to specific team members"
+  - "Panel discussions: Track multiple speakers throughout"
+
+expected_output:
+  format: "Full transcript with named speakers"
+  consistency: "Same labeling format throughout"
+  attribution_notes: "Notes for any uncertain identifications"
+  content_preservation: "All original content preserved exactly"
+
+related_prompts:
+  - "Transcript Cleaner"
+  - "Timestamp Formatter"
+  - "Transcript Section Organizer"
+  - "Speaker Attribution Error Corrector"
+
+brasstranscripts_integration:
+  service_url: "https://brasstranscripts.com/upload"
+  supported_formats: ["TXT", "SRT", "VTT", "JSON"]
+  features: ["Automatic speaker identification", "Speaker labels in output"]

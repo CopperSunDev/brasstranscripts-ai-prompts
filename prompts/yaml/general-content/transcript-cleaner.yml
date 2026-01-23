@@ -1,0 +1,87 @@
+name: "Transcript Cleaner"
+category: "General Content"
+description: "Remove filler words and clean raw transcripts while preserving speaker voice"
+use_case: "Transcript Processing and Cleanup"
+complexity: "Beginner"
+output_type: "Cleaned, readable transcript preserving speaker voice"
+version: "1.0"
+last_updated: "January 2026"
+source_url: "https://brasstranscripts.com/blog/transcript-processing-workflow-complete-guide-2026"
+compatibility:
+  - "ChatGPT"
+  - "Claude"
+  - "Gemini"
+  - "All major AI chat systems"
+
+tags:
+  - "transcript-processing"
+  - "cleanup"
+  - "filler-removal"
+  - "readability"
+  - "editing"
+
+prompt_template: |
+  Clean this raw transcript while preserving the speaker's voice and all important content.
+
+  CLEANING RULES:
+  1. Remove filler words: um, uh, like (when filler), you know, I mean, basically, actually, honestly, literally (when not literal)
+  2. Remove false starts: "I was going to—I decided to" → "I decided to"
+  3. Remove repetitions: "It was really, really good" → "It was really good"
+  4. Fix incomplete sentences when meaning is clear
+  5. Preserve intentional emphasis and speaking style
+  6. Keep technical terms exactly as spoken
+  7. Maintain all factual content—don't summarize or omit
+
+  DO NOT:
+  - Remove emotional language or emphasis
+  - Change meaning or intent
+  - Add information not present
+  - Over-formalize casual speech
+  - Remove speaker personality
+
+  OUTPUT FORMAT:
+  - Return the full cleaned transcript
+  - Use paragraph breaks at natural pauses or topic shifts
+  - Preserve speaker labels exactly as they appear
+
+  TRANSCRIPT TO CLEAN:
+  [PASTE YOUR TRANSCRIPT HERE]
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com)
+  ---
+
+usage_instructions:
+  step_1: "Upload your audio to BrassTranscripts and download the TXT format"
+  step_2: "Copy the entire prompt into ChatGPT, Claude, or your preferred AI assistant"
+  step_3: "Replace the placeholder with your raw transcript text"
+  step_4: "Spot-check key sections to ensure meaning is preserved"
+
+pro_tips:
+  - "Process in chunks for transcripts over 5,000 words"
+  - "Provide context about content type for better results"
+  - "Keep original transcript to verify no content was lost"
+  - "Run before speaker labeling for better consistency"
+
+example_use_cases:
+  - "Meeting transcripts: Clean up verbal tics for professional documentation"
+  - "Podcast episodes: Prepare transcripts for blog posts or show notes"
+  - "Interview transcripts: Create readable versions for research analysis"
+  - "Lecture recordings: Make educational content easier to read and study"
+
+expected_output:
+  format: "Full cleaned transcript with all content preserved"
+  paragraph_breaks: "At natural pauses"
+  speaker_labels: "Intact and consistent"
+  no_summaries: "Complete transcript only"
+
+related_prompts:
+  - "Speaker Labeler"
+  - "Timestamp Formatter"
+  - "Transcript Section Organizer"
+  - "Transcript Content Repurposer"
+
+brasstranscripts_integration:
+  service_url: "https://brasstranscripts.com/upload"
+  supported_formats: ["TXT", "SRT", "VTT", "JSON"]
+  features: ["Speaker identification", "Multiple output formats"]

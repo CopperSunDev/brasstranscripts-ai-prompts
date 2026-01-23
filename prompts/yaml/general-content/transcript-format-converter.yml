@@ -1,0 +1,113 @@
+name: "Transcript Format Converter"
+category: "General Content"
+description: "Convert transcripts between TXT, SRT, VTT, and JSON formats"
+use_case: "Format Conversion and Compatibility"
+complexity: "Intermediate"
+output_type: "Transcript converted to specified format (TXT, SRT, VTT, JSON)"
+version: "1.0"
+last_updated: "January 2026"
+source_url: "https://brasstranscripts.com/blog/transcription-file-formats-decision-guide-2026"
+compatibility:
+  - "ChatGPT"
+  - "Claude"
+  - "Gemini"
+  - "All major AI chat systems"
+
+tags:
+  - "format-conversion"
+  - "txt"
+  - "srt"
+  - "vtt"
+  - "json"
+
+prompt_template: |
+  Convert this transcript to a different format.
+
+  SOURCE FORMAT: [TXT/SRT/VTT/JSON]
+  TARGET FORMAT: [TXT/SRT/VTT/JSON]
+
+  CONVERSION REQUIREMENTS:
+
+  **TXT to SRT/VTT:**
+  - Estimate timestamps based on ~150 words per minute speaking rate
+  - Split into 2-3 second segments
+  - Keep segments under 42 characters wide
+
+  **SRT to VTT:**
+  - Add WEBVTT header
+  - Change comma to period in timestamps (00:00:00,000 → 00:00:00.000)
+  - Add speaker tags if speakers are identified
+
+  **VTT to SRT:**
+  - Remove WEBVTT header
+  - Change period to comma in timestamps
+  - Strip styling tags, keep text only
+  - Add sequence numbers
+
+  **Any to TXT:**
+  - Remove timestamps and formatting
+  - Add paragraph breaks at natural pauses
+  - Keep speaker labels
+
+  **Any to JSON:**
+  - Structure as segments array
+  - Include start/end times
+  - Add speaker attribution
+  - Include metadata (duration, speaker count)
+
+  OUTPUT:
+  - Full converted transcript
+  - Note any information lost in conversion
+  - Flag any segments needing manual review
+
+  TRANSCRIPT TO CONVERT:
+  [PASTE YOUR TRANSCRIPT HERE]
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com)
+  ---
+
+usage_instructions:
+  step_1: "Identify your source format and target format"
+  step_2: "Fill in SOURCE FORMAT and TARGET FORMAT fields"
+  step_3: "Paste the full transcript in its current format"
+  step_4: "Review output for any information loss or segments flagged for review"
+
+pro_tips:
+  - "BrassTranscripts provides all four formats—no conversion needed"
+  - "Keep original file as backup; conversion can lose information"
+  - "Test a short section before processing long transcripts"
+  - "AI-estimated timestamps may need manual adjustment"
+
+example_use_cases:
+  - "YouTube upload: Convert TXT to SRT for caption upload"
+  - "Web player: Convert SRT to VTT for HTML5 video"
+  - "Reading: Convert SRT/VTT to clean TXT"
+  - "Development: Convert any format to JSON for API use"
+
+conversion_matrix:
+  txt_to_srt: "Estimated timing added"
+  txt_to_vtt: "Estimated timing added"
+  txt_to_json: "Estimated timing, structured data"
+  srt_to_txt: "Loses timing"
+  srt_to_vtt: "Simple header change"
+  srt_to_json: "Full conversion"
+  vtt_to_txt: "Loses timing and styling"
+  vtt_to_srt: "Loses styling"
+  vtt_to_json: "Full conversion"
+
+expected_output:
+  converted_transcript: "Full transcript in target format"
+  proper_formatting: "Correct structure for target format"
+  loss_notes: "Information about any data lost"
+  review_flags: "Segments needing manual review"
+
+related_prompts:
+  - "Timestamp Formatter"
+  - "Subtitle Timing Optimizer"
+  - "Format Conversion Optimizer"
+
+brasstranscripts_integration:
+  service_url: "https://brasstranscripts.com/upload"
+  supported_formats: ["TXT", "SRT", "VTT", "JSON"]
+  note: "All four formats included with every transcription—no conversion needed"

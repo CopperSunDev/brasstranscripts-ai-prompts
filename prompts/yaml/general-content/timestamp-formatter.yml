@@ -1,0 +1,95 @@
+name: "Timestamp Formatter"
+category: "General Content"
+description: "Reformat timestamps for different use cases (reading, captions, research, show notes)"
+use_case: "Transcript Processing and Timestamp Optimization"
+complexity: "Intermediate"
+output_type: "Transcript with timestamps formatted for specific use case"
+version: "1.0"
+last_updated: "January 2026"
+source_url: "https://brasstranscripts.com/blog/transcript-processing-workflow-complete-guide-2026"
+compatibility:
+  - "ChatGPT"
+  - "Claude"
+  - "Gemini"
+  - "All major AI chat systems"
+
+tags:
+  - "transcript-processing"
+  - "timestamps"
+  - "formatting"
+  - "captions"
+  - "show-notes"
+
+prompt_template: |
+  Reformat the timestamps in this transcript for my specific use case.
+
+  MY USE CASE: [CHOOSE ONE]
+  - READING: Add timestamps every 1-2 minutes as paragraph markers
+  - VIDEO CAPTIONS: Format as SRT/VTT with 2-3 second segments
+  - RESEARCH: Preserve all timestamps, format as [HH:MM:SS]
+  - PODCAST SHOW NOTES: Keep only major topic timestamps
+  - REMOVE: Strip all timestamps for clean reading
+
+  FORMATTING RULES BY USE CASE:
+
+  For READING:
+  - Add timestamp at start of each major topic or every 2 minutes
+  - Format: [12:34] at paragraph start
+  - Remove mid-sentence timestamps
+
+  For VIDEO CAPTIONS:
+  - Keep segments under 42 characters wide
+  - 2-3 second display time per segment
+  - Match natural speech breaks
+
+  For RESEARCH:
+  - Preserve all original timestamps
+  - Standardize format: [HH:MM:SS]
+  - Align with speaker turns
+
+  For PODCAST SHOW NOTES:
+  - Extract only topic-change timestamps
+  - Format: [MM:SS] Topic Name
+  - Create clickable chapter markers
+
+  TRANSCRIPT TO REFORMAT:
+  [PASTE YOUR TRANSCRIPT HERE]
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com)
+  ---
+
+usage_instructions:
+  step_1: "Choose your use case from the options"
+  step_2: "Copy and customize the prompt with your selected use case"
+  step_3: "Include the timestamped transcript from BrassTranscripts"
+  step_4: "Use the reformatted timestamps in your final output"
+
+pro_tips:
+  - "Start with JSON format from BrassTranscripts for word-level timestamps"
+  - "Match your platform requirements (YouTube has specific SRT preferences)"
+  - "Test a sample section before processing long transcripts"
+  - "Keep original backup before reformatting"
+
+example_use_cases:
+  - "Reading format: Paragraph markers every 2 minutes"
+  - "Video captions: SRT format for YouTube upload"
+  - "Research: Precise timestamps for citation"
+  - "Podcast show notes: Chapter markers for listeners"
+
+expected_output:
+  format: "Reformatted transcript matching selected use case"
+  consistency: "Consistent timestamp format throughout"
+  segment_lengths: "Appropriate for use case"
+  quality: "Clean, professional output ready for use"
+
+related_prompts:
+  - "Transcript Cleaner"
+  - "Speaker Labeler"
+  - "Transcript Section Organizer"
+  - "Subtitle Timing Optimizer"
+
+brasstranscripts_integration:
+  service_url: "https://brasstranscripts.com/upload"
+  supported_formats: ["TXT", "SRT", "VTT", "JSON"]
+  features: ["Word-level timestamps in JSON", "Pre-formatted SRT/VTT"]

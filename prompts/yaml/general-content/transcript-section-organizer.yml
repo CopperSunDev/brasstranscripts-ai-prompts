@@ -1,0 +1,96 @@
+name: "Transcript Section Organizer"
+category: "General Content"
+description: "Add section headers and structure to long transcripts based on topic changes"
+use_case: "Transcript Processing and Structure"
+complexity: "Intermediate"
+output_type: "Structured transcript with headers and table of contents"
+version: "1.0"
+last_updated: "January 2026"
+source_url: "https://brasstranscripts.com/blog/transcript-processing-workflow-complete-guide-2026"
+compatibility:
+  - "ChatGPT"
+  - "Claude"
+  - "Gemini"
+  - "All major AI chat systems"
+
+tags:
+  - "transcript-processing"
+  - "organization"
+  - "structure"
+  - "headers"
+  - "table-of-contents"
+
+prompt_template: |
+  Add section headers and structure to this transcript based on topic changes.
+
+  ORGANIZATION RULES:
+  1. Identify natural topic shifts in the conversation
+  2. Add clear H2 headers for major sections
+  3. Add H3 subheaders for subtopics within sections
+  4. Create a table of contents at the top
+  5. Preserve all original content—don't summarize
+
+  HEADER STYLE: [CHOOSE ONE]
+  - DESCRIPTIVE: "Discussion of Q3 Revenue Performance"
+  - QUESTION-BASED: "How Did Q3 Revenue Perform?"
+  - TOPIC-BASED: "Q3 Revenue"
+  - TIMESTAMP-BASED: "[12:34] Q3 Revenue Discussion"
+
+  ADDITIONAL FORMATTING:
+  - [ ] Add bold to key decisions or action items
+  - [ ] Add bullet summaries at end of each section
+  - [ ] Highlight direct quotes worth noting
+  - [ ] Mark follow-up items or unresolved questions
+
+  OUTPUT STRUCTURE:
+  ## Table of Contents
+  [Auto-generated list of sections]
+
+  ## Section 1: [Header]
+  [Content]
+
+  ## Section 2: [Header]
+  [Content]
+
+  TRANSCRIPT TO ORGANIZE:
+  [PASTE YOUR TRANSCRIPT HERE]
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com)
+  ---
+
+usage_instructions:
+  step_1: "Run through Transcript Cleaner and Speaker Labeler prompts first"
+  step_2: "Choose header style that matches your use case and audience"
+  step_3: "Select additional formatting options you want applied"
+  step_4: "Verify section breaks make sense and no content was lost"
+
+pro_tips:
+  - "Process long transcripts in 20-minute chunks for 60+ minute transcripts"
+  - "Match header style to audience: question-based for FAQ, topic-based for documentation"
+  - "Add context about meeting type to help AI identify logical sections"
+  - "Verify completeness—ensure no content was accidentally summarized"
+
+example_use_cases:
+  - "Meeting transcripts: Create structured meeting notes with clear sections"
+  - "Interview transcripts: Organize by topic for easier analysis"
+  - "Podcast episodes: Prepare for show notes and chapter markers"
+  - "Training recordings: Structure educational content for reference"
+
+expected_output:
+  table_of_contents: "At the top with section links"
+  h2_headers: "For major topics"
+  h3_subheaders: "For subtopics"
+  content_preservation: "All original content preserved in full"
+  optional_formatting: "Bold decisions, section summaries as requested"
+
+related_prompts:
+  - "Transcript Cleaner"
+  - "Speaker Labeler"
+  - "Timestamp Formatter"
+  - "Transcript Content Repurposer"
+
+brasstranscripts_integration:
+  service_url: "https://brasstranscripts.com/upload"
+  supported_formats: ["TXT", "SRT", "VTT", "JSON"]
+  features: ["Speaker identification", "Multiple output formats"]

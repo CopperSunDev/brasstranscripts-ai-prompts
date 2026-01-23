@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **114 Professional AI Prompts for Transcript Analysis**
+🎯 **121 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -111,9 +111,16 @@ Professional client communication and project management workflows.
 
 [📖 View Details](https://brasstranscripts.com/blog/freelancer-client-call-transcription-productivity-guide) | [📁 Browse Files](./prompts/markdown/general-content/)
 
-### 📄 General Content (45 prompts)
+### 📄 General Content (52 prompts)
 Versatile prompts for document creation, training materials, and content optimization.
 
+- **Universal Transcription Cost Calculator** - Comprehensive cost comparison across transcription services for any use case
+- **Transcript Cleaner** - Remove filler words and clean raw transcripts while preserving speaker voice
+- **Speaker Labeler** - Replace generic speaker labels with actual names or roles
+- **Timestamp Formatter** - Reformat timestamps for different use cases (reading, captions, research, show notes)
+- **Transcript Section Organizer** - Add section headers and structure to long transcripts based on topic changes
+- **Transcript Content Repurposer** - Transform transcripts into blog posts, summaries, meeting notes, social media, and more
+- **Transcript Format Converter** - Convert transcripts between TXT, SRT, VTT, and JSON formats
 - **Government Meeting Minutes Assistant** - Help government clerks draft comprehensive minutes from AI transcripts of recorded meetings
 - **AI Transcription Time Estimator** - Calculate accurate processing times and delivery deadlines for your audio files
 - **Audio Quality Pre-Recording Checklist** - Prevent audio problems before recording

@@ -1,0 +1,95 @@
+name: "Transcript Content Repurposer"
+category: "General Content"
+description: "Transform transcripts into blog posts, summaries, meeting notes, social media, and more"
+use_case: "Content Creation and Transformation"
+complexity: "Intermediate"
+output_type: "Transformed content in specified format (blog, summary, social, etc.)"
+version: "1.0"
+last_updated: "January 2026"
+source_url: "https://brasstranscripts.com/blog/transcript-processing-workflow-complete-guide-2026"
+compatibility:
+  - "ChatGPT"
+  - "Claude"
+  - "Gemini"
+  - "All major AI chat systems"
+
+tags:
+  - "content-creation"
+  - "repurposing"
+  - "blog-post"
+  - "summary"
+  - "social-media"
+
+prompt_template: |
+  Transform this processed transcript into a specific content format.
+
+  OUTPUT FORMAT: [CHOOSE ONE]
+  - BLOG POST: 800-1,500 word article with introduction, key points, conclusion
+  - EXECUTIVE SUMMARY: 1-page overview with key decisions and action items
+  - MEETING NOTES: Structured notes with attendees, topics, decisions, next steps
+  - SHOW NOTES: Episode description, timestamps, key quotes, resources mentioned
+  - SOCIAL MEDIA: 5-10 posts highlighting key insights (Twitter/LinkedIn format)
+  - NEWSLETTER: Email-friendly summary with one main takeaway
+  - VIDEO DESCRIPTION: YouTube description with timestamps and keywords
+
+  CONTENT GUIDELINES:
+  1. Preserve accuracy—don't add information not in the transcript
+  2. Use direct quotes for compelling statements
+  3. Include attribution: "According to [Speaker]..."
+  4. Maintain the tone of the original conversation
+  5. Highlight actionable insights over general discussion
+
+  ADDITIONAL REQUESTS:
+  - [ ] Include 3-5 pull quotes for social sharing
+  - [ ] Add SEO keywords for blog optimization
+  - [ ] Create headline options (3-5 variations)
+  - [ ] Suggest related topics for follow-up content
+
+  TRANSCRIPT TO REPURPOSE:
+  [PASTE YOUR PROCESSED TRANSCRIPT HERE]
+
+  CONTEXT:
+  - Original content type: [PODCAST/MEETING/INTERVIEW/WEBINAR]
+  - Target audience: [DESCRIBE]
+  - Publication channel: [BLOG/NEWSLETTER/SOCIAL/INTERNAL]
+
+  ---
+  Prompt by BrassTranscripts (brasstranscripts.com)
+  ---
+
+usage_instructions:
+  step_1: "Run through cleaning, labeling, and organizing prompts first"
+  step_2: "Choose output format that matches your publication needs"
+  step_3: "Fill in context section to help AI match tone and audience"
+  step_4: "Verify accuracy against original transcript before publishing"
+
+pro_tips:
+  - "Start with quality input—well-processed transcripts produce better output"
+  - "Be specific about audience for better tone matching"
+  - "Use direct quotes—they add authenticity and are shareable"
+  - "Verify all facts—AI can't fact-check against external sources"
+
+example_use_cases:
+  - "Podcast to blog: Transform episodes into SEO-optimized articles"
+  - "Meeting to summary: Create executive briefings from recorded meetings"
+  - "Interview to quotes: Extract social media content from interviews"
+  - "Webinar to newsletter: Summarize key points for email subscribers"
+
+expected_output:
+  format: "Formatted content matching selected output type"
+  accuracy: "Information from original transcript only"
+  attribution: "Proper attribution for quotes and insights"
+  additional_elements: "Pull quotes, headlines as requested"
+  length: "Appropriate for chosen format"
+
+related_prompts:
+  - "Transcript Cleaner"
+  - "Speaker Labeler"
+  - "Transcript Section Organizer"
+  - "Blog Post Creator"
+  - "Meeting Summary Generator"
+
+brasstranscripts_integration:
+  service_url: "https://brasstranscripts.com/upload"
+  supported_formats: ["TXT", "SRT", "VTT", "JSON"]
+  features: ["Speaker identification", "Multiple output formats"]
