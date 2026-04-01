@@ -1,6 +1,6 @@
 # BrassTranscripts AI Prompts
 
-🎯 **121 Professional AI Prompts for Transcript Analysis**
+🎯 **122 Professional AI Prompts for Transcript Analysis**
 
 Transform meeting recordings, interviews, and audio content into executive summaries, marketing assets, legal analysis, and professional documents using these battle-tested AI prompts.
 
@@ -111,9 +111,10 @@ Professional client communication and project management workflows.
 
 [📖 View Details](https://brasstranscripts.com/blog/freelancer-client-call-transcription-productivity-guide) | [📁 Browse Files](./prompts/markdown/general-content/)
 
-### 📄 General Content (52 prompts)
+### 📄 General Content (53 prompts)
 Versatile prompts for document creation, training materials, and content optimization.
 
+- **Bulk vs. Single-File Cost Calculator** - Compare single-file and bulk transcription pricing to find the cheaper option for your batch
 - **Universal Transcription Cost Calculator** - Comprehensive cost comparison across transcription services for any use case
 - **Transcript Cleaner** - Remove filler words and clean raw transcripts while preserving speaker voice
 - **Speaker Labeler** - Replace generic speaker labels with actual names or roles
