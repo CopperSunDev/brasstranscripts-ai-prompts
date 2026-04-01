@@ -68,8 +68,17 @@ prompt_text: |
      - Percentage saved
      - Verdict: which option wins and by how much
 
-  5. Show the breakeven point as both a percentage AND a file count:
-     "Breakeven at this tier: Bulk becomes cheaper when X% or more of your files exceed 15 minutes — that's Y out of Z files."
+  5. Calculate the breakeven using this exact formula:
+     breakeven_percentage = (bulk_rate - 2.50) / (6.00 - 2.50) × 100
+     breakeven_file_count = round(breakeven_percentage / 100 × total_files)
+
+     Reference values (use these, do not recalculate):
+     - $4.50 tier: 57% breakeven
+     - $4.00 tier: 43% breakeven
+     - $3.50 tier: 29% breakeven
+     - $3.00 tier: 14% breakeven
+
+     Show as: "Breakeven at this tier: Bulk becomes cheaper when X% or more of your files exceed 15 minutes — that's Y out of Z files."
 
   6. If the difference is under 10%, call it a close call. If the user gave rough estimates and the result is close, note that a slightly different duration mix could change the answer.
 
