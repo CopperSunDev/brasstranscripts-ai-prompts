@@ -8,7 +8,7 @@
 
 ## Overview
 
-This prompt compares BrassTranscripts single-file pricing ($2.50-$6.00/file based on duration) against bulk pricing ($90 flat for 1-19 files, then $3.00-$4.50/file for 20+) to determine which option is cheaper for your specific batch. It accepts exact file lists, rough estimates, or just a file count, then calculates totals, savings, and the breakeven point.
+This prompt compares BrassTranscripts single-file pricing ($2.50-$6.00/file based on duration) against bulk pricing ($3.00-$6.00/file based on batch size, no minimum file count) to determine which option is cheaper for your specific batch. It accepts exact file lists, rough estimates, or just a file count, then calculates totals, savings, and the breakeven point.
 
 **Perfect for**:
 - Law firms deciding between single-file and bulk for case recordings
@@ -29,9 +29,11 @@ Single-file:
 - Files 1-15 minutes: $2.50 each
 - Files 16-120 minutes: $6.00 each
 
-Bulk (flat per-file rate regardless of duration):
-- 1-19 files: $90 flat (no per-file breakdown — you pay $90 whether you have 1 or 19 files)
-- 20-49 files: $4.50/file
+Bulk (flat per-file rate regardless of duration, no minimum file count):
+- 1-5 files: $6.00/file
+- 6-10 files: $5.00/file
+- 11-15 files: $4.75/file
+- 16-49 files: $4.50/file
 - 50-99 files: $4.00/file
 - 100-249 files: $3.50/file
 - 250+ files: $3.00/file
@@ -60,8 +62,7 @@ INSTRUCTIONS:
    - Sum = single-file total
 
    BULK TOTAL:
-   - If 1-19 files: bulk total = $90 flat
-   - If 20+ files: determine volume tier, then total files × tier rate = bulk total
+   - Determine volume tier based on file count, then total files × tier rate = bulk total
 
 4. Present results as a clear comparison table:
    - Single-file total
@@ -75,10 +76,13 @@ INSTRUCTIONS:
    breakeven_file_count = round(breakeven_percentage / 100 × total_files)
 
    Reference values (use these, do not recalculate):
-   - $4.50 tier: 57% breakeven
-   - $4.00 tier: 43% breakeven
-   - $3.50 tier: 29% breakeven
-   - $3.00 tier: 14% breakeven
+   - $6.00 tier (1-5 files): 100% breakeven (bulk only matches single-file at best)
+   - $5.00 tier (6-10 files): 71% breakeven
+   - $4.75 tier (11-15 files): 64% breakeven
+   - $4.50 tier (16-49 files): 57% breakeven
+   - $4.00 tier (50-99 files): 43% breakeven
+   - $3.50 tier (100-249 files): 29% breakeven
+   - $3.00 tier (250+ files): 14% breakeven
 
    Show as: "Breakeven at this tier: Bulk becomes cheaper when X% or more of your files exceed 15 minutes — that's Y out of Z files."
 
