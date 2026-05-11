@@ -23,9 +23,10 @@ prompt: |
   CALCULATE FOR THESE SERVICES:
 
   1. **BrassTranscripts** (Pay-per-use)
-     - $2.50 flat for 0-15 min files
-     - $6.00 flat for 16-120 min files
+     - Single-file: $2.50 (0-15 min) or $6.00 (16-120 min) flat per file
+     - Bulk batches: Tiered $3.00-$6.00/file across 7 batch sizes (1-5: $6, 6-10: $5, 11-15: $4.75, 16-49: $4.50, 50-99: $4, 100-249: $3.50, 250+: $3)
      - Includes speaker ID and all formats
+     - Note: For consistent weekly podcasts producing 20+ episodes/month, also compare TurboScribe ($10/mo billed annually) — subscriptions can be cheaper for high-consistency users.
 
   2. **Otter.ai** (Subscription)
      - Free: 300 min/month

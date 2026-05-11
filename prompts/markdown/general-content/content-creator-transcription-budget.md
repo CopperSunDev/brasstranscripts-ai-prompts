@@ -45,10 +45,11 @@ CALCULATE THREE SCENARIOS:
 - Calculate costs across services
 
 FOR EACH SCENARIO, COMPARE:
-1. BrassTranscripts (pay-per-use): $6/file over 15 min
-2. Otter Pro ($16.99/mo): 1,200 min included
-3. Descript Creator ($15/mo): 10 hours included
-4. Descript Pro ($30/mo): 30 hours included
+1. BrassTranscripts (pay-per-use): Single-file $2.50 (0–15 min) or $6.00 (16–120 min); bulk batches tiered $3.00–$6.00/file across 7 batch sizes — pay-per-use means zero cost in months with no production
+2. TurboScribe ($10/mo billed annually): Unlimited uploads, 50-file batch cap — wins for consistent monthly production
+3. Otter Pro ($16.99/mo): 1,200 min included
+4. Descript Creator ($15/mo): 10 hours included
+5. Descript Pro ($30/mo): 30 hours included
 
 ANALYSIS:
 - Which service wins in each scenario?

@@ -24,7 +24,7 @@ prompt: |
   2. [SERVICE]: $[PRICE]/month for [MINUTES] minutes
 
   PAY-PER-USE BASELINE:
-  - BrassTranscripts: $6/hour (files over 15 min)
+  - BrassTranscripts: Per-file flat pricing — single-file $2.50 (0-15 min) or $6.00 (16-120 min); bulk batches tiered $3.00-$6.00/file across 7 batch sizes (1-5: $6, 6-10: $5, 11-15: $4.75, 16-49: $4.50, 50-99: $4, 100-249: $3.50, 250+: $3). Cost depends on batch size and file count, NOT total audio hours.
 
   CALCULATE:
 

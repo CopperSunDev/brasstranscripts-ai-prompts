@@ -33,7 +33,8 @@ prompt: |
   CALCULATE DIY ALTERNATIVE:
 
   1. **Transcription costs** (BrassTranscripts)
-     - Calculate: [reps] × [calls/rep] × $6/call
+     - Per-file flat pricing — bulk batches typically apply for sales teams (Tiered $3.00-$6.00/file across 7 batch sizes; 100+ monthly calls hit the $3.50/file tier, 250+ hit $3.00/file)
+     - Calculate: [reps] × [calls/rep] × applicable bulk tier price (use brasstranscripts.com/bulk-transcription-guide for current tiers)
      - Monthly and annual projection
 
   2. **AI analysis costs** (ChatGPT/Claude)

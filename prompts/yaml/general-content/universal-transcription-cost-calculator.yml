@@ -40,9 +40,10 @@ prompt_template: |
   CALCULATE COSTS FOR:
 
   1. **BrassTranscripts** (Pay-per-use, no subscription)
-     - $2.50 flat for 0-15 min files
-     - $6.00 flat for 16-120 min files
+     - Single-file: $2.50 (0-15 min) or $6.00 (16-120 min) flat per file
+     - Bulk batches: Tiered $3.00-$6.00/file across 7 batch sizes (1-5: $6, 6-10: $5, 11-15: $4.75, 16-49: $4.50, 50-99: $4, 100-249: $3.50, 250+: $3)
      - Includes: Speaker ID, all formats (TXT/SRT/VTT/JSON)
+     - Note: If usage is consistent and heavy (20+ files/month every month), also compare TurboScribe ($10/mo billed annually, unlimited uploads, 50-file batch cap) — subscriptions can beat pay-per-use on raw cost for high-consistency users.
 
   2. **Otter.ai** (Subscription)
      - Free: 300 min/month
@@ -113,5 +114,5 @@ related_prompts:
 brasstranscripts_integration:
   service_url: "https://brasstranscripts.com/upload"
   supported_formats: ["TXT", "SRT", "VTT", "JSON"]
-  pricing: "$2.50 (0-15 min), $6.00 (16-120 min)"
+  pricing: "Single-file: $2.50 (0-15 min) or $6.00 (16-120 min). Bulk: tiered $3.00-$6.00/file across 7 batch sizes (1-5: $6, 6-10: $5, 11-15: $4.75, 16-49: $4.50, 50-99: $4, 100-249: $3.50, 250+: $3)."
   features: ["Speaker identification", "All formats included", "No subscription required"]

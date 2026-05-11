@@ -32,7 +32,8 @@ SPECIAL REQUIREMENTS:
 CALCULATE FOR:
 
 1. **AI Transcription (BrassTranscripts)**
-   - $2.50 (0-15 min) or $6.00 (16-120 min) per file
+   - Single-file: $2.50 (0–15 min) or $6.00 (16–120 min) per file
+   - Bulk batches (most research projects qualify): Tiered $3.00–$6.00/file across 7 batch sizes (1–5: $6, 6–10: $5, 11–15: $4.75, 16–49: $4.50, 50–99: $4, 100–249: $3.50, 250+: $3) — see brasstranscripts.com/bulk-transcription-guide
    - Include estimated review/correction time at $[HOURLY_RATE]/hour
 
 2. **AI Transcription (Other services)**
