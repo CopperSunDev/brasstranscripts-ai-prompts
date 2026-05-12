@@ -1,0 +1,15 @@
+{%- comment -%}
+  Canonical tag strategy:
+    1. If a page sets `canonical_url` in front matter, use that verbatim.
+    2. Otherwise, for prompt pages under prompts/markdown/<category>/<slug>.md,
+       use `canonical_base` (set per-directory in _config.yml defaults) plus
+       the page slug, pointing back to brasstranscripts.com/ai-prompt-guide.
+    3. jekyll-seo-tag will still emit its own canonical; we rely on the
+       last <link rel="canonical"> in <head> winning per HTML spec.
+{%- endcomment -%}
+{%- if page.canonical_url -%}
+  <link rel="canonical" href="{{ page.canonical_url }}" />
+{%- elsif page.canonical_base -%}
+  {%- assign slug = page.name | replace: '.md', '' -%}
+  <link rel="canonical" href="{{ page.canonical_base }}-{{ slug }}" />
+{%- endif -%}

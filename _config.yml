@@ -1,0 +1,58 @@
+title: BrassTranscripts AI Prompt Library
+description: >-
+  122 free AI prompts for transforming audio and video transcripts into
+  business-ready content — executive summaries, marketing assets, legal
+  analysis, and more.
+url: https://coppersundev.github.io
+baseurl: /brasstranscripts-ai-prompts
+
+theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude non-rendered files from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - ATTRIBUTION_LINE_UPDATE_PROGRESS.md
+  - schemas
+  - examples
+  - prompts/yaml
+
+# Inject layout + canonical defaults for each prompt category without
+# modifying the 122 source markdown files.
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  - scope:
+      path: "prompts/markdown/executive-business"
+    values:
+      layout: default
+      category: Executive & Business
+      canonical_base: https://brasstranscripts.com/ai-prompt-guide#executive-business
+  - scope:
+      path: "prompts/markdown/content-marketing"
+    values:
+      layout: default
+      category: Content Marketing
+      canonical_base: https://brasstranscripts.com/ai-prompt-guide#content-marketing
+  - scope:
+      path: "prompts/markdown/legal-professional"
+    values:
+      layout: default
+      category: Legal Professional
+      canonical_base: https://brasstranscripts.com/ai-prompt-guide#legal-professional
+  - scope:
+      path: "prompts/markdown/general-content"
+    values:
+      layout: default
+      category: Freelancer & General Content
+      canonical_base: https://brasstranscripts.com/ai-prompt-guide#general-content
